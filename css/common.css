@@ -1,0 +1,348 @@
+/* -----------------------------------------------------------
+	common style
+----------------------------------------------------------- */
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    width: 1320px;
+  }
+}
+.main-page-wrapper {
+  width: 100%;
+  min-height: 418px;
+  background-image: url("../images/background-content.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 585px 418px;
+}
+@media only screen and (max-width: 991px) {
+  .main-page-wrapper {
+    background-size: 339px 242px;
+  }
+}
+
+.top-player__wrapper {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  border: 1px solid #E9E6DC;
+  border-radius: 4px;
+  padding: 24px 14px;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+.top-player__wrapper::-webkit-scrollbar {
+  width: 5px;
+}
+.top-player__wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.top-player__wrapper::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 5px;
+}
+.top-player__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+}
+.top-player__description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.top-player__list-player {
+  width: 100%;
+  height: auto;
+  max-height: 600px;
+  overflow-y: auto;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+.top-player__list-player::-webkit-scrollbar {
+  width: 5px;
+}
+.top-player__list-player::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.top-player__list-player::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 5px;
+}
+.top-player__list-player .player-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  padding-right: 4px;
+}
+.top-player__list-player .player-item .score {
+  min-width: 30px;
+  padding: 2px 4px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #ffffff;
+  background-color: #F91E4E;
+}
+.top-player__list-player .player-item .player-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-grow: 1;
+}
+.top-player__list-player .player-item .player-info .player-detail {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: 10px;
+}
+.top-player__list-player .player-item .player-info .player-detail .player-image-wrapper {
+  min-width: 56px;
+  max-width: 56px;
+  height: 56px;
+  border: none;
+  position: relative;
+}
+.top-player__list-player .player-item .player-info .player-detail .player-image-wrapper .player-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: none;
+}
+.top-player__list-player .player-item .player-info .player-detail .player-image-wrapper .club-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  min-width: 24px;
+  max-width: 24px;
+  height: auto;
+  object-fit: cover;
+}
+.top-player__list-player .player-item .player-info .player-detail .player-description {
+  display: flex;
+  flex-direction: column;
+}
+.top-player__list-player .player-item .player-info .player-detail .player-description a {
+  text-decoration: none;
+}
+.top-player__list-player .player-item .player-info .player-detail .player-description a:hover {
+  text-decoration: underline;
+}
+.top-player__list-player .player-item .player-info .player-detail .player-description .player-name {
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+}
+.top-player__list-player .player-item .player-info .player-detail .player-description .club-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #718096;
+}
+
+.football-ranking {
+  width: 100%;
+  height: auto;
+  background: #FFFFFF;
+  border: 1px solid #E9E6DC;
+  border-radius: 4px;
+}
+.football-ranking__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+}
+.football-ranking__header .arrow {
+  cursor: pointer;
+  display: flex;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.football-ranking__header .league-info {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.football-ranking__header .league-info img {
+  min-width: 16px;
+  max-width: 16px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.football-ranking__header .league-info .league-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.football-ranking__table {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #F7FAFC;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #718096;
+  max-height: 580px;
+  overflow-y: auto;
+  padding-right: 4px;
+  /* width */
+  /* Track */
+  /* Handle */
+}
+.football-ranking__table::-webkit-scrollbar {
+  width: 5px;
+}
+.football-ranking__table::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.football-ranking__table::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 5px;
+}
+.football-ranking__table .table-heading {
+  width: 100%;
+  display: flex;
+  padding: 4px 10px;
+}
+.football-ranking__table .column-10 {
+  width: 10%;
+}
+.football-ranking__table .column-15 {
+  width: 15%;
+}
+.football-ranking__table .column-55 {
+  width: 55%;
+  padding-left: 12px;
+}
+.football-ranking__table .table-row {
+  padding: 10px 0px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #EDF2F7;
+  background-color: #fff;
+  padding: 10px 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #1A202C;
+}
+.football-ranking__table .pos-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.football-ranking__table .pos-wrapper .text-pos {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #1A202C;
+}
+.football-ranking__table .pos-wrapper span {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.football-ranking__table .club-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.football-ranking__table .club-info img {
+  min-width: 20px;
+  max-width: 20px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.football-ranking__table .club-info .club-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #1A202C;
+  min-width: max-content;
+}
+
+/*# sourceMappingURL=common.css.map */
