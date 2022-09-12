@@ -1,0 +1,600 @@
+.match-page-wrapper {
+  background-color: #fff;
+}
+
+.match-page-wrapper {
+  width: 100%;
+  height: auto;
+}
+.match-page-wrapper .live-content {
+  width: 100%;
+}
+@media only screen and (max-width: 991px) {
+  .match-page-wrapper .live-content {
+    padding-top: 8px;
+  }
+}
+.match-page-wrapper .live-content .live-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: #1A202C;
+  padding: 36px 0px 20px;
+}
+@media only screen and (max-width: 991px) {
+  .match-page-wrapper .live-content .live-title {
+    display: none;
+  }
+}
+.match-page-wrapper .live-content .live-video {
+  width: 100%;
+  height: 715px;
+  border: 1px solid;
+}
+@media only screen and (max-width: 991px) {
+  .match-page-wrapper .live-content .live-video {
+    max-height: 210px;
+    width: 100%;
+  }
+}
+.match-page-wrapper .live-content .control-live {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0px;
+  max-width: 100%;
+  margin: auto;
+}
+@media only screen and (max-width: 991px) {
+  .match-page-wrapper .live-content .control-live {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+.match-page-wrapper .live-content .control-live .list-server {
+  display: flex;
+  gap: 12px;
+}
+.match-page-wrapper .live-content .control-live .list-server .btn-server {
+  outline: none;
+  padding: 8px 16px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 8px;
+  color: #1A202C;
+  border: none;
+  cursor: pointer;
+  background-color: #FDC400;
+}
+.match-page-wrapper .live-content .control-live .list-server .btn-server:focus {
+  outline: none;
+}
+.match-page-wrapper .live-content .control-live .list-server .active {
+  color: #fff;
+  background-color: #F91E4E;
+}
+.match-page-wrapper .live-content .control-live .list-contact {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-width: 991px) {
+  .match-page-wrapper .live-content .control-live .list-contact {
+    display: none;
+  }
+}
+.match-page-wrapper .live-content .control-live .list-contact li a {
+  text-decoration: none;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.match-page-wrapper .live-content .dash-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+@media only screen and (max-width: 991px) {
+  .match-page-wrapper .live-content .dash-wrapper {
+    display: none;
+  }
+}
+.match-page-wrapper .live-content .dash-wrapper img {
+  display: block;
+  width: 195px;
+  height: 23px;
+  object-fit: cover;
+}
+.match-page-wrapper .live-content .match-result-wrapper {
+  padding-bottom: 50px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .match-page-wrapper .live-content .match-result-wrapper {
+    padding-bottom: 0;
+  }
+}
+.match-page-wrapper .live-content .match-result-wrapper .column-50 {
+  width: 50%;
+}
+.match-page-wrapper .live-content .match-result-wrapper .column-15 {
+  width: 15%;
+}
+@media only screen and (max-width: 991px) {
+  .match-page-wrapper .live-content .match-result-wrapper .column-15 {
+    margin: 0px 20px;
+  }
+}
+.match-page-wrapper .live-content .match-result-wrapper .club-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+@media only screen and (max-width: 991px) {
+  .match-page-wrapper .live-content .match-result-wrapper .club-item {
+    gap: 8px;
+  }
+}
+.match-page-wrapper .live-content .match-result-wrapper .club-item .club-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #1A202C;
+}
+@media only screen and (max-width: 991px) {
+  .match-page-wrapper .live-content .match-result-wrapper .club-item .club-name {
+    font-size: 13px;
+    line-height: 21px;
+  }
+}
+.match-page-wrapper .live-content .match-result-wrapper .club-item .club-image {
+  min-width: 64px;
+  max-width: 64px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 991px) {
+  .match-page-wrapper .live-content .match-result-wrapper .club-item .club-image {
+    min-width: 24px;
+    max-width: 24px;
+  }
+}
+.match-page-wrapper .live-content .match-result-wrapper .score-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+.match-page-wrapper .live-content .match-result-wrapper .score-wrapper .result {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #F91E4E;
+}
+@media only screen and (max-width: 991px) {
+  .match-page-wrapper .live-content .match-result-wrapper .score-wrapper .result {
+    font-size: 24px;
+    line-height: 36px;
+    min-width: max-content;
+  }
+}
+.match-page-wrapper .live-content .match-result-wrapper .score-wrapper .match-info {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: -36px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+@media only screen and (max-width: 991px) {
+  .match-page-wrapper .live-content .match-result-wrapper .score-wrapper .match-info {
+    bottom: -18px;
+  }
+}
+.match-page-wrapper .live-content .match-result-wrapper .score-wrapper .time,
+.match-page-wrapper .live-content .match-result-wrapper .score-wrapper .league-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #718096;
+  min-width: max-content;
+}
+@media only screen and (max-width: 991px) {
+  .match-page-wrapper .live-content .match-result-wrapper .score-wrapper .league-name {
+    display: none;
+  }
+}
+
+.page-live-content-wrapper {
+  padding: 24px 0px;
+  width: 100%;
+  display: flex;
+  gap: 24px;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper {
+    padding: 12px 0px;
+    gap: 12px;
+    flex-direction: column;
+  }
+}
+.page-live-content-wrapper .left-content {
+  display: flex;
+  flex-grow: 1;
+  background: #FFFFFF;
+  border: 1px solid #E9E6DC;
+  border-radius: 4px;
+  padding: 40px 24px;
+  flex-direction: column;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .left-content {
+    padding: 24px 16px;
+  }
+}
+.page-live-content-wrapper .left-content .block-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #1A202C;
+  margin-bottom: 16px;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .left-content .block-title {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+  }
+}
+.page-live-content-wrapper .right-content {
+  min-width: 300px;
+  max-width: 300px;
+  border: 1px solid red;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .right-content {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+.page-live-content-wrapper .list-info {
+  width: 100%;
+  display: flex;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .list-info {
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
+}
+.page-live-content-wrapper .list-info .info-item {
+  width: 25%;
+  height: auto;
+  gap: 12px;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .list-info .info-item {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
+.page-live-content-wrapper .list-info .info-item .info-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.page-live-content-wrapper .list-info .info-item .info-detail .detail-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+}
+.page-live-content-wrapper .list-info .info-item .info-detail .detail-value {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+}
+.page-live-content-wrapper .h2h-wrapper .h2h-row {
+  display: flex;
+  margin-bottom: 12px;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .h2h-wrapper .h2h-row {
+    margin-bottom: 8px;
+  }
+}
+.page-live-content-wrapper .h2h-wrapper .h2h-column {
+  width: 33.3333333333%;
+}
+.page-live-content-wrapper .h2h-wrapper .h2h-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .h2h-wrapper .h2h-item {
+    gap: 8px;
+  }
+}
+.page-live-content-wrapper .h2h-wrapper .h2h-item .h2h-name {
+  font-style: normal;
+  font-weight: 500;
+  color: #1A202C;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .h2h-wrapper .h2h-item .h2h-name {
+    font-size: 12px;
+    line-height: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 72px;
+  }
+}
+.page-live-content-wrapper .h2h-wrapper .h2h-item .h2h-image {
+  min-width: 40px;
+  max-width: 40px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .h2h-wrapper .h2h-item .h2h-image {
+    min-width: 24px;
+    max-width: 24px;
+  }
+}
+.page-live-content-wrapper .h2h-wrapper .h2h-result {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .h2h-wrapper .h2h-result {
+    gap: 16px;
+  }
+}
+.page-live-content-wrapper .h2h-wrapper .h2h-result span {
+  min-width: max-content;
+  display: inline-block;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .h2h-wrapper .h2h-result span {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.page-live-content-wrapper .h2h-wrapper .h2h-result span:first-child {
+  color: #2F855A;
+}
+.page-live-content-wrapper .h2h-wrapper .h2h-result span:nth-child(2) {
+  color: #718096;
+}
+.page-live-content-wrapper .h2h-wrapper .h2h-result span:nth-child(3) {
+  color: #F91E4E;
+}
+.page-live-content-wrapper .table-timeline-match .league-fixture__table {
+  margin-bottom: 24px;
+}
+.page-live-content-wrapper .table-timeline-match .league-fixture__table .table-heading {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 8px;
+}
+.page-live-content-wrapper .table-timeline-match .league-fixture__table .coloumn-40 {
+  width: 40%;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .table-timeline-match .league-fixture__table .coloumn-40 {
+    width: 100%;
+  }
+}
+.page-live-content-wrapper .table-timeline-match .league-fixture__table .column-60 {
+  width: 60%;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .table-timeline-match .league-fixture__table .column-60 {
+    width: 100%;
+  }
+}
+.page-live-content-wrapper .table-timeline-match .league-fixture__table .column-10 {
+  width: 10%;
+}
+.page-live-content-wrapper .table-timeline-match .league-fixture__table .column-20 {
+  width: 20%;
+}
+.page-live-content-wrapper .table-timeline-match .league-fixture__table .table-row {
+  padding: 12px 0px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #EDF2F7;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .table-timeline-match .league-fixture__table .table-row {
+    flex-flow: column;
+    padding: 8px 0px;
+  }
+}
+.page-live-content-wrapper .table-timeline-match .league-fixture__table .table-row .time {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .table-timeline-match .league-fixture__table .table-row .time {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  justify-content: center;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club {
+    gap: 12px;
+  }
+}
+.page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .club-item {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .club-item:first-of-type {
+  justify-content: flex-end;
+}
+.page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .club-item:last-of-type {
+  justify-content: flex-start;
+}
+.page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .club-item .club-name {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  min-width: max-content;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .club-item .club-name {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+.page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .club-item .club-image {
+  min-width: 24px;
+  max-width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .score {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  align-items: center;
+}
+.page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .score .score-item {
+  display: inline-block;
+  min-width: 24px;
+  max-width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FDC400;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  text-align: center;
+  /* Gray:900 */
+  color: #1A202C;
+}
+.page-live-content-wrapper .prediction-and-wnning-odds-wrapper .prediction-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .prediction-and-wnning-odds-wrapper .prediction-item {
+    margin-bottom: 8px;
+  }
+}
+.page-live-content-wrapper .prediction-and-wnning-odds-wrapper .prediction-item img {
+  min-width: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  border: none;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .prediction-and-wnning-odds-wrapper .prediction-item img {
+    min-width: 24px;
+    max-width: 24px;
+    height: 24px;
+  }
+}
+.page-live-content-wrapper .prediction-and-wnning-odds-wrapper .prediction-item .rediction-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .prediction-and-wnning-odds-wrapper .prediction-item .rediction-detail {
+    gap: 0;
+  }
+}
+.page-live-content-wrapper .prediction-and-wnning-odds-wrapper .prediction-item .rediction-detail .club-name {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1A202C;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .prediction-and-wnning-odds-wrapper .prediction-item .rediction-detail .club-name {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.page-live-content-wrapper .prediction-and-wnning-odds-wrapper .prediction-item .rediction-detail .description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+}
+@media only screen and (max-width: 991px) {
+  .page-live-content-wrapper .prediction-and-wnning-odds-wrapper .prediction-item .rediction-detail .description {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+/*# sourceMappingURL=match.css.map */
