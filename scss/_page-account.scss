@@ -1,0 +1,245 @@
+@charset "utf-8";
+@import "variables";
+@import "mixins";
+
+
+
+.account-page-wrapper {
+  padding-top: 46px;
+  padding-bottom: 238px;
+
+  @include mq(max_md) {
+    padding-top: 24px;
+    padding-bottom: 100px;
+  }
+
+  .title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #1A202C;
+    margin-bottom: 19px;
+
+
+    @include mq(max_md) {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .account-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mq(max_md) {
+       flex-direction: column;
+       align-items: flex-start;
+       gap: 12px;
+    }
+  }
+
+  .user-info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    @include mq(max_md) {
+      gap: 16px;
+    }
+
+    .btn-upload {
+      position: relative;
+      width: 144px;
+      height: 144px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0;
+      transition: 0.2s;
+      cursor: pointer;
+      overflow: hidden;
+      background-color: #EDF2F7;
+
+      @include mq(max_md) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    .btn-upload input[type="file"] {
+      cursor: pointer;
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      transform: scale(3);
+      opacity: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+
+    .info-detail {
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      .username {
+        margin: 0;
+        padding: 0;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #1A202C;
+
+        @include mq(max_md) {
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 21px;
+        }
+      }
+
+      .line {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #1A202C;
+      }
+
+      .text-link {
+        text-decoration: none;
+        color: #F91E4E;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+      }
+    }
+
+    @include mq(max_md) {
+      gap: 16px;
+    }
+  }
+
+  .btn-log-out {
+    min-width: 100px;
+    padding: 8px 24px;
+    background-color: transparent;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #1A202C;
+    cursor: pointer;
+    border: 1px solid #1A202C;
+
+    &:focus {
+      outline: none;
+    }
+
+  }
+
+  .transaction-wrapper {
+    margin-left: 176px;
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    padding: 24px;
+    padding-right: 100px;
+    min-width: 1096px;
+    max-width: auto;
+
+    @include mq(max_md) {
+      padding: 12px;
+      min-width: 100%;
+      max-width: 100%;
+      margin-left: 0;
+      margin-top: 24px;
+    }
+
+    .transaction-title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #1A202C;
+      margin-bottom: 12px;
+
+      @include mq(max_md) {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 8px;
+      }
+
+    }
+
+    .list-transaction {
+      width: 100%;
+      margin-right: 76px;
+
+      @include mq(max_md) {
+        margin-right: 0;
+      }
+      .table-row {
+        display: flex;
+        border-top: 1px solid #EDF2F7;
+        padding: 10px 12px;
+
+        &:last-of-type {
+          border-bottom: 1px solid #EDF2F7;
+        }
+
+        @include mq(max_md) {
+          padding: 6px 8px;
+        }
+
+        .column-item {
+          width: calc(100% / 3);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #1A202C;
+          min-width: max-content;
+
+          @include mq(max_md) {
+            font-size: 14px;
+            line-height: 21px;
+
+            &:nth-of-type(2) {
+              text-align: center;
+            }
+            &:nth-of-type(3) {
+              text-align: right;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+
+  @include mq(max_md) {
+    padding-top: 23px;
+  }
+}

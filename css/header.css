@@ -42,6 +42,7 @@
   height: auto;
   padding: 8px 0px;
   background-color: #FDC400;
+  position: relative;
 }
 
 .header-content {

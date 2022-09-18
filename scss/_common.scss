@@ -22,6 +22,14 @@
 	display: flex;
 }
 
+.text-primary {
+	color: #F91E4E;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
+}
+
 .flex-start {
 	justify-content: flex-start;
 }
@@ -47,6 +55,46 @@
 	padding-left: 15px;
 	margin-right: auto;
 	margin-left: auto;
+	// overflow: auto;
+}
+
+.dash-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	.dash-horizontal {
+		display: block;
+		min-width: 195px;
+		max-width: 195px;
+		height: 23px;
+		object-fit: cover;
+	}
+}
+
+.page-title {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	color: #1A202C;
+	margin-bottom: 12px;
+
+	@include mq(max_md) {
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		/* identical to box height */
+
+
+		/* Gray:900 */
+
+		color: #1A202C;
+		margin-bottom: 12px;
+		;
+	}
 }
 
 @media (min-width: 768px) {
@@ -96,10 +144,11 @@
 		border: 1px solid #E9E6DC;
 		border-radius: 4px;
 		padding: 24px 14px;
+		padding-right: 4px;
 
 		/* width */
 		&::-webkit-scrollbar {
-			width: 5px;
+			width: 4px;
 		}
 
 		/* Track */
@@ -136,9 +185,10 @@
 		height: auto;
 		max-height: 600px;
 		overflow-y: auto;
+
 		/* width */
 		&::-webkit-scrollbar {
-			width: 5px;
+			width: 4px;
 		}
 
 		/* Track */
@@ -156,8 +206,8 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			margin-bottom: 16px;;
-			padding-right: 4px;
+			margin-bottom: 16px;
+			padding-right: 8px;
 
 
 			.score {
@@ -199,14 +249,15 @@
 							object-fit: cover;
 							border: none;
 						}
+
 						.club-image {
 							position: absolute;
 							bottom: 0;
 							right: 0;
 							min-width: 24px;
-						max-width: 24px;
-						height: auto;
-						object-fit: cover;
+							max-width: 24px;
+							height: auto;
+							object-fit: cover;
 						}
 					}
 
@@ -241,6 +292,8 @@
 		}
 	}
 }
+
+
 // ==========END STYLE TOP PLAYER ==========
 .football-ranking {
 	width: 100%;
@@ -301,21 +354,21 @@
 		overflow-y: auto;
 		padding-right: 4px;
 
-    /* width */
-    &::-webkit-scrollbar {
-      width: 5px;
-    }
+		/* width */
+		&::-webkit-scrollbar {
+			width: 4px;
+		}
 
-    /* Track */
-    &::-webkit-scrollbar-track {
-      background: #f1f1f1;
-    }
+		/* Track */
+		&::-webkit-scrollbar-track {
+			background: #f1f1f1;
+		}
 
-    /* Handle */
-    &::-webkit-scrollbar-thumb {
-      background: #ccc;
-      border-radius: 5px;
-    }
+		/* Handle */
+		&::-webkit-scrollbar-thumb {
+			background: #ccc;
+			border-radius: 5px;
+		}
 
 
 
@@ -324,10 +377,12 @@
 			display: flex;
 			padding: 4px 10px;
 		}
+
 		.column-10 {
 			width: 10%;
 
 		}
+
 		.column-15 {
 			width: 15%;
 		}
@@ -373,6 +428,7 @@
 				align-items: center;
 			}
 		}
+
 		.club-info {
 			display: flex;
 			align-items: center;
@@ -397,3 +453,685 @@
 		}
 	}
 }
+
+
+// ========== STYLE LINE UP  BLOCK =======
+
+.line-up-wrapper {
+	width: 100%;
+	height: auto;
+	background: #FFFFFF;
+	border: 1px solid #E9E6DC;
+	border-radius: 4px;
+	padding: 24px 16px 16px 16px;
+
+	.title {
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		color: #1A202C;
+	}
+
+	.line-up-content {
+		width: 100%;
+		height: auto;
+		margin-top: 16px;
+
+		.line-up-nav {
+			width: 100%;
+			display: flex;
+
+			li {
+				width: 50%;
+				height: auto;
+
+				a {
+					width: 100%;
+					height: 100%;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					padding: 6px 0px;
+					gap: 6px;
+					text-decoration: none;
+					border-bottom: 1px solid #EDF2F7;
+
+					&:hover {
+						text-decoration: none;
+					}
+
+					img {
+						min-width: 32px;
+						max-width: 32px;
+						display: block;
+						height: 32px;
+						border: none;
+						border-radius: 50%;
+						object-fit: cover;
+					}
+
+					.club-name {
+						font-style: normal;
+						font-weight: 500;
+						font-size: 14px;
+						line-height: 21px;
+						color: #1A202C;
+					}
+				}
+			}
+
+			.ui-tabs-active {
+				border-bottom: 1px solid #F91E4E
+			}
+		}
+
+		.list-line-up {
+			margin-top: 16px;
+			width: 100%;
+			max-height: 645px;
+			overflow-y: auto;
+
+			/* width */
+			&::-webkit-scrollbar {
+				width: 4px;
+			}
+
+			/* Track */
+			&::-webkit-scrollbar-track {
+				background: #f1f1f1;
+			}
+
+			/* Handle */
+			&::-webkit-scrollbar-thumb {
+				background: #ccc;
+				border-radius: 5px;
+			}
+
+
+			.line-up-item {
+				display: flex;
+				gap: 12px;
+				align-items: center;
+				margin-bottom: 12px;
+
+				img {
+					display: block;
+					min-width: 40px;
+					max-width: 40px;
+					height: 40px;
+					border: none;
+					border-radius: 50%;
+					object-fit: cover;
+				}
+
+				.player-info {
+					display: flex;
+					flex-grow: 1;
+					flex-direction: column;
+
+					.player-name {
+						font-style: normal;
+						font-weight: 500;
+						font-size: 14px;
+						line-height: 21px;
+						color: #1A202C;
+					}
+
+					.detail {
+						margin: 0;
+						padding: 0;
+						font-style: normal;
+						font-style: normal;
+						font-weight: 400;
+						font-size: 12px;
+						line-height: 18px;
+						display: flex;
+						gap: 2px;
+					}
+				}
+
+				.text-green {
+					color: #38A169;
+				}
+
+				.text-grey {
+					color: #718096
+				}
+			}
+		}
+	}
+}
+
+// ========== STYLE LINE UP  BLOCK =======
+
+
+// ==========STYLE LIST TOP MATCH TODAY ======
+
+.list-top-match-today {
+	width: 100%;
+	height: auto;
+	display: flex;
+  flex-wrap: wrap;
+	gap: 24px;
+	margin-bottom: 24px;
+
+	@include mq(max_md) {
+		flex-direction: row;
+		flex-wrap: nowrap;
+		overflow-x: auto;
+	}
+
+	.list-top-match-item {
+		min-width: 300px;
+		max-width: 300px;
+		min-height: 150px;
+		max-height: 150px;
+		padding: 16px 32px;
+		background: #FFFFFF;
+		border: 1px solid #E9E6DC;
+		box-shadow: 0px 3px 0px rgba(126, 123, 107, 0.1);
+		border-radius: 4px;
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+
+		@include mq(max_md) {
+			flex-direction: column;
+			flex-wrap: nowrap;
+			overflow-x: auto;
+			min-width: 150px;
+			max-width:150px;
+			min-height: 193px;
+			max-height: max-content;
+			padding: 16px;
+		}
+
+		&:hover {
+			border: 1px solid #FDC400;
+			cursor: pointer;
+		}
+
+		.left-content, .right-content {
+			display: flex;
+			flex-direction: column;
+			gap: 8px;
+			align-items: center;
+
+			@include mq(max_md) {
+			 order: 1;
+			 width: fit-content;
+			}
+
+			img {
+				display: block;
+				min-width: 40px;
+				max-width: 40px;
+				height: 40px;
+				border: none;
+				border-radius: 50%;
+			}
+
+			.club-name {
+				font-style: normal;
+				font-weight: 500;
+				font-size: 16px;
+				line-height: 24px;
+				color: #1A202C;
+				text-transform: uppercase;
+			}
+		}
+
+		.right-content {
+			@include mq(max_md) {
+				position: absolute;
+				right: 16px;
+				top: 16px;
+			}
+		}
+
+		.middle-content {
+			display: flex;
+			flex-grow: 1;
+			flex-direction: column;
+			width: 100%;
+			padding: 0px 30px;
+			align-items: center;
+
+			@include mq(max_md) {
+				order: 3;
+				padding: 0;
+			}
+
+			.text-live {
+				text-transform: uppercase;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 21px;
+				color: #F91E4E;
+			}
+
+			.league-info {
+				display: flex;
+				flex-direction: column;
+				flex-grow: 1;
+			  gap: 2px;
+				justify-content: center;
+				align-items: center;
+
+				.league-name {
+					font-style: normal;
+					font-weight: 400;
+					font-size: 12px;
+					line-height: 18px;
+					min-width: max-content;
+					color: #718096;
+				}
+
+				.league-time {
+					font-style: normal;
+					font-weight: 500;
+					font-size: 14px;
+					line-height: 21px;
+					color: #1A202C;
+				}
+			}
+
+			.btn-match {
+				width: 100%;
+				min-width: 102px;
+				max-width: 102px;
+				display: block;
+				height: auto;
+				padding: 6px 0px;
+				text-align: center;
+				border: none;
+				cursor: pointer;
+				font-style: normal;
+				font-weight: 500;
+				font-size: 14px;
+				line-height: 21px;
+				border-radius: 4px;
+
+				&:focus {
+					outline: none;
+				}
+			}
+
+			.btn-default {
+				color: #718096;
+				background: #E2E8F0;
+			}
+
+			.btn-live {
+				background-color: #FDC400;
+				color: #1A202C;
+			}
+		}
+	}
+}
+
+// ==========STYLE LIST TOP MATCH TODAY ======
+
+
+
+// ===========LIST NEWS ============
+.list-news {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	margin-top: 40px;
+
+	a {
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	@include mq(max_md) {
+		gap: 0;
+		margin-top: 16px;
+	}
+
+
+
+	.news-item {
+		min-width: 408px;
+		height: auto;
+		width: calc((100% - 48px) / 3);
+		margin-bottom: 40px;
+
+		@include mq(max_md) {
+			width: 100%;
+			margin-bottom: 16px;
+			min-width: 100%;
+		}
+
+		.news-image {
+			width: 100%;
+
+			max-height: 222px;
+			object-fit: cover;
+			display: block;
+		}
+
+		.news-detail {
+			padding-top: 12px;
+			display: flex;
+			flex-direction: column;
+			gap: 4px;
+
+			.league-name {
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 21px;
+				color: $secondary-color;
+
+				@include mq(max_md) {
+					font-size: 12px;
+					list-style: 18px
+				}
+			}
+
+			.news-title {
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 27px;
+				color: $content-primary;
+				display: -webkit-box;
+				-webkit-line-clamp: 2;
+				-webkit-box-orient: vertical;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				max-width: 337px;
+				@include mq(max_md) {
+					font-size: 16px;
+					list-style: 24px;
+				}
+			}
+
+			.time {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 21px;
+				color: #718096;
+				@include mq(max_md) {
+					font-size: 12px;
+					list-style: 18px
+				}
+			}
+		}
+
+	}
+}
+
+.btn-load-more {
+	min-width: 141px;
+	display: block;
+	margin: 0 auto;
+	height: auto;
+	padding: 12px 0px;
+	text-align: center;
+	border: none;
+	cursor: pointer;
+	text-align: center;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	background-color: $primary-color;
+	border-radius: 4px;
+	color: $content-primary;
+
+	&:focus {
+		outline: none;
+	}
+}
+// ===========LIST NEWS============
+
+
+//============ Q AND A BLOCK============
+.qa-block-wrapper {
+	width: 100%;
+	padding: 45px 0px;
+	min-height: 670px;
+	background-color: #FDC400;
+	position: relative;
+	display: flex;
+
+	.qa-content-wrapper {
+		padding-right: 8px;
+		height: fit-content;
+		border: 1px solid #1A202C;
+		min-width: calc(100% - 670px);
+		max-width: calc(100% - 670px);
+		padding: 24px 8px 24px 24px;
+
+		@include mq(max_md) {
+			padding: 16px 0px;
+			min-width: 100%;
+			min-height: auto;
+			max-width: 100%;
+			padding: 16px 8px 12px 24px;
+		}
+
+	}
+
+	.qa-content {
+		width: 100%;
+		max-height: 580px;
+		padding-right: 20px;
+		overflow-y: auto;
+
+		@include mq(max_md) {
+			max-height: 530px;
+		}
+
+		/* width */
+		&::-webkit-scrollbar {
+			width: 6px;
+		}
+
+		/* Track */
+		&::-webkit-scrollbar-track {
+			background: transparent;
+		}
+
+		/* Handle */
+		&::-webkit-scrollbar-thumb {
+			background: #1A202C;
+			border-radius: 0;
+		}
+
+		.qa-item {
+			margin-bottom: 30px;
+		}
+		.qa-title {
+			font-style: normal;
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 27px;
+			color: #1A202C;
+			margin-bottom: 12px;
+		}
+
+		.qa-description {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 21px;
+			color: #1A202C;
+		}
+
+	}
+
+	.qa-image {
+		min-width: 670px;
+		max-width: 670px;
+		min-height: 580px;
+		max-height: 580px;
+		position: absolute;
+		top: 8px;
+		right: 48px;
+
+
+		@include mq(max_md) {
+			position: relative;
+			top: 0;
+			right: 0;
+			left: 0;
+			min-width: 100%;
+			max-width: 100%;
+			min-height: auto;
+		  max-height: auto;
+			margin-top: 24px;
+		}
+
+
+		img {
+			display: flex;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+}
+//============ Q AND A BLOCK============
+
+
+// ========CUSTOMER DATE PICKER STYLE ====
+
+
+.calendar {
+  background: #fff;
+  overflow: hidden;
+	position: relative;
+}
+.ui-datepicker-header {
+	height: auto;
+	width: 100%;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	color: #1A202C;
+	margin-bottom: 16px;
+}
+.ui-datepicker-prev,
+.ui-datepicker-next {
+  width: 24px;
+  height: 24px;
+  text-indent: 9999px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  cursor: pointer;
+  overflow: hidden;
+	position: relative;
+}
+.ui-datepicker-prev {
+  float: left;
+  margin-left: 0px;
+	position: relative;
+}
+.ui-datepicker-prev:after {
+  transform: rotate(45deg);
+  margin: -43px 0px 0px 8px;
+}
+.ui-datepicker-next {
+  float: right;
+  margin-right: 8px;
+	position: relative;
+}
+.ui-datepicker-next:after {
+  transform: rotate(-135deg);
+  margin: -43px 0px 0px 6px;
+}
+.ui-datepicker-prev:after,
+.ui-datepicker-next:after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-left: 2px solid #1A202C;
+  border-bottom: 2px solid #1A202C;
+	top: 48px;
+}
+.ui-datepicker-prev:hover,
+.ui-datepicker-next:hover,
+.ui-datepicker-prev:hover:after,
+.ui-datepicker-next:hover:after {
+  border-color: #1A202C;
+}
+.ui-datepicker-title {
+  text-align: center;
+
+	@include mq(max_md) {
+		margin-top: 10px;
+	}
+}
+.ui-datepicker-calendar {
+  width: 100%;
+  text-align: center;
+}
+.ui-datepicker-calendar thead tr th span {
+  display: block;
+  width: 35px;
+  margin-bottom: 8px;
+  font-size: 13px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 18px;
+	color: #718096;
+}
+.ui-state-default {
+  text-decoration: none;
+	width: 35px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: #1A202C;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+.ui-state-default:hover {
+  // background: rgba(0, 0, 0, 0.02);
+}
+
+.ui-datepicker-today {
+	.ui-state-highlight {
+		color: #FFFFFF;
+		border-radius: 50%;
+		background-color: #F91E4E;
+	}
+
+	.ui-state-active {
+		color: #fff !important;
+	}
+}
+.ui-state-active {
+  color: #F91E4E ;
+}
+.ui-datepicker-unselectable .ui-state-default {
+}
+
+.ui-datepicker-other-month .ui-state-default {
+	color: #A0AEC0;
+}
+// ===================
+
