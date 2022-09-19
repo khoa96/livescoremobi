@@ -260,7 +260,7 @@
                 <img src="./images/all.png" alt="">
                 <span>All League</span>
               </button>
-              <button class="league-dropdown-item" >
+              <button class="league-dropdown-item">
                 <img src="./images/champions.png" alt="">
                 <span>Champions League</span>
 
@@ -813,7 +813,7 @@
           </div>
 
           <div id="champions" class="tabcontent">
-          <div id="champions-league-tabs">
+            <div id="champions-league-tabs">
               <ul class="sub-tabs-nav">
                 <li><a href="#tabs-1">Yesterday</a></li>
                 <li><a href="#tabs-2">Today</a></li>
@@ -1354,34 +1354,66 @@
 
           <div class="football-ranking">
             <div class="football-ranking__header">
-              <span class="arrow arrow-prev">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_1_2411)">
-                    <path d="M12.5 5L7.5 10L12.5 15" stroke="#1A202C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_1_2411">
-                      <rect width="20" height="20" fill="white" transform="matrix(-1 0 0 1 20 0)" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </span>
               <div class="league-info">
-                <img src="./images/league.png" alt="">
-                <span class="league-name">Premier League</span>
+                <img src="./images/all.png" alt="" class="league-image" id="league-ranking-image" />
+                <span class="league-name" id="league-ranking-name">All League</span>
               </div>
-              <span class="arrow arrow-next">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_1_2410)">
-                    <path d="M7.5 5L12.5 10L7.5 15" stroke="#1A202C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <button class="btn-league-dropdown" id="btn-league-ranking-dropdown">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1_6031)">
+                    <path d="M8 10L12 14L16 10" stroke="#1A202C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                   </g>
                   <defs>
-                    <clipPath id="clip0_1_2410">
-                      <rect width="20" height="20" fill="white" />
+                    <clipPath id="clip0_1_6031">
+                      <rect width="24" height="24" fill="white" />
                     </clipPath>
                   </defs>
                 </svg>
-              </span>
+              </button>
+              <div class="list-league-ranking-dropdown">
+                <button class="league-ranking-item">
+                  <img src="./images/all.png" alt="" />
+                  <span>All League</span>
+                </button>
+                <button class="league-ranking-item">
+                  <img src="./images/champions.png" alt="" />
+                  <span>Champions League</span>
+                </button>
+                <button class="league-ranking-item">
+                  <img src="./images/europa.png" alt="" />
+                  <span>UEFA Europa League</span>
+                </button>
+
+                <button class="league-ranking-item">
+                  <img src="./images/premier.png" alt="" />
+                  <span>Premier League</span>
+                </button>
+
+                <button class="league-ranking-item">
+                  <img src="./images/la-liga.png" alt="" />
+                  <span>La Liga</span>
+                </button>
+
+                <button class="league-ranking-item">
+                  <img src="./images/bundesliga.png" alt="" />
+                  <span>Bundesliga</span>
+                </button>
+
+                <button class="league-ranking-item">
+                  <img src="./images/seria.png" alt="" />
+                  <span>Serie A</span>
+                </button>
+
+                <button class="league-ranking-item">
+                  <img src="./images/ligue-1.png" alt="" />
+                  <span>Ligue 1</span>
+                </button>
+
+                <button class="league-ranking-item">
+                  <img src="./images/worldcup.png" alt="" />
+                  <span>World Cup</span>
+                </button>
+              </div>
             </div>
             <div class="football-ranking__table">
               <div class="table-heading">
@@ -1807,117 +1839,6 @@
   </div>
   <?php include "templates/footer.php"; ?>
 </body>
-<!-- <script>
-  $(function() {
 
-    // =======HANDLE DATEPICKER FOR PC ========
-    $("#datepicker").datepicker({
-      firstDay: 1,
-      showOtherMonths: true,
-      selectOtherMonths: true,
-      dateFormat: "dd-mm-yy",
-      onSelect: function(date, datepicker) {
-        if (date) {
-          // handle select datetime here
-          alert("Selected Date: " + date);
-        }
-      }
-    });
-    // =======HANDLE DATEPICKER FOR PC ========
-
-
-    // =======HANDLE DATEPICKER FOR MOBILE ========
-    $("#datepicker-mobile").hide();
-    // handle datepicker for mobile
-    function padTo2Digits(num) {
-      return num.toString().padStart(2, '0');
-    }
-
-    function formatDate(date = new Date()) {
-      return [
-        padTo2Digits(date.getDate()),
-        padTo2Digits(date.getMonth() + 1),
-        date.getFullYear(),
-      ].join('/');
-    }
-    const date = new Date();
-    $("#time-calender").text(formatDate())
-    $("#btn-show-calender").on('click', function(event) {
-      $("#datepicker-mobile").show()
-      $(".list-league-dropdown").hide()
-      $("#datepicker-mobile").datepicker({
-        firstDay: 1,
-        showOtherMonths: true,
-        selectOtherMonths: true,
-        dateFormat: "dd/mm/yy",
-        onSelect: function(date, datepicker) {
-          if (date) {
-            // handle select datetime here
-            $("#time-calender").text(date)
-            $("#datepicker-mobile").hide();
-          }
-        }
-      })
-    })
-    $("#all-league-tabs").tabs({
-      active: 1
-    })
-    $("#champions-league-tabs").tabs({
-      active: 1
-    })
-  });
-
-  // =======HANDLE DATEPICKER FOR MOBILE ========
-
-
-  // ===========HANDLE CLICK TAB LEFT SIDEBAR FOR PC =======
-  function openTab(evt, tabName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
-
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(tabName).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-
-  // Get the element with id="defaultOpen" and click on it
-  document.getElementById("defaultOpen").click();
-  // ===========HANDLE CLICK TAB LEFT SIDEBAR FOR PC =======
-
-
-
-  // ===========HANDLE OPEN TAB LEFT SIDEBAR FOR MOBILE =======
-  $(".list-league-dropdown").hide();
-  $("#btn-league-dropdown").on('click', function () {
-    $("#datepicker-mobile").hide()
-    $(".list-league-dropdown").toggle()
-  })
-  // handle click league for mobile
-  $(".league-dropdown-item").on('click', function() {
-    const imgElement = $(this).children('img')
-    const spanElement = $(this).children('span')
-    if (imgElement.length && spanElement.length) {
-      const src = imgElement.attr('src')
-      const leagueName = spanElement.text()
-      $("#league-image-mobile").attr('src', src)
-      $("#league-name-mobile").text(leagueName)
-    }
-    $(".list-league-dropdown").hide();
-
-    //do something here .....
-  })
-</script> -->
 
 </html>

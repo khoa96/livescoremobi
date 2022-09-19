@@ -144,12 +144,16 @@
 .account-page-wrapper .btn-log-out:focus {
   outline: none;
 }
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .btn-log-out {
+    margin-left: 96px;
+  }
+}
 .account-page-wrapper .transaction-wrapper {
   margin-left: 176px;
   background: #FFFFFF;
   border: 1px solid #E2E8F0;
   padding: 24px;
-  padding-right: 100px;
   min-width: 1096px;
   max-width: auto;
 }
@@ -180,6 +184,8 @@
 .account-page-wrapper .transaction-wrapper .list-transaction {
   width: 100%;
   margin-right: 76px;
+  overflow-x: scroll;
+  max-width: 1000%;
 }
 @media only screen and (max-width: 991px) {
   .account-page-wrapper .transaction-wrapper .list-transaction {
@@ -191,6 +197,13 @@
   border-top: 1px solid #EDF2F7;
   padding: 10px 12px;
 }
+.account-page-wrapper .transaction-wrapper .list-transaction .table-row:first-of-type .column-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1A202C;
+  min-width: max-content;
+}
 .account-page-wrapper .transaction-wrapper .list-transaction .table-row:last-of-type {
   border-bottom: 1px solid #EDF2F7;
 }
@@ -200,11 +213,11 @@
   }
 }
 .account-page-wrapper .transaction-wrapper .list-transaction .table-row .column-item {
-  width: 33.3333333333%;
+  width: 16.6666666667%;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 14px;
+  line-height: 21px;
   color: #1A202C;
   min-width: max-content;
 }
@@ -213,12 +226,31 @@
     font-size: 14px;
     line-height: 21px;
   }
-  .account-page-wrapper .transaction-wrapper .list-transaction .table-row .column-item:nth-of-type(2) {
-    text-align: center;
+}
+.account-page-wrapper .transaction-wrapper .list-transaction .table-row .column-item:nth-of-type(1), .account-page-wrapper .transaction-wrapper .list-transaction .table-row .column-item:nth-of-type(2), .account-page-wrapper .transaction-wrapper .list-transaction .table-row .column-item:nth-of-type(3) {
+  text-align: left;
+  width: 20%;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .transaction-wrapper .list-transaction .table-row .column-item:nth-of-type(1), .account-page-wrapper .transaction-wrapper .list-transaction .table-row .column-item:nth-of-type(2), .account-page-wrapper .transaction-wrapper .list-transaction .table-row .column-item:nth-of-type(3) {
+    min-width: 240px;
   }
-  .account-page-wrapper .transaction-wrapper .list-transaction .table-row .column-item:nth-of-type(3) {
-    text-align: right;
+}
+.account-page-wrapper .transaction-wrapper .list-transaction .table-row .column-item:nth-of-type(4), .account-page-wrapper .transaction-wrapper .list-transaction .table-row .column-item:nth-of-type(5), .account-page-wrapper .transaction-wrapper .list-transaction .table-row .column-item:nth-of-type(6) {
+  width: 13.3333333333%;
+  text-align: center;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .transaction-wrapper .list-transaction .table-row .column-item:nth-of-type(4), .account-page-wrapper .transaction-wrapper .list-transaction .table-row .column-item:nth-of-type(5), .account-page-wrapper .transaction-wrapper .list-transaction .table-row .column-item:nth-of-type(6) {
+    min-width: 160px;
   }
+}
+.account-page-wrapper .transaction-wrapper .list-transaction .table-row .btn-link {
+  text-decoration: none;
+  color: #F91E4E;
+}
+.account-page-wrapper .transaction-wrapper .list-transaction .table-row .btn-link:hover {
+  text-decoration: none;
 }
 @media only screen and (max-width: 991px) {
   .account-page-wrapper {
