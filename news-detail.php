@@ -53,34 +53,66 @@
         <div class="right-content">
           <div class="football-ranking">
             <div class="football-ranking__header">
-              <span class="arrow arrow-prev">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_1_2411)">
-                    <path d="M12.5 5L7.5 10L12.5 15" stroke="#1A202C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_1_2411">
-                      <rect width="20" height="20" fill="white" transform="matrix(-1 0 0 1 20 0)" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </span>
               <div class="league-info">
-                <img src="./images/league.png" alt="">
-                <span class="league-name">Premier League</span>
+                <img src="./images/all.png" alt="" class="league-image" id="league-ranking-image" />
+                <span class="league-name" id="league-ranking-name">All League</span>
               </div>
-              <span class="arrow arrow-next">
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_1_2410)">
-                    <path d="M7.5 5L12.5 10L7.5 15" stroke="#1A202C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              <button class="btn-league-dropdown" id="btn-league-ranking-dropdown">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_1_6031)">
+                    <path d="M8 10L12 14L16 10" stroke="#1A202C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                   </g>
                   <defs>
-                    <clipPath id="clip0_1_2410">
-                      <rect width="20" height="20" fill="white" />
+                    <clipPath id="clip0_1_6031">
+                      <rect width="24" height="24" fill="white" />
                     </clipPath>
                   </defs>
                 </svg>
-              </span>
+              </button>
+              <div class="list-league-ranking-dropdown">
+                <button class="league-ranking-item">
+                  <img src="./images/all.png" alt="" />
+                  <span>All League</span>
+                </button>
+                <button class="league-ranking-item">
+                  <img src="./images/champions.png" alt="" />
+                  <span>Champions League</span>
+                </button>
+                <button class="league-ranking-item">
+                  <img src="./images/europa.png" alt="" />
+                  <span>UEFA Europa League</span>
+                </button>
+
+                <button class="league-ranking-item">
+                  <img src="./images/premier.png" alt="" />
+                  <span>Premier League</span>
+                </button>
+
+                <button class="league-ranking-item">
+                  <img src="./images/la-liga.png" alt="" />
+                  <span>La Liga</span>
+                </button>
+
+                <button class="league-ranking-item">
+                  <img src="./images/bundesliga.png" alt="" />
+                  <span>Bundesliga</span>
+                </button>
+
+                <button class="league-ranking-item">
+                  <img src="./images/seria.png" alt="" />
+                  <span>Serie A</span>
+                </button>
+
+                <button class="league-ranking-item">
+                  <img src="./images/ligue-1.png" alt="" />
+                  <span>Ligue 1</span>
+                </button>
+
+                <button class="league-ranking-item">
+                  <img src="./images/worldcup.png" alt="" />
+                  <span>World Cup</span>
+                </button>
+              </div>
             </div>
             <div class="football-ranking__table">
               <div class="table-heading">
@@ -489,6 +521,4 @@
   </div>
   <?php include "templates/footer.php"; ?>
 </body>
-
-
 </html>

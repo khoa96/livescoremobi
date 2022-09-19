@@ -1,4 +1,57 @@
 /* -----------------------------------------------------------
+	reset style
+----------------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins";
+  background-color: #F5F5F5;
+  color: #1A202C;
+}
+
+img {
+  max-width: 100%;
+}
+
+a,
+button {
+  transition: all 0.4s ease;
+}
+
+.over {
+  transition: all 0.4s ease;
+}
+.over:hover {
+  opacity: 0.7;
+}
+
+.list-style-none {
+  list-style: none !important;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* -----------------------------------------------------------
 	common style
 ----------------------------------------------------------- */
 .text-left {
@@ -161,8 +214,6 @@
 .top-player__list-player {
   width: 100%;
   height: auto;
-  max-height: 600px;
-  overflow-y: auto;
   /* width */
   /* Track */
   /* Handle */
@@ -265,33 +316,104 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 12px;
-}
-.football-ranking__header .arrow {
-  cursor: pointer;
-  display: flex;
-  width: 20px;
-  height: 20px;
-  justify-content: center;
+  position: relative;
+  padding: 4px;
   align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #E9E6DC;
+  border-radius: 4px;
 }
 .football-ranking__header .league-info {
   display: flex;
-  gap: 8px;
+  flex-grow: 1;
+  justify-content: center;
+  gap: 6px;
   align-items: center;
 }
-.football-ranking__header .league-info img {
-  min-width: 16px;
-  max-width: 16px;
-  height: auto;
-  border-radius: 50%;
+.football-ranking__header .league-ranking-item {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px 16px;
+  gap: 6px;
+  cursor: pointer;
+  border: none;
+  border-radius: 0px;
+  background-color: transparent;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+}
+.football-ranking__header .league-ranking-item:hover {
+  background-color: #EDF2F7;
+}
+.football-ranking__header .league-ranking-item img {
+  display: block;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
   object-fit: cover;
 }
-.football-ranking__header .league-info .league-name {
+.football-ranking__header .league-ranking-item:focus {
+  outline: none;
+}
+.football-ranking__header .league-image {
+  display: block;
+  width: 24px;
+  min-width: 24px;
+  height: 24px;
+  object-fit: cover;
+}
+.football-ranking__header .league-name {
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+  font-family: "Poppins";
+}
+.football-ranking__header .btn-league-dropdown {
+  display: flex;
+  min-width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #EDF2F7;
+}
+.football-ranking__header .btn-league-dropdown:focus {
+  outline: none;
+}
+.football-ranking__header .hidden {
+  display: none;
+}
+.football-ranking__header .show {
+  display: flex;
+}
+.football-ranking__header .list-league-ranking-dropdown {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border-radius: 4px;
+  border: 1px solid #E9E6DC;
+  box-shadow: 0px 3px 0px rgba(126, 123, 107, 0.1);
+}
+@media only screen and (max-width: 991px) {
+  .football-ranking__header {
+    display: flex;
+  }
 }
 .football-ranking__table {
   width: 100%;
@@ -304,8 +426,6 @@
   font-size: 12px;
   line-height: 18px;
   color: #718096;
-  max-height: 580px;
-  overflow-y: auto;
   padding-right: 4px;
   /* width */
   /* Track */
@@ -324,7 +444,7 @@
 .football-ranking__table .table-heading {
   width: 100%;
   display: flex;
-  padding: 4px 10px;
+  padding: 6px 10px;
 }
 .football-ranking__table .column-10 {
   width: 10%;
@@ -454,8 +574,6 @@
 .line-up-wrapper .line-up-content .list-line-up {
   margin-top: 16px;
   width: 100%;
-  max-height: 645px;
-  overflow-y: auto;
   /* width */
   /* Track */
   /* Handle */
@@ -560,19 +678,22 @@
   border: 1px solid #FDC400;
   cursor: pointer;
 }
-.list-top-match-today .list-top-match-item .left-content, .list-top-match-today .list-top-match-item .right-content {
+.list-top-match-today .list-top-match-item .left-content,
+.list-top-match-today .list-top-match-item .right-content {
   display: flex;
   flex-direction: column;
   gap: 8px;
   align-items: center;
 }
 @media only screen and (max-width: 991px) {
-  .list-top-match-today .list-top-match-item .left-content, .list-top-match-today .list-top-match-item .right-content {
+  .list-top-match-today .list-top-match-item .left-content,
+.list-top-match-today .list-top-match-item .right-content {
     order: 1;
     width: fit-content;
   }
 }
-.list-top-match-today .list-top-match-item .left-content img, .list-top-match-today .list-top-match-item .right-content img {
+.list-top-match-today .list-top-match-item .left-content img,
+.list-top-match-today .list-top-match-item .right-content img {
   display: block;
   min-width: 40px;
   max-width: 40px;
@@ -580,7 +701,8 @@
   border: none;
   border-radius: 50%;
 }
-.list-top-match-today .list-top-match-item .left-content .club-name, .list-top-match-today .list-top-match-item .right-content .club-name {
+.list-top-match-today .list-top-match-item .left-content .club-name,
+.list-top-match-today .list-top-match-item .right-content .club-name {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;

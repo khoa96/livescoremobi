@@ -84,17 +84,22 @@ function openTab(evt, tabName) {
 }
 
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+const nodeDefault = document.getElementById("defaultOpen")
+if (nodeDefault) {
+  nodeDefault.click();
+}
+
 // ===========HANDLE CLICK TAB LEFT SIDEBAR FOR PC =======
 
 
 
-// ===========HANDLE OPEN TAB LEFT SIDEBAR FOR MOBILE =======
+// ===========HANDLE OPEN TAB LEFT SIDEBAR FOR MOBILE (select league)=======
 $(".list-league-dropdown").hide();
 $("#btn-league-dropdown").on('click', function () {
   $("#datepicker-mobile").hide()
   $(".list-league-dropdown").toggle()
 })
+
 // handle click league for mobile
 $(".league-dropdown-item").on('click', function () {
   const imgElement = $(this).children('img')
@@ -106,5 +111,31 @@ $(".league-dropdown-item").on('click', function () {
     $("#league-name-mobile").text(leagueName)
   }
   $(".list-league-dropdown").hide();
-  //do something here .....
+  //code something here .....
 })
+
+
+// =================== HANDLE SELECT LEAGUE RANKING ===================
+
+// hidden list league ranking when init
+$(".list-league-ranking-dropdown").hide();
+
+// toggle show list league ranking when click.
+$("#btn-league-ranking-dropdown").on('click', function () {
+  $(".list-league-ranking-dropdown").toggle()
+})
+
+// handle click league for mobile
+$(".league-ranking-item").on('click', function () {
+  const imgElement = $(this).children('img')
+  const spanElement = $(this).children('span')
+  if (imgElement.length && spanElement.length) {
+    const src = imgElement.attr('src')
+    const leagueName = spanElement.text()
+    $("#league-ranking-image").attr('src', src)
+    $("#league-ranking-name").text(leagueName)
+  }
+  $(".list-league-ranking-dropdown").hide();
+  // code something here .....
+})
+// =================== HANDLE SELECT LEAGUE RANKING ===================

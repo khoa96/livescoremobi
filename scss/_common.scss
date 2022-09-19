@@ -2,6 +2,61 @@
 @import "variables";
 @import "mixins";
 
+/* -----------------------------------------------------------
+	reset style
+----------------------------------------------------------- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: $font_main;
+	background-color: $background-primary-color;
+	color: $content-primary;
+}
+
+img {
+	max-width: 100%;
+}
+
+a,
+button {
+	transition: all 0.4s ease;
+}
+
+.over {
+	transition: all 0.4s ease;
+
+	&:hover {
+		opacity: 0.7;
+	}
+}
+
+.list-style-none {
+	list-style: none !important;
+}
+
+a {
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+
+}
 
 /* -----------------------------------------------------------
 	common style
@@ -183,8 +238,8 @@
 	&__list-player {
 		width: 100%;
 		height: auto;
-		max-height: 600px;
-		overflow-y: auto;
+		// max-height: 600px;
+		// overflow-y: auto;
 
 		/* width */
 		&::-webkit-scrollbar {
@@ -306,37 +361,121 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 12px;
+		// padding: 12px;
 
-		.arrow {
-			cursor: pointer;
-			display: flex;
-			width: 20px;
-			height: 20px;
-			justify-content: center;
-			align-items: center;
-		}
+		position: relative;
+		padding: 4px;
+		align-items: center;
+		background: #FFFFFF;
+		border: 1px solid #E9E6DC;
+		border-radius: 4px;
 
 		.league-info {
 			display: flex;
-			gap: 8px;
+			flex-grow: 1;
+			justify-content: center;
+			gap: 6px;
 			align-items: center;
+		}
+
+		.league-ranking-item {
+			width: 100%;
+			display: flex;
+			justify-content: flex-start;
+			padding: 10px 16px;
+			gap: 6px;
+			cursor: pointer;
+			border: none;
+			border-radius: 0px;
+			background-color: transparent;
+			align-items: center;
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 21px;
+			color: #1A202C;
+
+			&:hover {
+				background-color: #EDF2F7;
+			}
 
 			img {
-				min-width: 16px;
-				max-width: 16px;
-				height: auto;
-				border-radius: 50%;
+				display: block;
+				width: 24px;
+				min-width: 24px;
+				height: 24px;
 				object-fit: cover;
 			}
 
-			.league-name {
-				font-style: normal;
-				font-weight: 500;
-				font-size: 16px;
-				line-height: 24px;
+			&:focus {
+				outline: none;
 			}
 		}
+
+		.league-image {
+			display: block;
+			width: 24px;
+			min-width: 24px;
+			height: 24px;
+			object-fit: cover;
+		}
+
+		.league-name {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 21px;
+			color: #1A202C;
+			font-family: 'Poppins';
+		}
+
+		.btn-league-dropdown {
+			display: flex;
+			min-width: 32px;
+			height: 32px;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			border: none;
+			border-radius: 4px;
+			background-color: #EDF2F7;
+
+			&:focus {
+				outline: none;
+			}
+		}
+
+		.hidden {
+			display: none;
+		}
+
+		.show {
+			display: flex;
+		}
+
+		.list-league-ranking-dropdown {
+			position: absolute;
+			top: 45px;
+			left: 0;
+			width: 100%;
+			height: auto;
+			background-color: #fff;
+			z-index: 999;
+			display: flex;
+			flex-direction: column;
+			background: #FFFFFF;
+			border-radius: 4px;
+			;
+			border: 1px solid #E9E6DC;
+			box-shadow: 0px 3px 0px rgba(126, 123, 107, 0.1);
+
+		}
+
+		@include mq(max_md) {
+			display: flex;
+		}
+
+
 	}
 
 	&__table {
@@ -350,8 +489,8 @@
 		font-size: 12px;
 		line-height: 18px;
 		color: #718096;
-		max-height: 580px;
-		overflow-y: auto;
+		// max-height: 580px;
+		// overflow-y: auto;
 		padding-right: 4px;
 
 		/* width */
@@ -375,7 +514,7 @@
 		.table-heading {
 			width: 100%;
 			display: flex;
-			padding: 4px 10px;
+			padding: 6px 10px;
 		}
 
 		.column-10 {
@@ -530,8 +669,8 @@
 		.list-line-up {
 			margin-top: 16px;
 			width: 100%;
-			max-height: 645px;
-			overflow-y: auto;
+			// max-height: 645px;
+			// overflow-y: auto;
 
 			/* width */
 			&::-webkit-scrollbar {
@@ -613,7 +752,7 @@
 	width: 100%;
 	height: auto;
 	display: flex;
-  flex-wrap: wrap;
+	flex-wrap: wrap;
 	gap: 24px;
 	margin-bottom: 24px;
 
@@ -642,7 +781,7 @@
 			flex-wrap: nowrap;
 			overflow-x: auto;
 			min-width: 150px;
-			max-width:150px;
+			max-width: 150px;
 			min-height: 193px;
 			max-height: max-content;
 			padding: 16px;
@@ -653,15 +792,16 @@
 			cursor: pointer;
 		}
 
-		.left-content, .right-content {
+		.left-content,
+		.right-content {
 			display: flex;
 			flex-direction: column;
 			gap: 8px;
 			align-items: center;
 
 			@include mq(max_md) {
-			 order: 1;
-			 width: fit-content;
+				order: 1;
+				width: fit-content;
 			}
 
 			img {
@@ -717,7 +857,7 @@
 				display: flex;
 				flex-direction: column;
 				flex-grow: 1;
-			  gap: 2px;
+				gap: 2px;
 				justify-content: center;
 				align-items: center;
 
@@ -848,6 +988,7 @@
 				overflow: hidden;
 				text-overflow: ellipsis;
 				max-width: 337px;
+
 				@include mq(max_md) {
 					font-size: 16px;
 					list-style: 24px;
@@ -860,6 +1001,7 @@
 				font-size: 14px;
 				line-height: 21px;
 				color: #718096;
+
 				@include mq(max_md) {
 					font-size: 12px;
 					list-style: 18px
@@ -892,6 +1034,7 @@
 		outline: none;
 	}
 }
+
 // ===========LIST NEWS============
 
 
@@ -951,6 +1094,7 @@
 		.qa-item {
 			margin-bottom: 30px;
 		}
+
 		.qa-title {
 			font-style: normal;
 			font-weight: 500;
@@ -988,7 +1132,7 @@
 			min-width: 100%;
 			max-width: 100%;
 			min-height: auto;
-		  max-height: auto;
+			max-height: auto;
 			margin-top: 24px;
 		}
 
@@ -1002,6 +1146,7 @@
 	}
 
 }
+
 //============ Q AND A BLOCK============
 
 
@@ -1009,10 +1154,11 @@
 
 
 .calendar {
-  background: #fff;
-  overflow: hidden;
+	background: #fff;
+	overflow: hidden;
 	position: relative;
 }
+
 .ui-datepicker-header {
 	height: auto;
 	width: 100%;
@@ -1023,77 +1169,88 @@
 	color: #1A202C;
 	margin-bottom: 16px;
 }
+
 .ui-datepicker-prev,
 .ui-datepicker-next {
-  width: 24px;
-  height: 24px;
-  text-indent: 9999px;
+	width: 24px;
+	height: 24px;
+	text-indent: 9999px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-  cursor: pointer;
-  overflow: hidden;
+	cursor: pointer;
+	overflow: hidden;
 	position: relative;
 }
+
 .ui-datepicker-prev {
-  float: left;
-  margin-left: 0px;
+	float: left;
+	margin-left: 0px;
 	position: relative;
 }
+
 .ui-datepicker-prev:after {
-  transform: rotate(45deg);
-  margin: -43px 0px 0px 8px;
+	transform: rotate(45deg);
+	margin: -43px 0px 0px 8px;
 }
+
 .ui-datepicker-next {
-  float: right;
-  margin-right: 8px;
+	float: right;
+	margin-right: 8px;
 	position: relative;
 }
+
 .ui-datepicker-next:after {
-  transform: rotate(-135deg);
-  margin: -43px 0px 0px 6px;
+	transform: rotate(-135deg);
+	margin: -43px 0px 0px 6px;
 }
+
 .ui-datepicker-prev:after,
 .ui-datepicker-next:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 10px;
-  height: 10px;
-  border-left: 2px solid #1A202C;
-  border-bottom: 2px solid #1A202C;
+	content: "";
+	position: absolute;
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-left: 2px solid #1A202C;
+	border-bottom: 2px solid #1A202C;
 	top: 48px;
 }
+
 .ui-datepicker-prev:hover,
 .ui-datepicker-next:hover,
 .ui-datepicker-prev:hover:after,
 .ui-datepicker-next:hover:after {
-  border-color: #1A202C;
+	border-color: #1A202C;
 }
+
 .ui-datepicker-title {
-  text-align: center;
+	text-align: center;
 
 	@include mq(max_md) {
 		margin-top: 10px;
 	}
 }
+
 .ui-datepicker-calendar {
-  width: 100%;
-  text-align: center;
+	width: 100%;
+	text-align: center;
 }
+
 .ui-datepicker-calendar thead tr th span {
-  display: block;
-  width: 35px;
-  margin-bottom: 8px;
-  font-size: 13px;
+	display: block;
+	width: 35px;
+	margin-bottom: 8px;
+	font-size: 13px;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 12px;
 	line-height: 18px;
 	color: #718096;
 }
+
 .ui-state-default {
-  text-decoration: none;
+	text-decoration: none;
 	width: 35px;
 	height: 35px;
 	display: flex;
@@ -1109,8 +1266,9 @@
 		text-decoration: none;
 	}
 }
+
 .ui-state-default:hover {
-  // background: rgba(0, 0, 0, 0.02);
+	// background: rgba(0, 0, 0, 0.02);
 }
 
 .ui-datepicker-today {
@@ -1124,14 +1282,15 @@
 		color: #fff !important;
 	}
 }
+
 .ui-state-active {
-  color: #F91E4E ;
+	color: #F91E4E;
 }
-.ui-datepicker-unselectable .ui-state-default {
-}
+
+.ui-datepicker-unselectable .ui-state-default {}
 
 .ui-datepicker-other-month .ui-state-default {
 	color: #A0AEC0;
 }
-// ===================
 
+// ===================

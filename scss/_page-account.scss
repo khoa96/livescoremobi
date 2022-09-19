@@ -157,6 +157,10 @@
       outline: none;
     }
 
+    @include mq(max_md) {
+      margin-left: 96px;
+    }
+
   }
 
   .transaction-wrapper {
@@ -164,7 +168,6 @@
     background: #FFFFFF;
     border: 1px solid #E2E8F0;
     padding: 24px;
-    padding-right: 100px;
     min-width: 1096px;
     max-width: auto;
 
@@ -195,6 +198,8 @@
     .list-transaction {
       width: 100%;
       margin-right: 76px;
+      overflow-x: scroll;
+      max-width: 1000%;
 
       @include mq(max_md) {
         margin-right: 0;
@@ -203,6 +208,16 @@
         display: flex;
         border-top: 1px solid #EDF2F7;
         padding: 10px 12px;
+
+        &:first-of-type {
+          .column-item {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: #1A202C;
+            min-width: max-content;
+          }
+        }
 
         &:last-of-type {
           border-bottom: 1px solid #EDF2F7;
@@ -213,26 +228,47 @@
         }
 
         .column-item {
-          width: calc(100% / 3);
+          width: calc(100% / 6);
           font-style: normal;
           font-weight: 400;
-          font-size: 16px;
-          line-height: 19px;
+          font-size: 14px;
+          line-height: 21px;
           color: #1A202C;
           min-width: max-content;
 
           @include mq(max_md) {
             font-size: 14px;
             line-height: 21px;
-
-            &:nth-of-type(2) {
-              text-align: center;
-            }
-            &:nth-of-type(3) {
-              text-align: right;
-            }
           }
 
+          &:nth-of-type(1),
+          &:nth-of-type(2),
+          &:nth-of-type(3){
+            text-align: left;
+            width: 20%;
+
+            @include mq(max_md) {
+              min-width: 240px
+            }
+          }
+          &:nth-of-type(4),
+          &:nth-of-type(5),
+          &:nth-of-type(6){
+            width: calc(40% / 3);
+            text-align: center;
+
+            @include mq(max_md) {
+              min-width: 160px;
+            }
+          }
+        }
+
+        .btn-link {
+          text-decoration: none;
+          color: #F91E4E;
+          &:hover {
+            text-decoration: none;
+          }
         }
       }
     }
