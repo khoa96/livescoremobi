@@ -777,6 +777,7 @@ p {
   font-size: 14px;
   line-height: 21px;
   border-radius: 4px;
+  font-family: "Poppins";
 }
 .list-top-match-today .list-top-match-item .middle-content .btn-match:focus {
   outline: none;
@@ -894,6 +895,7 @@ p {
   background-color: #FDC400;
   border-radius: 4px;
   color: #1A202C;
+  font-family: "Poppins";
 }
 .btn-load-more:focus {
   outline: none;

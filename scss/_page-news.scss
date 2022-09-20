@@ -12,7 +12,8 @@
   background-size: 585px 418px;
 
   @include mq(max_md) {
-    background-size: 339px 242px;
+    // background-size: 339px 242px;
+    background-size: 280px 240px !important;
   }
 
 
@@ -23,8 +24,10 @@
     position: relative;
 
     @include mq(max_md) {
-      width: calc(100% - 339px);
-      height: calc((242px * 28) / 100);
+      // width: calc(100% - 339px);
+      // height: calc((242px * 28) / 100);
+      width: calc(100% - 280px);
+      height: calc((240px * 28) / 100);
     }
 
     .title {
@@ -176,6 +179,7 @@
 
   .btn-load-more-mb {
     display: none;
+    font-family: 'Poppins';
 
     @include mq(max_md) {
       display: block;

@@ -23,7 +23,7 @@
 						</div>
 						<div class="list-control">
 							<button class="btn btn-submit">Sign in</button>
-							<!-- <a href="#" target="" class="btn btn-link">Login</a> -->
+							<a href="#" target="" class="btn btn-link">Login</a>
 						</div>
 					</div>
 				</div>

@@ -29,6 +29,8 @@
       height: auto;
       background-color: #fff;
       height: fit-content;
+      display: flex;
+      flex-direction: column;
 
       @include mq(max_md) {
         min-width: 100%;
@@ -50,8 +52,8 @@
 
         @include mq(max_md) {
           padding: 0;
-          margin-bottom: 8px;
-          ;
+          order: 1;
+          margin-bottom: 0;
         }
       }
 
@@ -71,6 +73,11 @@
         padding: 4px;
         position: relative;
         flex-direction: column;
+
+        @include mq(max_md) {
+          order: 2;
+          margin-top: 8px;
+        }
 
         #datepicker-mobile {
           position: absolute;

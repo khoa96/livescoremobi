@@ -785,6 +785,7 @@
   background-color: #FDC400;
   border-radius: 4px;
   color: #1A202C;
+  font-family: "Poppins";
 }
 .control-comment .btn-load-more:focus {
   outline: none;

@@ -87,6 +87,99 @@
 .league-page-wrapper .league-detail .league-fixture__header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .league-page-wrapper .league-detail .league-fixture__header {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+.league-page-wrapper .league-detail .league-fixture__header .filter-wrapper {
+  min-width: 306px;
+  max-width: 306px;
+}
+@media only screen and (max-width: 991px) {
+  .league-page-wrapper .league-detail .league-fixture__header .filter-wrapper {
+    min-width: 100%;
+    max-width: 100%;
+    margin-bottom: 24px;
+  }
+}
+.league-page-wrapper .league-detail .league-fixture__header .filter-wrapper .ui-datepicker-title {
+  margin-top: 10px !important;
+}
+.league-page-wrapper .league-detail .league-fixture__header .filter-wrapper .ui-datepicker-header {
+  margin-bottom: 4px !important;
+}
+.league-page-wrapper .league-detail .league-fixture__header .filter-wrapper .ui-datepicker-calendar {
+  padding-top: 8px;
+  border: 1px solid #E9E6DC;
+  box-shadow: 0px 3px 0px rgba(126, 123, 107, 0.1);
+  border-radius: 4px;
+}
+.league-page-wrapper .league-detail .league-fixture__header .filter-wrapper .calender-for-mobile {
+  width: 100%;
+  padding: 4px;
+  position: relative;
+  flex-direction: column;
+  background: #FFFFFF;
+  border: 1px solid #E9E6DC;
+  border-radius: 4px;
+}
+@media only screen and (max-width: 991px) {
+  .league-page-wrapper .league-detail .league-fixture__header .filter-wrapper .calender-for-mobile {
+    order: 2;
+    margin-top: 8px;
+  }
+}
+.league-page-wrapper .league-detail .league-fixture__header .filter-wrapper .calender-for-mobile #datepicker-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  z-index: 99999;
+}
+.league-page-wrapper .league-detail .league-fixture__header .filter-wrapper .calender-for-mobile .control-wrapper {
+  display: flex;
+}
+.league-page-wrapper .league-detail .league-fixture__header .filter-wrapper .calender-for-mobile .time-detail {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.league-page-wrapper .league-detail .league-fixture__header .filter-wrapper .calender-for-mobile .btn-calender {
+  display: flex;
+  min-width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+}
+.league-page-wrapper .league-detail .league-fixture__header .filter-wrapper .calender-for-mobile .btn-calender:focus {
+  outline: none;
+}
+.league-page-wrapper .league-detail .league-fixture__header .filter-wrapper .calender-for-mobile .btn-next,
+.league-page-wrapper .league-detail .league-fixture__header .filter-wrapper .calender-for-mobile .btn-prev {
+  background-color: #EDF2F7;
+}
+.league-page-wrapper .league-detail .league-fixture__header .filter-wrapper .calender-for-mobile .btn-next {
+  margin-right: 4px;
+}
+.league-page-wrapper .league-detail .league-fixture__header .filter-wrapper .calender-for-mobile .btn-show {
+  background-color: #F91E4E;
+}
+@media only screen and (max-width: 991px) {
+  .league-page-wrapper .league-detail .league-fixture__header .filter-wrapper .calender-for-mobile {
+    display: flex;
+  }
 }
 .league-page-wrapper .league-detail .league-fixture__header .title {
   font-style: normal;
@@ -99,7 +192,7 @@
   .league-page-wrapper .league-detail .league-fixture__header .title {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 8px;
+    margin-bottom: 0;
   }
 }
 .league-page-wrapper .league-detail .league-fixture__table {

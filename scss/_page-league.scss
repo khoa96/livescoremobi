@@ -10,7 +10,8 @@
     padding-top: 16px;
   }
 
-  .league-header {
+
+  .league-header{
     display: flex;
     gap: 16px;
     align-items: center;
@@ -99,6 +100,116 @@
       &__header {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+
+
+        @include mq(max_md) {
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+        }
+
+        .filter-wrapper {
+          min-width: 306px;
+          max-width: 306px;
+          // position: relative;
+
+          @include mq(max_md) {
+            min-width: 100%;
+            max-width: 100%;
+            margin-bottom: 24px;;
+          }
+
+          .ui-datepicker-title  {
+            margin-top: 10px !important;
+          }
+          .ui-datepicker-header {
+            margin-bottom: 4px !important;
+            // border: 1px solid #E9E6DC;
+            // border-radius: 4px;
+          }
+
+          .ui-datepicker-calendar {
+            // background: #FFFFFF;
+            // border: 1px solid #E9E6DC;
+            // border-radius: 4px;
+            padding-top: 8px;
+            border: 1px solid #E9E6DC;
+            box-shadow: 0px 3px 0px rgba(126, 123, 107, 0.1);
+            border-radius: 4px;
+          }
+
+          .calender-for-mobile {
+            width: 100%;
+            padding: 4px;
+            position: relative;
+            flex-direction: column;
+            background: #FFFFFF;
+            border: 1px solid #E9E6DC;
+            border-radius: 4px;
+
+            @include mq(max_md) {
+              order: 2;
+              margin-top: 8px;
+            }
+
+            #datepicker-mobile {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: auto;
+              background-color: #fff;
+              z-index: 99999;
+            }
+
+
+            .control-wrapper {
+              display: flex;
+            }
+
+            .time-detail {
+              flex-grow: 1;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+
+            .btn-calender {
+              display: flex;
+              min-width: 32px;
+              height: 32px;
+              justify-content: center;
+              align-items: center;
+              cursor: pointer;
+              border: none;
+              border-radius: 4px;
+              background-color: transparent;
+
+              &:focus {
+                outline: none;
+              }
+            }
+
+            .btn-next,
+            .btn-prev {
+              background-color: #EDF2F7;
+            }
+
+            .btn-next {
+              margin-right: 4px;
+            }
+
+            .btn-show {
+              background-color: #F91E4E;
+            }
+
+            @include mq(max_md) {
+              display: flex;
+            }
+          }
+
+        }
 
         .title {
           font-style: normal;
@@ -110,7 +221,7 @@
           @include mq(max_md) {
             font-size: 16px;
             line-height: 24px;
-            margin-bottom: 8px;
+            margin-bottom: 0;
           }
         }
       }

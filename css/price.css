@@ -104,6 +104,13 @@
   line-height: 36px;
   color: #1A202C;
 }
+@media only screen and (max-width: 991px) {
+  .price-page-wrapper .price-table-wrapper .column-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 .price-page-wrapper .price-table-wrapper .table-heading {
   display: flex;
   border: 1px solid #E2E8F0;
@@ -140,6 +147,11 @@
 .price-page-wrapper .price-table-wrapper .table-heading .table-column:first-of-type {
   justify-content: center;
 }
+@media only screen and (max-width: 991px) {
+  .price-page-wrapper .price-table-wrapper .table-heading .table-column:first-of-type {
+    justify-content: flex-start;
+  }
+}
 .price-page-wrapper .price-table-wrapper .table-heading .table-column:first-of-type span {
   font-style: normal;
   font-weight: 400;
@@ -153,6 +165,11 @@
   justify-content: space-between;
   align-items: center;
   gap: 12px;
+}
+@media only screen and (max-width: 991px) {
+  .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(3), .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(4), .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(5), .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(6) {
+    gap: 8px;
+  }
 }
 .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(3) .price-info, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(4) .price-info, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(5) .price-info, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(6) .price-info {
   display: flex;
@@ -178,6 +195,13 @@
   line-height: 84px;
   color: #F91E4E;
 }
+@media only screen and (max-width: 991px) {
+  .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(3) .price-info .price span:last-of-type, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(4) .price-info .price span:last-of-type, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(5) .price-info .price span:last-of-type, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(6) .price-info .price span:last-of-type {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+  }
+}
 .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(3) .price-info .per-month, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(4) .price-info .per-month, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(5) .price-info .per-month, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(6) .price-info .per-month {
   font-style: normal;
   font-weight: 400;
@@ -185,12 +209,24 @@
   line-height: 24px;
   color: #1A202C;
 }
+@media only screen and (max-width: 991px) {
+  .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(3) .price-info .per-month, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(4) .price-info .per-month, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(5) .price-info .per-month, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(6) .price-info .per-month {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
 .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(3) .price-info .save-label, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(4) .price-info .save-label, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(5) .price-info .save-label, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(6) .price-info .save-label {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #48BB78;
+}
+@media only screen and (max-width: 991px) {
+  .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(3) .price-info .save-label, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(4) .price-info .save-label, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(5) .price-info .save-label, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(6) .price-info .save-label {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(3) .btn-select, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(4) .btn-select, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(5) .btn-select, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(6) .btn-select {
   min-width: 90px;
@@ -205,6 +241,11 @@
   color: #FFFFFF;
   font-family: "Poppins";
   cursor: pointer;
+}
+@media only screen and (max-width: 991px) {
+  .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(3) .btn-select, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(4) .btn-select, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(5) .btn-select, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(6) .btn-select {
+    border-radius: 8px;
+  }
 }
 .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(3) .btn-select:focus, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(4) .btn-select:focus, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(5) .btn-select:focus, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(6) .btn-select:focus {
   outline: none;
