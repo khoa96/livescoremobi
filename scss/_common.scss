@@ -1,6 +1,7 @@
 @charset "utf-8";
 @import "variables";
 @import "mixins";
+@import "fonts";
 
 /* -----------------------------------------------------------
 	reset style
@@ -1293,6 +1294,70 @@ p {
 
 .ui-datepicker-other-month .ui-state-default {
 	color: #A0AEC0;
+}
+
+
+.thankiu-page-wrapper {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 137px 0px 417px 0px;
+
+
+	@include mq(max_md) {
+		padding: 65px 0px 200px 0px;
+	}
+	.thank-description {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 27px;
+		/* identical to box height */
+
+
+		/* Gray:900 */
+
+		color: #1A202C;
+		margin: 20px 0px 28px 0px;
+
+		@include mq(max_md) {
+			font-size: 14px;
+			line-height: 21px;
+			margin: 10px 0px 14px 0px;
+		}
+	}
+
+	.btn-back {
+		min-width: 190px;
+		display: block;
+		margin: 0 auto;
+		height: auto;
+		padding: 12px 0px;
+		text-align: center;
+		border: none;
+		cursor: pointer;
+		text-align: center;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 21px;
+		background-color: $primary-color;
+		border-radius: 4px;
+		color: $content-primary;
+		font-family: 'Poppins';
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: none;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
 }
 
 // ===================
