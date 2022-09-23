@@ -35,24 +35,62 @@
       <div class="transaction-wrapper">
         <h4 class="transaction-title">Transaction history</h4>
         <div class="list-transaction">
-          <div class="table-row">
-            <div class="column-item">Code</div>
-            <div class="column-item">Subcribe At</div>
-            <div class="column-item">Package </div>
-            <div class="column-item">Status </div>
-            <div class="column-item">&nbsp;</div>
+          <div class="table-row table-heading">
+            <div class="column-item">Date of purchase</div>
+            <div class="column-item">Amount</div>
+            <div class="column-item">Plan</div>
+            <div class="column-item">Payment method</div>
+            <div class="column-item">Transaction ID</div>
             <div class="column-item">&nbsp;</div>
           </div>
           <div class="table-row">
-            <div class="column-item">0IEFShHQ6zxXgu1Y</div>
-            <div class="column-item">Sep 18 2022, 11:21</div>
-            <div class="column-item">USD20.00 - 3 months </div>
-            <div class="column-item">Actived</div>
+            <div class="column-item">29.08. 22:30</div>
+            <div class="column-item">$15</div>
+            <div class="column-item">3 months</div>
+            <div class="column-item">Paypal in Paddle</div>
+            <div class="column-item">457348943</div>
             <div class="column-item">
-              <a href="#" class="btn-link">View Transaction</a>
+              <button class="btn-view-transaction">View</button>
             </div>
+          </div>
+          <div class="table-row">
+            <div class="column-item">29.08. 22:30</div>
+            <div class="column-item">$15</div>
+            <div class="column-item">3 months</div>
+            <div class="column-item">Paypal in Paddle</div>
+            <div class="column-item">457348943</div>
             <div class="column-item">
-              <a href="#" class="btn-link">Unsubcribe</a>
+              <button class="btn-view-transaction">View</button>
+            </div>
+          </div>
+          <div class="table-row">
+            <div class="column-item">29.08. 22:30</div>
+            <div class="column-item">$15</div>
+            <div class="column-item">3 months</div>
+            <div class="column-item">Paypal in Paddle</div>
+            <div class="column-item">457348943</div>
+            <div class="column-item">
+              <button class="btn-view-transaction">View</button>
+            </div>
+          </div>
+          <div class="table-row">
+            <div class="column-item">29.08. 22:30</div>
+            <div class="column-item">$15</div>
+            <div class="column-item">3 months</div>
+            <div class="column-item">Paypal in Paddle</div>
+            <div class="column-item">457348943</div>
+            <div class="column-item">
+              <button class="btn-view-transaction">View</button>
+            </div>
+          </div>
+          <div class="table-row">
+            <div class="column-item">29.08. 22:30</div>
+            <div class="column-item">$15</div>
+            <div class="column-item">3 months</div>
+            <div class="column-item">Paypal in Paddle</div>
+            <div class="column-item">457348943</div>
+            <div class="column-item">
+              <button class="btn-view-transaction">View</button>
             </div>
           </div>
         </div>
