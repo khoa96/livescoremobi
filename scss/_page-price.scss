@@ -3,12 +3,14 @@
 @import "mixins";
 
 .price-page-wrapper {
-  padding-top: 53px;
-  padding-bottom: 77px;
+  padding-top: 39px;
+  padding-bottom: 151px;
+  padding-left: 36px;
 
   @include mq(max_md) {
-    padding-top: 22px;
-    padding-bottom: 138px;
+    padding-top: 24px;
+    padding-bottom: 70px;
+    padding-left: 18px;
   }
 
   .title {
@@ -44,7 +46,7 @@
       font-size: 18px;
       line-height: 27px;
       color: #FFFFFF;
-      background-color: #F91E4E;
+      background-color: #13B7A7;
       border-radius: 50%;
 
       @include mq(max_md) {
@@ -201,7 +203,7 @@
               line-height: 36px;
               align-items: center;
               justify-content: center;
-              color: #F91E4E;
+              color: $primary-color;
 
               @include mq(max_md) {
 
@@ -213,7 +215,7 @@
                   font-weight: 500;
                   font-size: 56px;
                   line-height: 84px;
-                  color: #F91E4E;
+                  color: $primary-color;
                   @include mq(max_md) {
                     font-weight: 600;
                     font-size: 40px;
@@ -255,7 +257,7 @@
             padding: 8px 24px;
             text-align: center;
             border: none;
-            background-color: #F91E4E;
+            background-color: #13B7A7;;
             font-style: normal;
             font-weight:500;
             font-size: 16px;
@@ -464,7 +466,7 @@
         }
 
         &:last-of-type {
-          background: #F91E4E;
+          background: $primary-color;
         }
 
         text-align: center;
@@ -499,7 +501,7 @@
       }
       a {
         text-decoration: none;
-        color: #F91E4E;
+        color: $primary-color;
         &:hover {
           text-decoration: none;
         }

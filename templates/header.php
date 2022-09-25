@@ -1,19 +1,35 @@
-<div class="header">
+<header class="header">
 	<div class="container">
-		<div class="header-content">
-			<h1>
-				<a href="#" class="logo-wrapper">
-					<img src="../images/icon-logo.png" alt="" class="logo-icon">
-					<img src="./images/logo.png" alt="" class="logo-title" />
-				</a>
-			</h1>
-			<div class="header-right">
-				<p class="header-description">Live basketball today on TV at bizfootball.com</p>
-				<div class="list-control">
-					<a href="#" target="" class="btn btn-signin">Log in</a>
-					<a href="#" target=""  class="btn btn-signup">Log in</a>
-				</div>
-			</div>
+	<nav class="navbar">
+		<a href="#" class="nav-logo">
+			<img src="../images/logo.png" alt="" class="logo-header">
+		</a>
+		<ul class="nav-menu">
+			<li class="nav-item link-active">
+				<a href="#" class="nav-link">Hot Match</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">Highlight</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">Compettion Map</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">Pricing</a>
+			</li>
+			<li class="nav-item">
+				<a href="#" class="nav-link">News</a>
+			</li>
+			<li class="list-control">
+				<a href="#" target="" class="btn btn-signin">Log in</a>
+				<a href="#" target="" class="btn btn-signup">Sign up</a>
+			</li>
+		</ul>
+		<div class="hamburger">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
 		</div>
+	</nav>
 	</div>
-</div>
+</header>

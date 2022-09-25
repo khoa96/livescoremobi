@@ -4,8 +4,10 @@
   <?php include "templates/header.php"; ?>
   <?php include "templates/menu.php"; ?>
   <div class="news-page-wrapper">
-    <div class="news-header">
-      <h3 class="title">News</h3>
+    <div class="page-header">
+      <div class="container">
+        <h3 class="title">News</h3>
+      </div>
     </div>
     <div class="container">
       <div class="news-detail-wrapper">
@@ -521,4 +523,5 @@
   </div>
   <?php include "templates/footer.php"; ?>
 </body>
+
 </html>

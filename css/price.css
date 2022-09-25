@@ -1,11 +1,13 @@
 .price-page-wrapper {
-  padding-top: 53px;
-  padding-bottom: 77px;
+  padding-top: 39px;
+  padding-bottom: 151px;
+  padding-left: 36px;
 }
 @media only screen and (max-width: 991px) {
   .price-page-wrapper {
-    padding-top: 22px;
-    padding-bottom: 138px;
+    padding-top: 24px;
+    padding-bottom: 70px;
+    padding-left: 18px;
   }
 }
 .price-page-wrapper .title {
@@ -41,7 +43,7 @@
   font-size: 18px;
   line-height: 27px;
   color: #FFFFFF;
-  background-color: #F91E4E;
+  background-color: #13B7A7;
   border-radius: 50%;
 }
 @media only screen and (max-width: 991px) {
@@ -186,14 +188,14 @@
   line-height: 36px;
   align-items: center;
   justify-content: center;
-  color: #F91E4E;
+  color: #A52457;
 }
 .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(3) .price-info .price span:last-of-type, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(4) .price-info .price span:last-of-type, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(5) .price-info .price span:last-of-type, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(6) .price-info .price span:last-of-type {
   font-style: normal;
   font-weight: 500;
   font-size: 56px;
   line-height: 84px;
-  color: #F91E4E;
+  color: #A52457;
 }
 @media only screen and (max-width: 991px) {
   .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(3) .price-info .price span:last-of-type, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(4) .price-info .price span:last-of-type, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(5) .price-info .price span:last-of-type, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(6) .price-info .price span:last-of-type {
@@ -233,7 +235,7 @@
   padding: 8px 24px;
   text-align: center;
   border: none;
-  background-color: #F91E4E;
+  background-color: #13B7A7;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -425,7 +427,7 @@
   background-color: #FFB700;
 }
 .price-page-wrapper .payment-wrapper .list-control .btn-payment:last-of-type {
-  background: #F91E4E;
+  background: #A52457;
 }
 .price-page-wrapper .payment-wrapper .list-control .btn-payment:focus {
   outline: none;
@@ -452,7 +454,7 @@
 }
 .price-page-wrapper .payment-wrapper .privacy a {
   text-decoration: none;
-  color: #F91E4E;
+  color: #A52457;
 }
 .price-page-wrapper .payment-wrapper .privacy a:hover {
   text-decoration: none;

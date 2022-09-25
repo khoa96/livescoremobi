@@ -1,49 +1,19 @@
 .news-page-wrapper {
   width: 100%;
-  min-height: 418px;
-  background-image: url("../images/background-content.png"), linear-gradient(#F91E4E 28%, #F5F5F5 0%);
-  background-repeat: no-repeat;
-  background-position: top right;
-  background-size: 585px 418px;
+  height: auto;
+}
+.news-page-wrapper .news-wrapper {
+  margin-bottom: 122px;
 }
 @media only screen and (max-width: 991px) {
-  .news-page-wrapper {
-    background-size: 280px 240px !important;
-  }
-}
-.news-page-wrapper .news-header {
-  width: calc(100% - 585px);
-  height: 117.04px;
-  background-color: #F91E4E;
-  position: relative;
-}
-@media only screen and (max-width: 991px) {
-  .news-page-wrapper .news-header {
-    width: calc(100% - 280px);
-    height: 67.2px;
-  }
-}
-.news-page-wrapper .news-header .title {
-  font-weight: 500;
-  font-size: 32px;
-  line-height: 48px;
-  color: #ffffff;
-  position: absolute;
-  top: 30px;
-  left: 162px;
-}
-@media only screen and (max-width: 991px) {
-  .news-page-wrapper .news-header .title {
-    font-size: 24px;
-    line-height: 36px;
-    top: 18px;
-    left: 16px;
+  .news-page-wrapper .news-wrapper {
+    margin-bottom: 77px;
   }
 }
 .news-page-wrapper .news-detail-wrapper {
   display: flex;
   gap: 24px;
-  margin-top: 48px;
+  margin-top: 40px;
 }
 @media only screen and (max-width: 991px) {
   .news-page-wrapper .news-detail-wrapper {
@@ -155,8 +125,8 @@
 }
 .news-page-wrapper .news-detail-wrapper .dash img {
   display: block;
-  width: 195px;
-  height: 23px;
+  width: 128px;
+  height: 15px;
 }
 .news-page-wrapper .other-title {
   font-style: normal;
@@ -175,7 +145,6 @@
 }
 .news-page-wrapper .btn-load-more-mb {
   display: none;
-  font-family: "Poppins";
 }
 @media only screen and (max-width: 991px) {
   .news-page-wrapper .btn-load-more-mb {

@@ -3,26 +3,13 @@
 @import "mixins";
 
 .football-page-wrapper {
-  padding-top: 24px;
-
-  .news-block-wrapper {
-    width: 100%;
-    height: auto;
-
-    .list-news {
-      margin-top: 0 !important;
-    }
-  }
-
   .main-content-page-football {
     display: flex;
     gap: 24px;
-    margin: 24px 0px;
 
     @include mq(max_md) {
       flex-direction: column;
     }
-
     .left-content {
       min-width: 300px;
       max-width: 300px;

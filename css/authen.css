@@ -1,85 +1,124 @@
 .authen-form-wrapper {
   width: 100%;
-  height: auto;
-  background-color: #FDC400;
-  padding: 30px 0px 114px 0px;
+  min-height: 833px;
+  height: calc(100vh - 73px);
+  background-image: url("../images/singin-background.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-top: 48px;
+  color: #ffffff;
 }
 @media only screen and (max-width: 991px) {
   .authen-form-wrapper {
-    padding: 0px 0px 70px 0px;
+    padding: 24px 0px 44px 0px;
+    min-height: auto;
+    height: auto;
+    max-height: auto;
   }
 }
 .authen-form-wrapper .authen-form-content {
   display: flex;
-  gap: 84px;
-  justify-content: center;
 }
 @media only screen and (max-width: 991px) {
   .authen-form-wrapper .authen-form-content {
-    gap: 24px;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
 }
-.authen-form-wrapper .image-authen {
+.authen-form-wrapper .authen-content {
   width: 50%;
-  height: auto;
 }
 @media only screen and (max-width: 991px) {
-  .authen-form-wrapper .image-authen {
+  .authen-form-wrapper .authen-content {
     width: 100%;
+    order: 2;
   }
 }
-.authen-form-wrapper .image-authen img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
+.authen-form-wrapper .authen-content ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.authen-form-wrapper .authen-content ul li {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.authen-form-wrapper .authen-content ul li span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  display: inline-block;
+  max-width: 560px;
+}
+.authen-form-wrapper .form-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+@media only screen and (max-width: 991px) {
+  .authen-form-wrapper .form-title {
+    margin-bottom: 16px;
+  }
 }
 .authen-form-wrapper .form-wrapper {
-  padding-top: 60px;
-  min-width: 400px;
-  max-width: 400px;
+  width: 50%;
+  border-left: 1px solid #ffffff;
+  padding-left: 83px;
 }
 @media only screen and (max-width: 991px) {
   .authen-form-wrapper .form-wrapper {
     padding-top: 12px;
     min-width: 100%;
     max-width: 100%;
+    border-left: none;
+    padding-left: 0;
+    order: 1;
   }
 }
-.authen-form-wrapper .form-wrapper .form-title {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  color: #1A202C;
-  margin-bottom: 16px;
+.authen-form-wrapper .form-wrapper .form-detail {
+  max-width: 400px;
+}
+@media only screen and (max-width: 991px) {
+  .authen-form-wrapper .form-wrapper .form-detail {
+    max-width: 100%;
+  }
 }
 .authen-form-wrapper .form-wrapper .form-item {
   width: 100%;
-  padding: 8px 14px;
-  border-radius: 4px;
-  background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  margin-bottom: 12px;
+  gap: 8px;
+  margin-bottom: 16px;
+  max-width: 400px;
 }
 .authen-form-wrapper .form-wrapper .form-item label {
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-  color: #1A202C;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+  cursor: pointer;
 }
 .authen-form-wrapper .form-wrapper .form-item input {
+  display: block;
+  width: 100%;
   outline: none;
-  border: none;
+  border: 1px solid #FFFFFF;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
-  color: #1A202C;
-  padding: 3px 0px;
+  line-height: 24px;
+  color: #ffffff;
+  padding: 8px 16px;
+  background-color: transparent;
+  caret-color: #fff;
+  cursor: pointer;
 }
 .authen-form-wrapper .form-wrapper .form-item input:focus {
   outline: none;
@@ -90,7 +129,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #718096;
+  color: rgba(255, 255, 255, 0.5);
 }
 .authen-form-wrapper .form-wrapper .btn {
   display: block;
@@ -114,10 +153,10 @@
 }
 .authen-form-wrapper .form-wrapper .btn-submit {
   color: #ffffff;
-  background-color: #F91E4E;
+  background-color: #A52457;
 }
 .authen-form-wrapper .form-wrapper .btn-link {
-  color: #F91E4E;
+  color: #ffffff;
 }
 .authen-form-wrapper .form-wrapper .btn-link:hover {
   text-decoration: none;
