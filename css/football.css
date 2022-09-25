@@ -1,17 +1,6 @@
-.football-page-wrapper {
-  padding-top: 24px;
-}
-.football-page-wrapper .news-block-wrapper {
-  width: 100%;
-  height: auto;
-}
-.football-page-wrapper .news-block-wrapper .list-news {
-  margin-top: 0 !important;
-}
 .football-page-wrapper .main-content-page-football {
   display: flex;
   gap: 24px;
-  margin: 24px 0px;
 }
 @media only screen and (max-width: 991px) {
   .football-page-wrapper .main-content-page-football {

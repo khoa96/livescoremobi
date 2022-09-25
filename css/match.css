@@ -1,35 +1,86 @@
-.match-page-wrapper {
-  background-color: #fff;
+.page-wrapper {
+  padding-bottom: 145px;
+}
+@media only screen and (max-width: 991px) {
+  .page-wrapper {
+    padding-bottom: 172px;
+  }
 }
 
 .match-page-wrapper {
   width: 100%;
   height: auto;
 }
+.match-page-wrapper .match-live-wrapper {
+  width: 100%;
+  height: auto;
+  background-color: #1A202C;
+}
 .match-page-wrapper .live-content {
   width: 100%;
+  padding: 24px 0px;
 }
 @media only screen and (max-width: 991px) {
   .match-page-wrapper .live-content {
-    padding-top: 8px;
+    padding-top: 32px;
+    padding-bottom: 24px;
   }
+}
+.match-page-wrapper .live-content .live-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.match-page-wrapper .live-content .live-header .match-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.match-page-wrapper .live-content .live-header .list-contact {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-width: 991px) {
+  .match-page-wrapper .live-content .live-header .list-contact {
+    display: none;
+  }
+}
+.match-page-wrapper .live-content .live-header .list-contact li a {
+  text-decoration: none;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .match-page-wrapper .live-content .live-title {
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 48px;
-  color: #1A202C;
-  padding: 36px 0px 20px;
+  font-size: 24px;
+  line-height: 36px;
+  color: #fff;
 }
 @media only screen and (max-width: 991px) {
   .match-page-wrapper .live-content .live-title {
     display: none;
   }
 }
+.match-page-wrapper .live-content .match-time {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
 .match-page-wrapper .live-content .live-video {
   width: 100%;
   height: 715px;
+  margin-bottom: 8px;
 }
 @media only screen and (max-width: 991px) {
   .match-page-wrapper .live-content .live-video {
@@ -40,11 +91,10 @@
 .match-page-wrapper .live-content .control-live {
   width: 100%;
   height: auto;
-  background-color: #fff;
+  background-color: transparent;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 0px;
   max-width: 100%;
   margin: auto;
 }
@@ -60,556 +110,220 @@
 }
 .match-page-wrapper .live-content .control-live .list-server .btn-server {
   outline: none;
-  padding: 8px 16px;
+  padding: 6px 16px;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  border-radius: 8px;
-  color: #1A202C;
-  border: none;
+  font-size: 14px;
+  line-height: 21px;
+  color: #13B7A7;
+  border: 1px solid #13B7A7;
   cursor: pointer;
-  background-color: #FDC400;
+  background-color: transparent;
 }
 .match-page-wrapper .live-content .control-live .list-server .btn-server:focus {
   outline: none;
 }
 .match-page-wrapper .live-content .control-live .list-server .active {
   color: #fff;
-  background-color: #F91E4E;
+  background-color: #13B7A7;
 }
-.match-page-wrapper .live-content .control-live .list-contact {
-  display: flex;
-  gap: 24px;
-  list-style: none;
-  align-items: center;
-  margin: 0;
-  padding: 0;
+.match-page-wrapper .match-result-wrapper {
+  width: 100%;
+  height: auto;
+  margin: 48px 0px 24px 0px;
 }
 @media only screen and (max-width: 991px) {
-  .match-page-wrapper .live-content .control-live .list-contact {
-    display: none;
+  .match-page-wrapper .match-result-wrapper {
+    margin: 16px 0px;
   }
 }
-.match-page-wrapper .live-content .control-live .list-contact li a {
-  text-decoration: none;
-  width: 24px;
-  height: 24px;
+.match-page-wrapper .dash-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-.match-page-wrapper .live-content .dash-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 16px;
-}
-@media only screen and (max-width: 991px) {
-  .match-page-wrapper .live-content .dash-wrapper {
-    display: none;
-  }
-}
-.match-page-wrapper .live-content .dash-wrapper img {
+.match-page-wrapper .dash-wrapper img {
   display: block;
-  width: 195px;
-  height: 23px;
+  width: 128px;
+  height: 15px;
   object-fit: cover;
 }
-.match-page-wrapper .live-content .match-result-wrapper {
-  padding-bottom: 50px;
+.match-page-wrapper .match-result {
+  display: flex;
+  align-items: center;
+  gap: 24px;
   display: flex;
   width: 100%;
   align-items: center;
 }
 @media only screen and (max-width: 991px) {
-  .match-page-wrapper .live-content .match-result-wrapper {
+  .match-page-wrapper .match-result {
     padding-bottom: 0;
+    gap: 12px;
   }
 }
-.match-page-wrapper .live-content .match-result-wrapper .column-50 {
+.match-page-wrapper .match-result .column-50 {
   width: 50%;
 }
-.match-page-wrapper .live-content .match-result-wrapper .column-15 {
+.match-page-wrapper .match-result .column-15 {
   width: 15%;
 }
-@media only screen and (max-width: 991px) {
-  .match-page-wrapper .live-content .match-result-wrapper .column-15 {
-    margin: 0px 20px;
-  }
-}
-.match-page-wrapper .live-content .match-result-wrapper .club-item {
+.match-page-wrapper .match-result .club-item {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
 }
-@media only screen and (max-width: 991px) {
-  .match-page-wrapper .live-content .match-result-wrapper .club-item {
-    gap: 8px;
-  }
-}
-.match-page-wrapper .live-content .match-result-wrapper .club-item .club-name {
+.match-page-wrapper .match-result .club-item .club-name {
+  font-style: normal;
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 20px;
+  line-height: 30px;
   color: #1A202C;
 }
 @media only screen and (max-width: 991px) {
-  .match-page-wrapper .live-content .match-result-wrapper .club-item .club-name {
-    font-size: 13px;
+  .match-page-wrapper .match-result .club-item .club-name {
+    font-size: 14px;
     line-height: 21px;
   }
 }
-.match-page-wrapper .live-content .match-result-wrapper .club-item .club-image {
-  min-width: 64px;
-  max-width: 64px;
+.match-page-wrapper .match-result .club-item .club-image {
+  min-width: 24px;
+  max-width: 24px;
   height: auto;
   border-radius: 50%;
   object-fit: cover;
 }
 @media only screen and (max-width: 991px) {
-  .match-page-wrapper .live-content .match-result-wrapper .club-item .club-image {
+  .match-page-wrapper .match-result .club-item .club-image {
     min-width: 24px;
     max-width: 24px;
   }
 }
-.match-page-wrapper .live-content .match-result-wrapper .score-wrapper {
+.match-page-wrapper .match-result .score-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 4px;
   position: relative;
+  min-width: 90px;
+  max-width: 90px;
+  text-align: center;
+  border: 1px solid #A52457;
 }
-.match-page-wrapper .live-content .match-result-wrapper .score-wrapper .result {
+@media only screen and (max-width: 991px) {
+  .match-page-wrapper .match-result .score-wrapper {
+    padding: 0px 10px;
+    min-width: 50px;
+    max-width: 50px;
+  }
+}
+.match-page-wrapper .match-result .score-wrapper .result {
+  font-style: normal;
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 48px;
-  text-align: center;
-  color: #F91E4E;
+  font-size: 24px;
+  line-height: 36px;
+  color: #A52457;
 }
 @media only screen and (max-width: 991px) {
-  .match-page-wrapper .live-content .match-result-wrapper .score-wrapper .result {
-    font-size: 24px;
-    line-height: 36px;
+  .match-page-wrapper .match-result .score-wrapper .result {
+    font-size: 14px;
+    line-height: 21px;
     min-width: max-content;
+    font-weight: 600;
   }
 }
-.match-page-wrapper .live-content .match-result-wrapper .score-wrapper .match-info {
+.match-page-wrapper .match-time-detail {
   width: 100%;
-  height: auto;
-  position: absolute;
-  bottom: -36px;
-  right: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 0;
+  margin: 16px 0px;
 }
 @media only screen and (max-width: 991px) {
-  .match-page-wrapper .live-content .match-result-wrapper .score-wrapper .match-info {
-    bottom: -18px;
+  .match-page-wrapper .match-time-detail {
+    margin: 12px 0px;
   }
 }
-.match-page-wrapper .live-content .match-result-wrapper .score-wrapper .time,
-.match-page-wrapper .live-content .match-result-wrapper .score-wrapper .league-name {
+.match-page-wrapper .match-time-detail .time,
+.match-page-wrapper .match-time-detail .status {
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 18px;
-  color: #718096;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
   min-width: max-content;
 }
-@media only screen and (max-width: 991px) {
-  .match-page-wrapper .live-content .match-result-wrapper .score-wrapper .league-name {
-    display: none;
-  }
+.match-page-wrapper .match-time-detail .status {
+  color: #A52457;
 }
 
-.page-live-content-wrapper {
-  padding: 24px 0px;
+.list-club-info-detail {
   width: 100%;
   display: flex;
   gap: 24px;
+  margin-bottom: 24px;
 }
-@media only screen and (max-width: 991px) {
-  .page-live-content-wrapper {
-    padding: 12px 0px;
-    gap: 12px;
-    flex-direction: column;
-  }
-}
-.page-live-content-wrapper .left-content {
+.list-club-info-detail .club-item-info {
+  width: 50%;
+  padding: 24px 32px;
   display: flex;
-  flex-grow: 1;
-  flex-direction: column;
   gap: 16px;
-}
-.page-live-content-wrapper .left-content .match-info-wrapper {
-  background: #FFFFFF;
-  border: 1px solid #E9E6DC;
-  border-radius: 4px;
-  padding: 40px 24px;
-  flex-direction: column;
-}
-@media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .left-content .match-info-wrapper {
-    padding: 24px 16px;
-  }
-}
-.page-live-content-wrapper .left-content .block-title {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  color: #1A202C;
-  margin-bottom: 16px;
-}
-@media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .left-content .block-title {
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 8px;
-  }
-}
-.page-live-content-wrapper .right-content {
-  min-width: 300px;
-  max-width: 300px;
-}
-@media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .right-content {
-    min-width: 100%;
-    max-width: 100%;
-  }
-}
-.page-live-content-wrapper .list-info {
-  width: 100%;
-  display: flex;
-  margin-bottom: 40px;
-}
-@media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .list-info {
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin-bottom: 24px;
-  }
-}
-.page-live-content-wrapper .list-info .info-item {
-  width: 25%;
-  height: auto;
-  gap: 12px;
-  display: flex;
-  align-items: center;
-}
-@media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .list-info .info-item {
-    width: 100%;
-    margin-bottom: 8px;
-  }
-}
-.page-live-content-wrapper .list-info .info-item .info-detail {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-.page-live-content-wrapper .list-info .info-item .info-detail .detail-title {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  color: #1A202C;
-}
-.page-live-content-wrapper .list-info .info-item .info-detail .detail-value {
+  background-color: #F9F8F2;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #1A202C;
 }
-.page-live-content-wrapper .h2h-wrapper .h2h-row {
-  display: flex;
-  margin-bottom: 12px;
-}
 @media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .h2h-wrapper .h2h-row {
-    margin-bottom: 8px;
+  .list-club-info-detail .club-item-info {
+    padding: 12px;
+    gap: 12px;
+    width: 100%;
   }
 }
-.page-live-content-wrapper .h2h-wrapper .h2h-column {
-  width: 33.3333333333%;
+.list-club-info-detail .club-item-info img {
+  display: block;
+  min-width: 54px;
+  max-width: 54px;
+  height: 54px;
+  border: none;
+  border-radius: 50%;
+  object-fit: cover;
 }
-.page-live-content-wrapper .h2h-wrapper .h2h-item {
+.list-club-info-detail .club-item-info .info-detail {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 12px;
 }
 @media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .h2h-wrapper .h2h-item {
+  .list-club-info-detail .club-item-info .info-detail {
     gap: 8px;
   }
 }
-.page-live-content-wrapper .h2h-wrapper .h2h-item .h2h-name {
-  font-style: normal;
-  font-weight: 500;
-  color: #1A202C;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-}
-@media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .h2h-wrapper .h2h-item .h2h-name {
-    font-size: 12px;
-    line-height: 18px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 72px;
-  }
-}
-.page-live-content-wrapper .h2h-wrapper .h2h-item .h2h-image {
-  min-width: 40px;
-  max-width: 40px;
-  height: auto;
-  border-radius: 50%;
-  object-fit: cover;
-}
-@media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .h2h-wrapper .h2h-item .h2h-image {
-    min-width: 24px;
-    max-width: 24px;
-  }
-}
-.page-live-content-wrapper .h2h-wrapper .h2h-result {
+.list-club-info-detail .club-item-info .info-detail .info-item {
   display: flex;
-  justify-content: center;
-  gap: 64px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  align-items: center;
-}
-@media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .h2h-wrapper .h2h-result {
-    gap: 16px;
-  }
-}
-.page-live-content-wrapper .h2h-wrapper .h2h-result span {
-  min-width: max-content;
-  display: inline-block;
-}
-@media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .h2h-wrapper .h2h-result span {
-    font-size: 16px;
-    line-height: 24px;
-  }
-}
-.page-live-content-wrapper .h2h-wrapper .h2h-result span:first-child {
-  color: #2F855A;
-}
-.page-live-content-wrapper .h2h-wrapper .h2h-result span:nth-child(2) {
-  color: #718096;
-}
-.page-live-content-wrapper .h2h-wrapper .h2h-result span:nth-child(3) {
-  color: #F91E4E;
-}
-.page-live-content-wrapper .table-timeline-match .league-fixture__table {
-  margin-bottom: 24px;
-}
-.page-live-content-wrapper .table-timeline-match .league-fixture__table .table-heading {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  margin-bottom: 8px;
-}
-.page-live-content-wrapper .table-timeline-match .league-fixture__table .coloumn-40 {
-  width: 40%;
-}
-@media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .table-timeline-match .league-fixture__table .coloumn-40 {
-    width: 100%;
-  }
-}
-.page-live-content-wrapper .table-timeline-match .league-fixture__table .column-60 {
-  width: 60%;
-}
-@media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .table-timeline-match .league-fixture__table .column-60 {
-    width: 100%;
-  }
-}
-.page-live-content-wrapper .table-timeline-match .league-fixture__table .column-10 {
-  width: 10%;
-}
-.page-live-content-wrapper .table-timeline-match .league-fixture__table .column-20 {
-  width: 20%;
-}
-.page-live-content-wrapper .table-timeline-match .league-fixture__table .table-row {
-  padding: 12px 0px;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid #EDF2F7;
-}
-@media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .table-timeline-match .league-fixture__table .table-row {
-    flex-flow: column;
-    padding: 8px 0px;
-  }
-}
-.page-live-content-wrapper .table-timeline-match .league-fixture__table .table-row .time {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-}
-@media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .table-timeline-match .league-fixture__table .table-row .time {
-    font-size: 12px;
-    line-height: 18px;
-  }
-}
-.page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  gap: 24px;
-  justify-content: center;
-}
-@media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club {
-    gap: 12px;
-  }
-}
-.page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .club-item {
-  display: flex;
-  gap: 8px;
-  align-items: center;
-}
-.page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .club-item:first-of-type {
-  justify-content: flex-end;
-}
-.page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .club-item:last-of-type {
-  justify-content: flex-start;
-}
-.page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .club-item .club-name {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  min-width: max-content;
-}
-@media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .club-item .club-name {
-    font-size: 12px;
-    line-height: 18px;
-  }
-}
-.page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .club-item .club-image {
-  min-width: 24px;
-  max-width: 24px;
-  height: 24px;
-  border: none;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .score {
-  display: flex;
-  justify-content: center;
   gap: 4px;
-  align-items: center;
-}
-.page-live-content-wrapper .table-timeline-match .league-fixture__table .list-club .score .score-item {
-  display: inline-block;
-  min-width: 24px;
-  max-width: 24px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #FDC400;
-  border-radius: 4px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  /* identical to box height */
-  text-align: center;
-  /* Gray:900 */
-  color: #1A202C;
-}
-.page-live-content-wrapper .prediction-and-wnning-odds-wrapper .prediction-item {
-  display: flex;
-  gap: 12px;
-  margin-bottom: 12px;
-}
-.page-live-content-wrapper .prediction-and-wnning-odds-wrapper .prediction-item:last-of-type {
-  margin-bottom: 0;
 }
 @media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .prediction-and-wnning-odds-wrapper .prediction-item {
-    margin-bottom: 8px;
-  }
-}
-.page-live-content-wrapper .prediction-and-wnning-odds-wrapper .prediction-item img {
-  min-width: 40px;
-  max-width: 40px;
-  max-height: 40px;
-  border: none;
-  border-radius: 50%;
-  object-fit: cover;
-}
-@media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .prediction-and-wnning-odds-wrapper .prediction-item img {
-    min-width: 24px;
-    max-width: 24px;
-    height: 24px;
-  }
-}
-.page-live-content-wrapper .prediction-and-wnning-odds-wrapper .prediction-item .rediction-detail {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-@media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .prediction-and-wnning-odds-wrapper .prediction-item .rediction-detail {
-    gap: 0;
-  }
-}
-.page-live-content-wrapper .prediction-and-wnning-odds-wrapper .prediction-item .rediction-detail .club-name {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #1A202C;
-}
-@media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .prediction-and-wnning-odds-wrapper .prediction-item .rediction-detail .club-name {
-    font-size: 14px;
-    line-height: 21px;
-  }
-}
-.page-live-content-wrapper .prediction-and-wnning-odds-wrapper .prediction-item .rediction-detail .description {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #1A202C;
-}
-@media only screen and (max-width: 991px) {
-  .page-live-content-wrapper .prediction-and-wnning-odds-wrapper .prediction-item .rediction-detail .description {
-    font-size: 14px;
-    line-height: 21px;
+  .list-club-info-detail {
+    gap: 16px;
+    flex-direction: column;
+    margin-bottom: 16px;
   }
 }
 
 .list-imformation-wrapper {
   width: 100%;
   height: auto;
-  margin-top: 40px;
+  padding: 40px;
+  background-color: #F9F8F2;
 }
 @media only screen and (max-width: 991px) {
   .list-imformation-wrapper {
-    margin-top: 24px;
+    padding: 24px;
   }
 }
 .list-imformation-wrapper .information-item__wrapper {
@@ -641,154 +355,12 @@
     line-height: 24px;
   }
 }
-.list-imformation-wrapper .information-item__dash {
-  width: 40px;
-  height: 4px;
-  border: none;
-  background-color: #FDC400;
-}
 .list-imformation-wrapper .information-item__description {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   color: #1A202C;
-}
-
-.comment-block__wrapper {
-  padding: 24px;
-  background: #FFFFFF;
-  border: 1px solid #E9E6DC;
-  border-radius: 4px;
-}
-@media only screen and (max-width: 991px) {
-  .comment-block__wrapper {
-    display: none;
-  }
-}
-.comment-block__wrapper .comment-form__wrapper {
-  background: #FFFFFF;
-  border: 1px solid #E2E8F0;
-  border-radius: 4px;
-  padding: 16px 12px 12px 24px;
-}
-.comment-block__wrapper .comment-form__wrapper textarea {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: none;
-  resize: none;
-  cursor: pointer;
-  font-family: "Poppins" !important;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #1A202C;
-}
-.comment-block__wrapper .comment-form__wrapper textarea::placeholder {
-  color: #718096;
-}
-.comment-block__wrapper .comment-form__wrapper textarea:focus {
-  outline: none;
-  border: none;
-}
-.comment-block__wrapper .comment-form__wrapper .control-wrapper {
-  display: flex;
-  justify-content: flex-end;
-}
-.comment-block__wrapper .comment-form__wrapper .control-wrapper .btn-send-comment {
-  min-width: 71px;
-  display: block;
-  height: auto;
-  padding: 11px 17px;
-  text-align: center;
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  background-color: #FDC400;
-  border-radius: 4px;
-  color: #1A202C;
-}
-.comment-block__wrapper .comment-form__wrapper .control-wrapper .btn-send-comment:focus {
-  outline: none;
-}
-.comment-block__title {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 16px;
-  color: #1A202C;
-}
-.comment-block__title .comment-count {
-  color: #718096;
-}
-
-.list-comment__wrapper {
-  margin-top: 16px;
-}
-.list-comment__wrapper .comment-item__wrapper {
-  width: 100%;
-  display: flex;
-  gap: 12px;
-  margin-bottom: 24px;
-}
-.list-comment__wrapper .comment-item__wrapper .avatar {
-  display: block;
-  min-width: 44px;
-  max-width: 44px;
-  height: 44px;
-  border: none;
-  border-radius: 50%;
-  object-fit: cover;
-}
-.list-comment__wrapper .comment-item__wrapper .comment-detail {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-.list-comment__wrapper .comment-item__wrapper .comment-detail .username {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  color: #1A202C;
-}
-.list-comment__wrapper .comment-item__wrapper .comment-detail .comment-content {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  /* Gray:900 */
-  color: #1A202C;
-}
-
-.control-comment .btn-load-more {
-  min-width: 141px;
-  display: block;
-  margin: 0 auto;
-  height: auto;
-  padding: 12px 0px;
-  text-align: center;
-  border: none;
-  cursor: pointer;
-  text-align: center;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
-  background-color: #FDC400;
-  border-radius: 4px;
-  color: #1A202C;
-  font-family: "Poppins";
-}
-.control-comment .btn-load-more:focus {
-  outline: none;
 }
 
 /*# sourceMappingURL=match.css.map */

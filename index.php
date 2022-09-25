@@ -3,139 +3,425 @@
 <body>
   <?php include "templates/header.php"; ?>
   <?php include "templates/menu.php"; ?>
-  <div class="main-page-wrapper football-page-wrapper">
-    <!-- Top Matches Today -->
+
+  <div class="countdown-timer-wrapper">
     <div class="container">
-      <h3 class="page-title">Top Matches Today</h3>
-      <div class="list-top-match-today">
-        <div class="list-top-match-item">
-          <div class="left-content club-item">
-            <img src="./images/mu-club.png" alt="">
-            <span class="club-name">ARS</span>
-          </div>
-          <div class="middle-content">
-            <div class="league-info">
-              <span class="league-name">Premier League</span>
-              <span class="league-time">Jun 8, 20:45</span>
+      <div class="countdown-timer-content">
+        <h3 class="countdown-title">Countdown timer</h3>
+        <div class="countdown-wrapper">
+          <div class="countdown countdown-container container">
+
+            <div class="clock-item-wrapper">
+              <div class="clock-item clock-days countdown-time-value">
+                <div class="wrap">
+                  <div class="inner">
+                    <div id="canvas-days" class="clock-canvas"></div>
+                    <div class="text">
+                      <p class="val">0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="type-hours type-time">DAYS</p>
             </div>
-            <button class="btn-match btn-default">Watch</button>
-          </div>
-          <div class="right-content club-item">
-            <img src="./images/chesea-club.png" alt="">
-            <span class="club-name">CHE</span>
-          </div>
-        </div>
-        <div class="list-top-match-item">
-          <div class="left-content club-item">
-            <img src="./images/mu-club.png" alt="">
-            <span class="club-name">ARS</span>
-          </div>
-          <div class="middle-content">
-            <div class="league-info">
-              <span class="league-name">Premier League</span>
-              <span class="league-time">Jun 8, 20:45</span>
-              <span class="text-live">LIVE NOW</span>
+
+            <div class="clock-item-wrapper">
+              <div class="clock-item clock-hours countdown-time-value">
+                <div class="wrap">
+                  <div class="inner">
+                    <div id="canvas-hours" class="clock-canvas"></div>
+                    <div class="text">
+                      <p class="val">0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="type-hours type-time">HOURS</p>
             </div>
-            <button class="btn-match btn-live">Watch</button>
-          </div>
-          <div class="right-content club-item">
-            <img src="./images/chesea-club.png" alt="">
-            <span class="club-name">CHE</span>
-          </div>
-        </div>
-        <div class="list-top-match-item">
-          <div class="left-content club-item">
-            <img src="./images/mu-club.png" alt="">
-            <span class="club-name">ARS</span>
-          </div>
-          <div class="middle-content">
-            <div class="league-info">
-              <span class="league-name">Premier League</span>
-              <span class="league-time">Jun 8, 20:45</span>
+
+            <div class="clock-item-wrapper">
+              <div class="clock-item clock-minutes countdown-time-valu">
+                <div class="wrap">
+                  <div class="inner">
+                    <div id="canvas-minutes" class="clock-canvas"></div>
+                    <div class="text">
+                      <p class="val">0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="type-minutes type-time">MINUTES</p>
             </div>
-            <button class="btn-match btn-default">Watch</button>
-          </div>
-          <div class="right-content club-item">
-            <img src="./images/chesea-club.png" alt="">
-            <span class="club-name">CHE</span>
-          </div>
-        </div>
-        <div class="list-top-match-item">
-          <div class="left-content club-item">
-            <img src="./images/mu-club.png" alt="">
-            <span class="club-name">ARS</span>
-          </div>
-          <div class="middle-content">
-            <div class="league-info">
-              <span class="league-name">Premier League</span>
-              <span class="league-time">Jun 8, 20:45</span>
-              <span class="text-live">LIVE NOW</span>
+
+            <div class="clock-item-wrapper">
+              <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3">
+                <div class="wrap">
+                  <div class="inner">
+                    <div id="canvas-seconds" class="clock-canvas"></div>
+
+                    <div class="text">
+                      <p class="val">0</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="type-seconds type-time">SECONDS</p>
             </div>
-            <button class="btn-match btn-live">Watch</button>
-          </div>
-          <div class="right-content club-item">
-            <img src="./images/chesea-club.png" alt="">
-            <span class="club-name">CHE</span>
-          </div>
-        </div>
-        <div class="list-top-match-item">
-          <div class="left-content club-item">
-            <img src="./images/mu-club.png" alt="">
-            <span class="club-name">ARS</span>
-          </div>
-          <div class="middle-content">
-            <div class="league-info">
-              <span class="league-name">Premier League</span>
-              <span class="league-time">Jun 8, 20:45</span>
-            </div>
-            <button class="btn-match btn-default">Watch</button>
-          </div>
-          <div class="right-content club-item">
-            <img src="./images/chesea-club.png" alt="">
-            <span class="club-name">CHE</span>
-          </div>
-        </div>
-        <div class="list-top-match-item">
-          <div class="left-content club-item">
-            <img src="./images/mu-club.png" alt="">
-            <span class="club-name">ARS</span>
-          </div>
-          <div class="middle-content">
-            <div class="league-info">
-              <span class="league-name">Premier League</span>
-              <span class="league-time">Jun 8, 20:45</span>
-              <span class="text-live">LIVE NOW</span>
-            </div>
-            <button class="btn-match btn-live">Watch</button>
-          </div>
-          <div class="right-content club-item">
-            <img src="./images/chesea-club.png" alt="">
-            <span class="club-name">CHE</span>
-          </div>
-        </div>
-        <div class="list-top-match-item">
-          <div class="left-content club-item">
-            <img src="./images/mu-club.png" alt="">
-            <span class="club-name">ARS</span>
-          </div>
-          <div class="middle-content">
-            <div class="league-info">
-              <span class="league-name">Premier League</span>
-              <span class="league-time">Jun 8, 20:45</span>
-            </div>
-            <button class="btn-match btn-default">Watch</button>
-          </div>
-          <div class="right-content club-item">
-            <img src="./images/chesea-club.png" alt="">
-            <span class="club-name">CHE</span>
           </div>
         </div>
       </div>
-      <div class="dash-wrapper">
-        <img src="./images/dash-horizontal.png" class="dash-horizontal" alt="">
+      <div class="timeline-wrapper">
+        <div class="timeline-item">
+          <span class="time-label">15/09</span>
+          <div class="icon-square-wrapper">
+            <span class="icon-square"></span>
+            <hr class="dash">
+          </div>
+          <div class="timeline-detail">
+            Discount 20%
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="time-label">25/10</span>
+          <div class="icon-square-wrapper">
+            <span class="icon-square"></span>
+            <hr class="dash">
+          </div>
+          <div class="timeline-detail">
+            Discount 20%
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="time-label">05/11</span>
+          <div class="icon-square-wrapper">
+            <span class="icon-square"></span>
+            <hr class="dash">
+          </div>
+          <div class="timeline-detail">
+            Discount 20%
+          </div>
+        </div>
+        <div class="timeline-item">
+          <span class="time-label">20/11</span>
+          <div class="icon-square-wrapper">
+            <span class="icon-square"></span>
+            <hr class="dash">
+          </div>
+          <div class="timeline-detail">
+            Start WC
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="football-page-wrapper">
+    <!-- Top Matches Today -->
+    <div class="list-top-match-today-wrapper">
+      <div class="container">
+        <div class="list-top-match-today-content">
+          <h3 class="top-match-title">Top Matches Today</h3>
+          <div class="list-top-match-today">
+            <div class="list-top-match-item">
+              <div class="club-item club-1">
+                <img src="./images/mu-club.png" alt="" class="club-image">
+                <span class="club-name">Liverpool</span>
+              </div>
+              <img src="./images/dash-top-match.png" class="dash-top-match" />
+              <div class="club-item club-2">
+                <span class="club-name">Man United</span>
+                <img src="./images/chesea-club.png" alt="" class="club-image">
+              </div>
+              <div class="league-info">
+                <img src="./images/league.png" alt="" class="league-image">
+                <span class="league-name">Premier League</span>
+              </div>
+              <span class="match-time">Jun 8, 20:45</span>
+              <button class="btn-top-match">Watch</button>
+            </div>
+            <div class="list-top-match-item">
+              <div class="club-item club-1">
+                <img src="./images/mu-club.png" alt="" class="club-image">
+                <span class="club-name">Liverpool</span>
+              </div>
+              <img src="./images/dash-top-match.png" class="dash-top-match" />
+              <div class="club-item club-2">
+                <span class="club-name">Man United</span>
+                <img src="./images/chesea-club.png" alt="" class="club-image">
+              </div>
+              <div class="league-info">
+                <img src="./images/league.png" alt="" class="league-image">
+                <span class="league-name">Premier League</span>
+              </div>
+              <span class="match-time">Jun 8, 20:45</span>
+              <button class="btn-top-match">Watch</button>
+            </div>
+            <div class="list-top-match-item">
+              <div class="club-item club-1">
+                <img src="./images/mu-club.png" alt="" class="club-image">
+                <span class="club-name">Liverpool</span>
+              </div>
+              <img src="./images/dash-top-match.png" class="dash-top-match" />
+              <div class="club-item club-2">
+                <span class="club-name">Man United</span>
+                <img src="./images/chesea-club.png" alt="" class="club-image">
+              </div>
+              <div class="league-info">
+                <img src="./images/league.png" alt="" class="league-image">
+                <span class="league-name">Premier League</span>
+              </div>
+              <span class="match-time">Jun 8, 20:45</span>
+              <button class="btn-top-match">Watch</button>
+            </div>
+            <div class="list-top-match-item">
+              <div class="club-item club-1">
+                <img src="./images/mu-club.png" alt="" class="club-image">
+                <span class="club-name">Liverpool</span>
+              </div>
+              <img src="./images/dash-top-match.png" class="dash-top-match" />
+              <div class="club-item club-2">
+                <span class="club-name">Man United</span>
+                <img src="./images/chesea-club.png" alt="" class="club-image">
+              </div>
+              <div class="league-info">
+                <img src="./images/league.png" alt="" class="league-image">
+                <span class="league-name">Premier League</span>
+              </div>
+              <span class="match-time">Jun 8, 20:45</span>
+              <button class="btn-top-match">Watch</button>
+            </div>
+            <div class="list-top-match-item">
+              <div class="club-item club-1">
+                <img src="./images/mu-club.png" alt="" class="club-image">
+                <span class="club-name">Liverpool</span>
+              </div>
+              <img src="./images/dash-top-match.png" class="dash-top-match" />
+              <div class="club-item club-2">
+                <span class="club-name">Man United</span>
+                <img src="./images/chesea-club.png" alt="" class="club-image">
+              </div>
+              <div class="league-info">
+                <img src="./images/league.png" alt="" class="league-image">
+                <span class="league-name">Premier League</span>
+              </div>
+              <span class="match-time">Jun 8, 20:45</span>
+              <button class="btn-top-match">Watch</button>
+            </div>
+            <div class="list-top-match-item">
+              <div class="club-item club-1">
+                <img src="./images/mu-club.png" alt="" class="club-image">
+                <span class="club-name">Liverpool</span>
+              </div>
+              <img src="./images/dash-top-match.png" class="dash-top-match" />
+              <div class="club-item club-2">
+                <span class="club-name">Man United</span>
+                <img src="./images/chesea-club.png" alt="" class="club-image">
+              </div>
+              <div class="league-info">
+                <img src="./images/league.png" alt="" class="league-image">
+                <span class="league-name">Premier League</span>
+              </div>
+              <span class="match-time">Jun 8, 20:45</span>
+              <button class="btn-top-match">Watch</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- Top Matches Today -->
+
+    <div class="list-group-wrapper">
+      <div class="container">
+        <div class="list-group">
+          <div class="group-item">
+            <span class="group-name">Group A</span>
+            <hr class="dash-solid">
+            <div class="list-country">
+              <div class="country-item">
+                <img src="./images/country-1.png" alt="">
+                <span class="country-name">Qatar</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-2.png" alt="">
+                <span class="country-name">Ecuador</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-3.png" alt="">
+                <span class="country-name">Senegal</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-4.png" alt="">
+                <span class="country-name">Netherlands</span>
+              </div>
+            </div>
+            <img src="./images/dash-horizontal.png" alt="" class="dash-horizontal">
+          </div>
+          <div class="group-item">
+            <span class="group-name">Group B</span>
+            <hr class="dash-solid">
+            <div class="list-country">
+              <div class="country-item">
+                <img src="./images/country-1.png" alt="">
+                <span class="country-name">Qatar</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-2.png" alt="">
+                <span class="country-name">Ecuador</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-3.png" alt="">
+                <span class="country-name">Senegal</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-4.png" alt="">
+                <span class="country-name">Netherlands</span>
+              </div>
+            </div>
+            <img src="./images/dash-horizontal.png" alt="" class="dash-horizontal">
+          </div>
+          <div class="group-item">
+            <span class="group-name">Group C</span>
+            <hr class="dash-solid">
+            <div class="list-country">
+              <div class="country-item">
+                <img src="./images/country-1.png" alt="">
+                <span class="country-name">Qatar</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-2.png" alt="">
+                <span class="country-name">Ecuador</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-3.png" alt="">
+                <span class="country-name">Senegal</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-4.png" alt="">
+                <span class="country-name">Netherlands</span>
+              </div>
+            </div>
+            <img src="./images/dash-horizontal.png" alt="" class="dash-horizontal">
+          </div>
+          <div class="group-item">
+            <span class="group-name">Group D</span>
+            <hr class="dash-solid">
+            <div class="list-country">
+              <div class="country-item">
+                <img src="./images/country-1.png" alt="">
+                <span class="country-name">Qatar</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-2.png" alt="">
+                <span class="country-name">Ecuador</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-3.png" alt="">
+                <span class="country-name">Senegal</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-4.png" alt="">
+                <span class="country-name">Netherlands</span>
+              </div>
+            </div>
+            <img src="./images/dash-horizontal.png" alt="" class="dash-horizontal">
+          </div>
+          <div class="group-item">
+            <span class="group-name">Group E</span>
+            <hr class="dash-solid">
+            <div class="list-country">
+              <div class="country-item">
+                <img src="./images/country-1.png" alt="">
+                <span class="country-name">Qatar</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-2.png" alt="">
+                <span class="country-name">Ecuador</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-3.png" alt="">
+                <span class="country-name">Senegal</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-4.png" alt="">
+                <span class="country-name">Netherlands</span>
+              </div>
+            </div>
+            <img src="./images/dash-horizontal.png" alt="" class="dash-horizontal">
+          </div>
+
+          <div class="group-item">
+            <span class="group-name">Group F</span>
+            <hr class="dash-solid">
+            <div class="list-country">
+              <div class="country-item">
+                <img src="./images/country-1.png" alt="">
+                <span class="country-name">Qatar</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-2.png" alt="">
+                <span class="country-name">Ecuador</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-3.png" alt="">
+                <span class="country-name">Senegal</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-4.png" alt="">
+                <span class="country-name">Netherlands</span>
+              </div>
+            </div>
+            <img src="./images/dash-horizontal.png" alt="" class="dash-horizontal">
+          </div>
+
+          <div class="group-item">
+            <span class="group-name">Group G</span>
+            <hr class="dash-solid">
+            <div class="list-country">
+              <div class="country-item">
+                <img src="./images/country-1.png" alt="">
+                <span class="country-name">Qatar</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-2.png" alt="">
+                <span class="country-name">Ecuador</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-3.png" alt="">
+                <span class="country-name">Senegal</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-4.png" alt="">
+                <span class="country-name">Netherlands</span>
+              </div>
+            </div>
+            <img src="./images/dash-horizontal.png" alt="" class="dash-horizontal">
+          </div>
+
+          <div class="group-item">
+            <span class="group-name">Group H</span>
+            <hr class="dash-solid">
+            <div class="list-country">
+              <div class="country-item">
+                <img src="./images/country-1.png" alt="">
+                <span class="country-name">Qatar</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-2.png" alt="">
+                <span class="country-name">Ecuador</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-3.png" alt="">
+                <span class="country-name">Senegal</span>
+              </div>
+              <div class="country-item">
+                <img src="./images/country-4.png" alt="">
+                <span class="country-name">Netherlands</span>
+              </div>
+            </div>
+            <img src="./images/dash-horizontal.png" alt="" class="dash-horizontal">
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="container">
       <div class="main-content-page-football">
         <div class="left-content">
@@ -1224,677 +1510,37 @@
             worldcup content
           </div>
         </div>
-        <div class="right-content">
-          <div class="top-player__wrapper">
-            <h3 class="top-player__title">Top Players</h3>
-            <span class="top-player__description">Best rated players from recent matches</span>
-            <div class="top-player__list-player">
-              <div class="player-item">
-                <div class="player-info">
-                  <span class="number">1</span>
-                  <div class="player-detail">
-                    <div class="player-image-wrapper">
-                      <img src="./images/player.png" alt="" class="player-image">
-                      <img src="./images/mu-club.png" alt="" class="club-image">
-                    </div>
-                    <div class="player-description">
-                      <a href="#" target="">
-                        <span class="player-name">Cody Gakpo</span>
-                      </a>
-                      <span class="club-name">Liverpool</span>
-                    </div>
-                  </div>
-                </div>
-                <span class="score">9.8</span>
-              </div>
-              <div class="player-item">
-                <div class="player-info">
-                  <span class="number">2</span>
-                  <div class="player-detail">
-                    <div class="player-image-wrapper">
-                      <img src="./images/player.png" alt="" class="player-image">
-                      <img src="./images/mu-club.png" alt="" class="club-image">
-                    </div>
-                    <div class="player-description">
-                      <a href="#" target="">
-                        <span class="player-name">Cody Gakpo</span>
-                      </a>
-                      <span class="club-name">Liverpool</span>
-                    </div>
-                  </div>
-                </div>
-                <span class="score">9.8</span>
-              </div>
-              <div class="player-item">
-                <div class="player-info">
-                  <span class="number">3</span>
-                  <div class="player-detail">
-                    <div class="player-image-wrapper">
-                      <img src="./images/player.png" alt="" class="player-image">
-                      <img src="./images/mu-club.png" alt="" class="club-image">
-                    </div>
-                    <div class="player-description">
-                      <a href="#" target="">
-                        <span class="player-name">Cody Gakpo</span>
-                      </a>
-                      <span class="club-name">Liverpool</span>
-                    </div>
-                  </div>
-                </div>
-                <span class="score">9.8</span>
-              </div>
-              <div class="player-item">
-                <div class="player-info">
-                  <span class="number">4</span>
-                  <div class="player-detail">
-                    <div class="player-image-wrapper">
-                      <img src="./images/player.png" alt="" class="player-image">
-                      <img src="./images/mu-club.png" alt="" class="club-image">
-                    </div>
-                    <div class="player-description">
-                      <a href="#" target="">
-                        <span class="player-name">Cody Gakpo</span>
-                      </a>
-                      <span class="club-name">Liverpool</span>
-                    </div>
-                  </div>
-                </div>
-                <span class="score">9.8</span>
-              </div>
-              <div class="player-item">
-                <div class="player-info">
-                  <span class="number">5</span>
-                  <div class="player-detail">
-                    <div class="player-image-wrapper">
-                      <img src="./images/player.png" alt="" class="player-image">
-                      <img src="./images/mu-club.png" alt="" class="club-image">
-                    </div>
-                    <div class="player-description">
-                      <a href="#" target="">
-                        <span class="player-name">Cody Gakpo</span>
-                      </a>
-                      <span class="club-name">Liverpool</span>
-                    </div>
-                  </div>
-                </div>
-                <span class="score">9.8</span>
-              </div>
-              <div class="player-item">
-                <div class="player-info">
-                  <span class="number">6</span>
-                  <div class="player-detail">
-                    <div class="player-image-wrapper">
-                      <img src="./images/player.png" alt="" class="player-image">
-                      <img src="./images/mu-club.png" alt="" class="club-image">
-                    </div>
-                    <div class="player-description">
-                      <a href="#" target="">
-                        <span class="player-name">Cody Gakpo</span>
-                      </a>
-                      <span class="club-name">Liverpool</span>
-                    </div>
-                  </div>
-                </div>
-                <span class="score">9.8</span>
-              </div>
-              <div class="player-item">
-                <div class="player-info">
-                  <span class="number">7</span>
-                  <div class="player-detail">
-                    <div class="player-image-wrapper">
-                      <img src="./images/player.png" alt="" class="player-image">
-                      <img src="./images/mu-club.png" alt="" class="club-image">
-                    </div>
-                    <div class="player-description">
-                      <a href="#" target="">
-                        <span class="player-name">Cody Gakpo</span>
-                      </a>
-                      <span class="club-name">Liverpool</span>
-                    </div>
-                  </div>
-                </div>
-                <span class="score">9.8</span>
-              </div>
-              <div class="player-item">
-                <div class="player-info">
-                  <span class="number">8</span>
-                  <div class="player-detail">
-                    <div class="player-image-wrapper">
-                      <img src="./images/player.png" alt="" class="player-image">
-                      <img src="./images/mu-club.png" alt="" class="club-image">
-                    </div>
-                    <div class="player-description">
-                      <a href="#" target="">
-                        <span class="player-name">Cody Gakpo</span>
-                      </a>
-                      <span class="club-name">Liverpool</span>
-                    </div>
-                  </div>
-                </div>
-                <span class="score">9.8</span>
-              </div>
-              <div class="player-item">
-                <div class="player-info">
-                  <span class="number">9</span>
-                  <div class="player-detail">
-                    <div class="player-image-wrapper">
-                      <img src="./images/player.png" alt="" class="player-image">
-                      <img src="./images/mu-club.png" alt="" class="club-image">
-                    </div>
-                    <div class="player-description">
-                      <a href="#" target="">
-                        <span class="player-name">Cody Gakpo</span>
-                      </a>
-                      <span class="club-name">Liverpool</span>
-                    </div>
-                  </div>
-                </div>
-                <span class="score">9.8</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="football-ranking">
-            <div class="football-ranking__header">
-              <div class="league-info">
-                <img src="./images/all.png" alt="" class="league-image" id="league-ranking-image" />
-                <span class="league-name" id="league-ranking-name">All League</span>
-              </div>
-              <button class="btn-league-dropdown" id="btn-league-ranking-dropdown">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_1_6031)">
-                    <path d="M8 10L12 14L16 10" stroke="#1A202C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_1_6031">
-                      <rect width="24" height="24" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </button>
-              <div class="list-league-ranking-dropdown">
-                <button class="league-ranking-item">
-                  <img src="./images/all.png" alt="" />
-                  <span>All League</span>
-                </button>
-                <button class="league-ranking-item">
-                  <img src="./images/champions.png" alt="" />
-                  <span>Champions League</span>
-                </button>
-                <button class="league-ranking-item">
-                  <img src="./images/europa.png" alt="" />
-                  <span>UEFA Europa League</span>
-                </button>
-
-                <button class="league-ranking-item">
-                  <img src="./images/premier.png" alt="" />
-                  <span>Premier League</span>
-                </button>
-
-                <button class="league-ranking-item">
-                  <img src="./images/la-liga.png" alt="" />
-                  <span>La Liga</span>
-                </button>
-
-                <button class="league-ranking-item">
-                  <img src="./images/bundesliga.png" alt="" />
-                  <span>Bundesliga</span>
-                </button>
-
-                <button class="league-ranking-item">
-                  <img src="./images/seria.png" alt="" />
-                  <span>Serie A</span>
-                </button>
-
-                <button class="league-ranking-item">
-                  <img src="./images/ligue-1.png" alt="" />
-                  <span>Ligue 1</span>
-                </button>
-
-                <button class="league-ranking-item">
-                  <img src="./images/worldcup.png" alt="" />
-                  <span>World Cup</span>
-                </button>
-              </div>
-            </div>
-            <div class="football-ranking__table">
-              <div class="table-heading">
-                <div class="column-15 text-left">Pos</div>
-                <div class="column-55 text-left">Club</div>
-                <div class="column-10 text-center">PI</div>
-                <div class="column-10 text-center">GD</div>
-                <div class="column-10 text-center">Pts</div>
-              </div>
-              <div class="table-row">
-                <div class="column-15 text-center">
-                  <div class="pos-wrapper">
-                    <span class="text-pos">1</span>
-                    <span class="arrow-up">
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 3L2.25 7.5H9.75L6 3Z" fill="#38A169" />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-                <div class="column-55 text-left">
-                  <div class="club-info">
-                    <img src="./images/mu-club.png" alt="">
-                    <span class="club-name">Man City</span>
-                  </div>
-                </div>
-                <div class="column-10 text-center">2</div>
-                <div class="column-10 text-center">+6</div>
-                <div class="column-10 text-center">6</div>
-              </div>
-              <div class="table-row">
-                <div class="column-15 text-center">
-                  <div class="pos-wrapper">
-                    <span class="text-pos">2</span>
-                    <span class="arrow-down">
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 9L2.25 4.5H9.75L6 9Z" fill="#E53E3E" />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-                <div class="column-55 text-left">
-                  <div class="club-info">
-                    <img src="./images/mu-club.png" alt="">
-                    <span class="club-name">Man City</span>
-                  </div>
-                </div>
-                <div class="column-10 text-center">2</div>
-                <div class="column-10 text-center">+6</div>
-                <div class="column-10 text-center">6</div>
-              </div>
-              <div class="table-row">
-                <div class="column-15 text-center">
-                  <div class="pos-wrapper">
-                    <span class="text-pos">3</span>
-                    <span class="dot">
-                      <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="6" height="6" rx="3" fill="#A0AEC0" />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-                <div class="column-55 text-left">
-                  <div class="club-info">
-                    <img src="./images/mu-club.png" alt="">
-                    <span class="club-name">Man City</span>
-                  </div>
-                </div>
-                <div class="column-10 text-center">2</div>
-                <div class="column-10 text-center">+6</div>
-                <div class="column-10 text-center">6</div>
-              </div>
-              <div class="table-row">
-                <div class="column-15 text-center">
-                  <div class="pos-wrapper">
-                    <span class="text-pos">4</span>
-                    <span class="arrow-up">
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 3L2.25 7.5H9.75L6 3Z" fill="#38A169" />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-                <div class="column-55 text-left">
-                  <div class="club-info">
-                    <img src="./images/mu-club.png" alt="">
-                    <span class="club-name">Man City</span>
-                  </div>
-                </div>
-                <div class="column-10 text-center">2</div>
-                <div class="column-10 text-center">+6</div>
-                <div class="column-10 text-center">6</div>
-              </div>
-              <div class="table-row">
-                <div class="column-15 text-center">
-                  <div class="pos-wrapper">
-                    <span class="text-pos">5</span>
-                    <span class="arrow-down">
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 9L2.25 4.5H9.75L6 9Z" fill="#E53E3E" />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-                <div class="column-55 text-left">
-                  <div class="club-info">
-                    <img src="./images/mu-club.png" alt="">
-                    <span class="club-name">Man City</span>
-                  </div>
-                </div>
-                <div class="column-10 text-center">2</div>
-                <div class="column-10 text-center">+6</div>
-                <div class="column-10 text-center">6</div>
-              </div>
-              <div class="table-row">
-                <div class="column-15 text-center">
-                  <div class="pos-wrapper">
-                    <span class="text-pos">6</span>
-                    <span class="dot">
-                      <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="6" height="6" rx="3" fill="#A0AEC0" />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-                <div class="column-55 text-left">
-                  <div class="club-info">
-                    <img src="./images/mu-club.png" alt="">
-                    <span class="club-name">Man City</span>
-                  </div>
-                </div>
-                <div class="column-10 text-center">2</div>
-                <div class="column-10 text-center">+6</div>
-                <div class="column-10 text-center">6</div>
-              </div>
-              <div class="table-row">
-                <div class="column-15 text-center">
-                  <div class="pos-wrapper">
-                    <span class="text-pos">5</span>
-                    <span class="arrow-down">
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 9L2.25 4.5H9.75L6 9Z" fill="#E53E3E" />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-                <div class="column-55 text-left">
-                  <div class="club-info">
-                    <img src="./images/mu-club.png" alt="">
-                    <span class="club-name">Man City</span>
-                  </div>
-                </div>
-                <div class="column-10 text-center">2</div>
-                <div class="column-10 text-center">+6</div>
-                <div class="column-10 text-center">6</div>
-              </div>
-              <div class="table-row">
-                <div class="column-15 text-center">
-                  <div class="pos-wrapper">
-                    <span class="text-pos">6</span>
-                    <span class="dot">
-                      <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="6" height="6" rx="3" fill="#A0AEC0" />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-                <div class="column-55 text-left">
-                  <div class="club-info">
-                    <img src="./images/mu-club.png" alt="">
-                    <span class="club-name">Man City</span>
-                  </div>
-                </div>
-                <div class="column-10 text-center">2</div>
-                <div class="column-10 text-center">+6</div>
-                <div class="column-10 text-center">6</div>
-              </div>
-              <div class="table-row">
-                <div class="column-15 text-center">
-                  <div class="pos-wrapper">
-                    <span class="text-pos">5</span>
-                    <span class="arrow-down">
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 9L2.25 4.5H9.75L6 9Z" fill="#E53E3E" />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-                <div class="column-55 text-left">
-                  <div class="club-info">
-                    <img src="./images/mu-club.png" alt="">
-                    <span class="club-name">Man City</span>
-                  </div>
-                </div>
-                <div class="column-10 text-center">2</div>
-                <div class="column-10 text-center">+6</div>
-                <div class="column-10 text-center">6</div>
-              </div>
-              <div class="table-row">
-                <div class="column-15 text-center">
-                  <div class="pos-wrapper">
-                    <span class="text-pos">6</span>
-                    <span class="dot">
-                      <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="6" height="6" rx="3" fill="#A0AEC0" />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-                <div class="column-55 text-left">
-                  <div class="club-info">
-                    <img src="./images/mu-club.png" alt="">
-                    <span class="club-name">Man City</span>
-                  </div>
-                </div>
-                <div class="column-10 text-center">2</div>
-                <div class="column-10 text-center">+6</div>
-                <div class="column-10 text-center">6</div>
-              </div>
-              <div class="table-row">
-                <div class="column-15 text-center">
-                  <div class="pos-wrapper">
-                    <span class="text-pos">5</span>
-                    <span class="arrow-down">
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 9L2.25 4.5H9.75L6 9Z" fill="#E53E3E" />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-                <div class="column-55 text-left">
-                  <div class="club-info">
-                    <img src="./images/mu-club.png" alt="">
-                    <span class="club-name">Man City</span>
-                  </div>
-                </div>
-                <div class="column-10 text-center">2</div>
-                <div class="column-10 text-center">+6</div>
-                <div class="column-10 text-center">6</div>
-              </div>
-              <div class="table-row">
-                <div class="column-15 text-center">
-                  <div class="pos-wrapper">
-                    <span class="text-pos">6</span>
-                    <span class="dot">
-                      <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="6" height="6" rx="3" fill="#A0AEC0" />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-                <div class="column-55 text-left">
-                  <div class="club-info">
-                    <img src="./images/mu-club.png" alt="">
-                    <span class="club-name">Man City</span>
-                  </div>
-                </div>
-                <div class="column-10 text-center">2</div>
-                <div class="column-10 text-center">+6</div>
-                <div class="column-10 text-center">6</div>
-              </div>
-              <div class="table-row">
-                <div class="column-15 text-center">
-                  <div class="pos-wrapper">
-                    <span class="text-pos">5</span>
-                    <span class="arrow-down">
-                      <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6 9L2.25 4.5H9.75L6 9Z" fill="#E53E3E" />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-                <div class="column-55 text-left">
-                  <div class="club-info">
-                    <img src="./images/mu-club.png" alt="">
-                    <span class="club-name">Man City</span>
-                  </div>
-                </div>
-                <div class="column-10 text-center">2</div>
-                <div class="column-10 text-center">+6</div>
-                <div class="column-10 text-center">6</div>
-              </div>
-              <div class="table-row">
-                <div class="column-15 text-center">
-                  <div class="pos-wrapper">
-                    <span class="text-pos">6</span>
-                    <span class="dot">
-                      <svg width="6" height="6" viewBox="0 0 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="6" height="6" rx="3" fill="#A0AEC0" />
-                      </svg>
-                    </span>
-                  </div>
-                </div>
-                <div class="column-55 text-left">
-                  <div class="club-info">
-                    <img src="./images/mu-club.png" alt="">
-                    <span class="club-name">Man City</span>
-                  </div>
-                </div>
-                <div class="column-10 text-center">2</div>
-                <div class="column-10 text-center">+6</div>
-                <div class="column-10 text-center">6</div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <div class="dash-wrapper">
-        <img src="./images/dash-horizontal.png" class="dash-horizontal" alt="">
       </div>
     </div>
-    <!-- q-and-a-block -->
-    <div class="qa-block-wrapper">
-      <div class="container">
-        <div class="qa-content-wrapper">
-          <div class="qa-content">
-            <div class="qa-item">
-              <h4 class="qa-title">What ‘s 2sport.tv</h4>
-              <p class="qa-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                doloremque laudantium,
-                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
-                sunt explicabo.
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                dolores eos
-                qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                consectetur,
-                adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
-                quaerat voluptatem.
-                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-                aliquid ex ea commodi
-                consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-                consequatur,
-                vel illum qui dolorem eum
-                fugiat quo voluptas nulla pariatur?
-              </p>
-            </div>
-            <div class="qa-item">
-              <h4 class="qa-title">What ‘s 2sport.tv</h4>
-              <p class="qa-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                doloremque laudantium,
-                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
-                sunt explicabo.
-                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                dolores eos
-                qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-                consectetur,
-                adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
-                quaerat voluptatem.
-                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-                aliquid ex ea commodi
-                consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-                consequatur,
-                vel illum qui dolorem eum
-                fugiat quo voluptas nulla pariatur?
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="qa-image">
-          <img src="./images/qa-image.png" alt="">
-        </div>
-      </div>
-    </div>
-    <!-- q-and-a-block -->
-
-
-    <!-- news -->
-    <div class="news-block-wrapper">
-      <div class="container">
-        <h3 class="page-title">News</h3>
-        <div class="list-news">
-          <a href="#" target="">
-            <div class="news-item">
-              <img src="./images/news-image.png" class="news-image" alt="">
-              <div class="news-detail">
-                <span class="league-name">Premier League</span>
-                <h2 class="news-title">City hit four to see off bournemouth and make it two from two</h2>
-                <span class="time">10 hours ago</span>
-              </div>
-            </div>
-          </a>
-          <a href="#" target="">
-            <div class="news-item">
-              <img src="./images/news-4.png" class="news-image" alt="">
-              <div class="news-detail">
-                <span class="league-name">Premier League</span>
-                <h2 class="news-title">City hit four to see off bournemouth and make it two from two</h2>
-                <span class="time">10 hours ago</span>
-              </div>
-            </div>
-          </a>
-          <a href="#" target="">
-            <div class="news-item">
-              <img src="./images/news-3.png" class="news-image" alt="">
-              <div class="news-detail">
-                <span class="league-name">Premier League</span>
-                <h2 class="news-title">City hit four to see off bournemouth and make it two from two</h2>
-                <span class="time">10 hours ago</span>
-              </div>
-            </div>
-          </a>
-          <a href="#" target="">
-            <div class="news-item">
-              <img src="./images/news-2.png" class="news-image" alt="">
-              <div class="news-detail">
-                <span class="league-name">Premier League</span>
-                <h2 class="news-title">City hit four to see off bournemouth and make it two from two</h2>
-                <span class="time">10 hours ago</span>
-              </div>
-            </div>
-          </a>
-          <a href="#" target="">
-            <div class="news-item">
-              <img src="./images/news-4.png" class="news-image" alt="">
-              <div class="news-detail">
-                <span class="league-name">Premier League</span>
-                <h2 class="news-title">City hit four to see off bournemouth and make it two from two</h2>
-                <span class="time">10 hours ago</span>
-              </div>
-            </div>
-          </a>
-          <a href="#" target="">
-            <div class="news-item">
-              <img src="./images/news-image.png" class="news-image" alt="">
-              <div class="news-detail">
-                <span class="league-name">Premier League</span>
-                <h2 class="news-title">City hit four to see off bournemouth and make it two from two</h2>
-                <span class="time">10 hours ago</span>
-              </div>
-            </div>
-          </a>
-        </div>
-        <button class="btn-load-more">View all</button>
-      </div>
-    </div>
-    <!-- news -->
   </div>
   <?php include "templates/footer.php"; ?>
 </body>
+<script type="text/javascript">
+  $('document').ready(function() {
+    $('.countdown').final_countdown({
+      start: 1664064000,
+      end: 1666742399,
+      now: 1664064000,
+      seconds: {
+        borderColor: '#50FFEE',
+        borderWidth: '3'
+      },
+      minutes: {
+        borderColor: '#50FFEE',
+        borderWidth: '3'
+      },
+      hours: {
+        borderColor: '#50FFEE',
+        borderWidth: '3'
+      },
+      days: {
+        borderColor: '#50FFEE',
+        borderWidth: '3'
+      }
+    }, function() {
+      // call back when finish
+    });
+  });
+</script>
 
 </html>
