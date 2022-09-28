@@ -66,12 +66,6 @@ $(function () {
       },
     });
   });
-  $("#all-league-tabs").tabs({
-    active: 1,
-  });
-  $("#champions-league-tabs").tabs({
-    active: 1,
-  });
 });
 
 // =======HANDLE DATEPICKER FOR MOBILE ========

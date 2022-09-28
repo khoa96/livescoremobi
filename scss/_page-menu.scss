@@ -14,34 +14,26 @@
 }
 .main-header {
   width: 100%;
-  background-color: #313131;
+  background-color: #13B7A7;
 	.navbar-menu {
 		padding-bottom: 0px;
-    padding-left:86px;
 		@include mq(max_xs) {
 			overflow: scroll;
 		}
 		.navbar-nav {
       display: flex;
 			position: relative;
-      gap: 32px;
 			flex-direction: row;
-      background-color: #313131;
+      background-color: #13B7A7;
 			@include mq(max_xs) {
 				flex-direction: row;
 			}
 		}
 		li.nav-item {
       min-width: max-content;
-			transition: all 0.5s ease-in-out;
-			@include mq(max_xs) {
-				width: 130px;
-			}
 			&.active, &:hover {
 				a.nav-link {
-          padding: 12px 0px 8px 0px;
-          border-bottom: 4px solid #FDC400;
-          color: #FDC400;
+          background-color: #A52457;
 				}
 				.children-menu {
 					display: block;
@@ -52,9 +44,19 @@
 			}
 			a.nav-link {
         display: block;
-        min-width: max-content;
+        width: 100%;
+				height: 100%;
+				min-width: 130px;
+				max-width: 130px;
+				text-align: center;
+				padding: 14px 0px;
 				@include style-font(16px, #fff, 500);
-        padding: 12px 0px;
+
+				@include mq(max_md) {
+					min-width: 120px;
+				max-width: 120px;
+				padding: 12px 0px;
+				}
 
 				img {
 					width: 20%;
@@ -82,7 +84,7 @@
           display: flex;
           align-items: center;
           gap: 4px;
-					@include style-font(14px, #F91E4E, 400);
+					@include style-font(14px, #A52457, 400);
 					line-height: 31px;
 					text-decoration: none;
 					margin-bottom: 10px;
@@ -107,7 +109,7 @@
 					  		line-height: 31px;
 								text-decoration: none;
 								&:hover {
-									color: #F91E4E;
+									color: #A52457;
 								}
 							}
 						}
@@ -131,7 +133,7 @@
 			}
 			position: absolute;
 			top: 100%;
-			left: 12px;
+			left: 0;
 			background: #fff;
 			width: 100%;
 			z-index: 99;
@@ -151,7 +153,7 @@
         align-items: center;
       }
 			a.header-chil {
-				@include style-font(14px, #F91E4E, 400);
+				@include style-font(14px, #A52457, 400);
 				text-decoration: none;
 				margin-bottom: 10px;
 				display: flex;
@@ -174,7 +176,7 @@
 							line-height: 31px;
 							text-decoration: none;
 							&:hover {
-								color: #F91E4E;
+								color: #A52457;
 							}
 						}
 					}
