@@ -59,41 +59,40 @@
     display: none;
   }
 }
-.football-page-wrapper .main-content-page-football .left-content .calender-for-mobile {
+.football-page-wrapper .main-content-page-football .left-content .calender-wrapper {
   display: none;
   width: 100%;
   background: #FFFFFF;
   border: 1px solid #E9E6DC;
   border-radius: 4px;
   padding: 4px;
-  position: relative;
   flex-direction: column;
 }
 @media only screen and (max-width: 991px) {
-  .football-page-wrapper .main-content-page-football .left-content .calender-for-mobile {
+  .football-page-wrapper .main-content-page-football .left-content .calender-wrapper {
     order: 2;
     margin-top: 8px;
   }
 }
-.football-page-wrapper .main-content-page-football .left-content .calender-for-mobile #datepicker-mobile {
+.football-page-wrapper .main-content-page-football .left-content .calender-wrapper #datepicker-mobile {
   position: absolute;
-  top: 0;
-  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: auto;
   background-color: #fff;
   z-index: 99999;
 }
-.football-page-wrapper .main-content-page-football .left-content .calender-for-mobile .control-wrapper {
+.football-page-wrapper .main-content-page-football .left-content .calender-wrapper .control-wrapper {
   display: flex;
 }
-.football-page-wrapper .main-content-page-football .left-content .calender-for-mobile .time-detail {
+.football-page-wrapper .main-content-page-football .left-content .calender-wrapper .time-detail {
   flex-grow: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.football-page-wrapper .main-content-page-football .left-content .calender-for-mobile .btn-calender {
+.football-page-wrapper .main-content-page-football .left-content .calender-wrapper .btn-calender {
   display: flex;
   min-width: 32px;
   height: 32px;
@@ -102,30 +101,16 @@
   cursor: pointer;
   border: none;
   border-radius: 4px;
+  border: none;
   background-color: transparent;
 }
-.football-page-wrapper .main-content-page-football .left-content .calender-for-mobile .btn-calender:focus {
+.football-page-wrapper .main-content-page-football .left-content .calender-wrapper .btn-calender:focus {
   outline: none;
 }
-.football-page-wrapper .main-content-page-football .left-content .calender-for-mobile .btn-next,
-.football-page-wrapper .main-content-page-football .left-content .calender-for-mobile .btn-prev {
-  background-color: #EDF2F7;
-}
-.football-page-wrapper .main-content-page-football .left-content .calender-for-mobile .btn-next {
-  margin-right: 4px;
-}
-.football-page-wrapper .main-content-page-football .left-content .calender-for-mobile .btn-show {
-  background-color: #F91E4E;
-}
 @media only screen and (max-width: 991px) {
-  .football-page-wrapper .main-content-page-football .left-content .calender-for-mobile {
+  .football-page-wrapper .main-content-page-football .left-content .calender-wrapper {
     display: flex;
   }
-}
-.football-page-wrapper .main-content-page-football .left-content .calender-wrapper {
-  width: 100%;
-  height: auto;
-  position: relative;
 }
 .football-page-wrapper .main-content-page-football .left-content .left-sidebar-tabs {
   margin-top: 16px;
@@ -603,8 +588,50 @@
   width: calc(100% - 720px);
   padding-left: 32px;
   border-bottom: 1px solid #E1ECE6;
-  padding-top: 8px;
   cursor: pointer;
+}
+@media only screen and (max-width: 991px) {
+  .league-content-wrapper .date-picker-wrapper {
+    display: none;
+  }
+}
+.league-content-wrapper .date-picker-wrapper .calender-wrapper {
+  width: 100%;
+}
+.league-content-wrapper .date-picker-wrapper .calender-wrapper .datepicker-mobile {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  z-index: 99999;
+}
+.league-content-wrapper .date-picker-wrapper .calender-wrapper .control-wrapper {
+  display: flex;
+}
+.league-content-wrapper .date-picker-wrapper .calender-wrapper .time-detail {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.league-content-wrapper .date-picker-wrapper .calender-wrapper .btn-calender {
+  display: flex;
+  min-width: 32px;
+  height: 32px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+.league-content-wrapper .date-picker-wrapper .calender-wrapper .btn-calender:focus {
+  outline: none;
+}
+@media only screen and (max-width: 991px) {
+  .league-content-wrapper .date-picker-wrapper .calender-wrapper {
+    display: flex;
+  }
 }
 .league-content-wrapper .list-league-match {
   width: 100%;
@@ -796,6 +823,10 @@
   .league-content-wrapper .list-league-match .league-match-item .list-match .match-item .right-row .btn-watch {
     display: none;
   }
+}
+
+.league-content-wrapper {
+  position: relative;
 }
 
 /*# sourceMappingURL=football.css.map */

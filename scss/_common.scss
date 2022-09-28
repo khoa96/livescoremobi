@@ -809,6 +809,11 @@ p {
 	background: #fff;
 	overflow: hidden;
 	position: relative;
+	max-width: 300px;
+	padding: 12px 4px;
+	@include mq(max_md) {
+		max-width: 100%;
+	}
 }
 
 .ui-datepicker-header {

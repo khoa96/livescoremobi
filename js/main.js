@@ -27,7 +27,6 @@ $(function () {
     onSelect: function (date, datepicker) {
       if (date) {
         // handle select datetime here
-        alert("Selected Date: " + date);
       }
     },
   });
@@ -49,10 +48,10 @@ $(function () {
   }
   const date = new Date();
   $("#time-calender").text(formatDate());
-  $("#btn-show-calender").on("click", function (event) {
-    $("#datepicker-mobile").show();
-    $(".list-league-dropdown").hide();
-    $("#datepicker-mobile").datepicker({
+  $(".datepicker-mobile").hide()
+  $(".btn-calender").on("click", function (event) {
+    $(".datepicker-mobile").toggle()
+    $(".datepicker-mobile").datepicker({
       firstDay: 1,
       showOtherMonths: true,
       selectOtherMonths: true,
@@ -60,7 +59,6 @@ $(function () {
       onSelect: function (date, datepicker) {
         if (date) {
           // handle select datetime here
-          $("#time-calender").text(date);
           $("#datepicker-mobile").hide();
         }
       },

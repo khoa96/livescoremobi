@@ -2,7 +2,6 @@
 
 <body>
   <?php include "templates/header.php"; ?>
-  <?php include "templates/menu.php"; ?>
   <div class="news-page-wrapper">
     <div class="page-header">
       <div class="container">

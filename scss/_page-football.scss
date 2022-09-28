@@ -58,14 +58,13 @@
         }
       }
 
-      .calender-for-mobile {
+      .calender-wrapper {
         display: none;
         width: 100%;
         background: #FFFFFF;
         border: 1px solid #E9E6DC;
         border-radius: 4px;
         padding: 4px;
-        position: relative;
         flex-direction: column;
 
         @include mq(max_md) {
@@ -75,8 +74,8 @@
 
         #datepicker-mobile {
           position: absolute;
-          top: 0;
-          left: 0;
+          right: 0;
+          bottom: 0;
           width: 100%;
           height: auto;
           background-color: #fff;
@@ -104,35 +103,16 @@
           cursor: pointer;
           border: none;
           border-radius: 4px;
+          border: none;
           background-color: transparent;
 
           &:focus {
             outline: none;
           }
         }
-
-        .btn-next,
-        .btn-prev {
-          background-color: #EDF2F7;
-        }
-
-        .btn-next {
-          margin-right: 4px;
-        }
-
-        .btn-show {
-          background-color: #F91E4E;
-        }
-
         @include mq(max_md) {
           display: flex;
         }
-      }
-
-      .calender-wrapper {
-        width: 100%;
-        height: auto;
-        position: relative;
       }
 
       .left-sidebar-tabs {
@@ -681,8 +661,54 @@
     width: calc(100% - 720px);
     padding-left: 32px;
     border-bottom: 1px solid #E1ECE6;
-    padding-top: 8px;
     cursor: pointer;
+
+    @include mq(max_md) {
+      display: none;
+    }
+
+    .calender-wrapper {
+      width: 100%;
+      .datepicker-mobile {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: auto;
+        background-color: #fff;
+        z-index: 99999;
+      }
+
+
+      .control-wrapper {
+        display: flex;
+      }
+
+      .time-detail {
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .btn-calender {
+        display: flex;
+        min-width: 32px;
+        height: 32px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+
+        &:focus {
+          outline: none;
+        }
+      }
+      @include mq(max_md) {
+        display: flex;
+      }
+    }
+
   }
 
   .list-league-match {
@@ -894,4 +920,8 @@
       }
     }
   }
+}
+
+.league-content-wrapper {
+  position: relative;
 }

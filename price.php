@@ -2,12 +2,11 @@
 
 <body>
   <?php include "templates/header.php"; ?>
-  <?php include "templates/menu.php"; ?>
   <div class="page-header">
-      <div class="container">
-        <h3 class="title">Pricing</h3>
-      </div>
+    <div class="container">
+      <h3 class="title">Pricing</h3>
     </div>
+  </div>
   <div class="price-page-wrapper">
     <div class="container">
       <h3 class="title">Choose your Bizfootball plan</h3>

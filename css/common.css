@@ -745,6 +745,13 @@ p {
   background: #fff;
   overflow: hidden;
   position: relative;
+  max-width: 300px;
+  padding: 12px 4px;
+}
+@media only screen and (max-width: 991px) {
+  .calendar {
+    max-width: 100%;
+  }
 }
 
 .ui-datepicker-header {

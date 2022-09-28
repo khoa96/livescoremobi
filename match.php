@@ -2,7 +2,6 @@
 
 <body>
   <?php include "templates/header.php"; ?>
-  <?php include "templates/menu.php"; ?>
   <div class="page-wrapper">
   <div class="match-page-wrapper">
     <div class="match-live-wrapper">

@@ -1,6 +1,10 @@
 .account-page-wrapper {
-  padding-top: 46px;
+  padding-top: 32px;
   padding-bottom: 238px;
+}
+.account-page-wrapper .account-conntrol {
+  display: flex;
+  justify-content: flex-end;
 }
 @media only screen and (max-width: 991px) {
   .account-page-wrapper {
@@ -28,8 +32,9 @@
 .account-page-wrapper .account-header {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 24px;
 }
 @media only screen and (max-width: 991px) {
   .account-page-wrapper .account-header {
@@ -41,11 +46,13 @@
 .account-page-wrapper .user-info-wrapper {
   display: flex;
   align-items: center;
-  gap: 32px;
+  gap: 16px;
+  flex-direction: column;
+  justify-content: center;
 }
 @media only screen and (max-width: 991px) {
   .account-page-wrapper .user-info-wrapper {
-    gap: 16px;
+    gap: 12px;
   }
 }
 .account-page-wrapper .user-info-wrapper .btn-upload {
@@ -60,7 +67,7 @@
   transition: 0.2s;
   cursor: pointer;
   overflow: hidden;
-  background-color: #EDF2F7;
+  background-color: #13B7A7;
 }
 @media only screen and (max-width: 991px) {
   .account-page-wrapper .user-info-wrapper .btn-upload {
@@ -93,6 +100,7 @@
   font-size: 24px;
   line-height: 36px;
   color: #1A202C;
+  text-align: center;
 }
 @media only screen and (max-width: 991px) {
   .account-page-wrapper .user-info-wrapper .info-detail .username {
@@ -115,7 +123,7 @@
 }
 .account-page-wrapper .user-info-wrapper .info-detail .text-link {
   text-decoration: none;
-  color: #F91E4E;
+  color: #A52457;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -149,13 +157,16 @@
     margin-left: 96px;
   }
 }
+.account-page-wrapper .main-account-content {
+  display: flex;
+  justify-content: center;
+}
 .account-page-wrapper .transaction-wrapper {
-  margin-left: 176px;
   background: #FFFFFF;
   border: 1px solid #E2E8F0;
   padding: 24px;
   min-width: 1096px;
-  max-width: auto;
+  max-width: 1096px;
 }
 @media only screen and (max-width: 991px) {
   .account-page-wrapper .transaction-wrapper {
@@ -183,9 +194,7 @@
 }
 .account-page-wrapper .transaction-wrapper .list-transaction {
   width: 100%;
-  margin-right: 76px;
   overflow-x: scroll;
-  max-width: 1000%;
 }
 @media only screen and (max-width: 991px) {
   .account-page-wrapper .transaction-wrapper .list-transaction {
@@ -274,7 +283,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  background-color: #FDC400;
+  background-color: #A52457;
   color: white;
   font-family: "Poppins";
 }
