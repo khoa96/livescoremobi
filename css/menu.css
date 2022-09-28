@@ -3,11 +3,10 @@
 ----------------------------------------------------------- */
 .main-header {
   width: 100%;
-  background-color: #313131;
+  background-color: #13B7A7;
 }
 .main-header .navbar-menu {
   padding-bottom: 0px;
-  padding-left: 86px;
 }
 @media only screen and (max-width: 575px) {
   .main-header .navbar-menu {
@@ -17,9 +16,8 @@
 .main-header .navbar-menu .navbar-nav {
   display: flex;
   position: relative;
-  gap: 32px;
   flex-direction: row;
-  background-color: #313131;
+  background-color: #13B7A7;
 }
 @media only screen and (max-width: 575px) {
   .main-header .navbar-menu .navbar-nav {
@@ -28,17 +26,9 @@
 }
 .main-header .navbar-menu li.nav-item {
   min-width: max-content;
-  transition: all 0.5s ease-in-out;
-}
-@media only screen and (max-width: 575px) {
-  .main-header .navbar-menu li.nav-item {
-    width: 130px;
-  }
 }
 .main-header .navbar-menu li.nav-item.active a.nav-link, .main-header .navbar-menu li.nav-item:hover a.nav-link {
-  padding: 12px 0px 8px 0px;
-  border-bottom: 4px solid #FDC400;
-  color: #FDC400;
+  background-color: #A52457;
 }
 .main-header .navbar-menu li.nav-item.active .children-menu, .main-header .navbar-menu li.nav-item:hover .children-menu {
   display: block;
@@ -50,11 +40,22 @@
 }
 .main-header .navbar-menu li.nav-item a.nav-link {
   display: block;
-  min-width: max-content;
+  width: 100%;
+  height: 100%;
+  min-width: 130px;
+  max-width: 130px;
+  text-align: center;
+  padding: 14px 0px;
   font-size: 16px;
   color: #fff;
   font-weight: 500;
-  padding: 12px 0px;
+}
+@media only screen and (max-width: 991px) {
+  .main-header .navbar-menu li.nav-item a.nav-link {
+    min-width: 120px;
+    max-width: 120px;
+    padding: 12px 0px;
+  }
 }
 .main-header .navbar-menu li.nav-item a.nav-link img {
   width: 20%;
@@ -84,7 +85,7 @@
   align-items: center;
   gap: 4px;
   font-size: 14px;
-  color: #F91E4E;
+  color: #A52457;
   font-weight: 400;
   line-height: 31px;
   text-decoration: none;
@@ -116,7 +117,7 @@
   text-decoration: none;
 }
 .main-header .navbar-menu li.nav-item .children-menu .chilren-item ul.mega-menu__menu li a:hover {
-  color: #F91E4E;
+  color: #A52457;
 }
 .main-header .menu-block {
   position: relative;
@@ -131,7 +132,7 @@
   display: none;
   position: absolute;
   top: 100%;
-  left: 12px;
+  left: 0;
   background: #fff;
   width: 100%;
   z-index: 99;
@@ -158,7 +159,7 @@
 }
 .main-header .block-sub-menu .children-menu a.header-chil {
   font-size: 14px;
-  color: #F91E4E;
+  color: #A52457;
   font-weight: 400;
   text-decoration: none;
   margin-bottom: 10px;
@@ -188,7 +189,7 @@
   text-decoration: none;
 }
 .main-header .block-sub-menu .children-menu .chilren-item ul.mega-menu__menu li a:hover {
-  color: #F91E4E;
+  color: #A52457;
 }
 
 .mega-menu__grid {

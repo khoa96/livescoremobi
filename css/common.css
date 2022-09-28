@@ -478,9 +478,16 @@ p {
   font-size: 14px;
   line-height: 21px;
   color: #1A202C;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
 }
 .list-top-match-today-wrapper .list-top-match-item .club-2 {
   justify-content: flex-end;
+}
+.list-top-match-today-wrapper .list-top-match-item .club-2 .club-name {
+  direction: rtl;
 }
 .list-top-match-today-wrapper .list-top-match-item .dash-top-match {
   display: block;
@@ -509,6 +516,10 @@ p {
   font-size: 12px;
   line-height: 18px;
   color: #1A202C;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100px;
 }
 .list-top-match-today-wrapper .list-top-match-item .match-time {
   font-style: normal;
