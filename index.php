@@ -112,6 +112,7 @@
         </div>
       </div>
     </div>
+    <img src="./images/ghost.png" alt="" class="ghost-image">
   </div>
   <?php include "templates/menu.php"; ?>
   <div class="football-page-wrapper">

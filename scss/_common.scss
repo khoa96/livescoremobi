@@ -1056,12 +1056,29 @@ p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding: 36px 0px;
+	position: relative;
 
 	@include mq(max_md) {
 		width: 100%;
 		min-height: 470px;
 	}
 
+
+	.ghost-image {
+		position: absolute;
+		bottom: -40px;
+		right: 0;
+		display: block;
+		width: 392px;
+		height: 392px;
+		z-index: 99999;
+		object-fit: cover;
+
+
+		@include mq(max_md) {
+			display: none;
+		}
+	}
 	.countdown-title {
 		font-style: normal;
 		font-weight: 600;
