@@ -83,11 +83,11 @@
 }
 .header .nav-link:hover {
   color: #A52457;
-  border-bottom: 3px solid #A52457;
+  border-bottom: 3px solid #13B7A7;
 }
 .header .link-active a {
   color: #A52457;
-  border-bottom: 3px solid #A52457;
+  border-bottom: 3px solid #13B7A7;
 }
 .header .list-control {
   display: flex;

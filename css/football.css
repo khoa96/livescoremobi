@@ -14,7 +14,8 @@
 @media only screen and (max-width: 991px) {
   .football-page-wrapper .main-content-page-football {
     flex-direction: column;
-    margin-top: 24px;
+    margin-top: 0;
+    background-color: #fff;
   }
 }
 .football-page-wrapper .main-content-page-football .left-content {
@@ -132,6 +133,12 @@
   background: #FFFFFF;
   border: 1px solid #E9E6DC;
   border-radius: 4px;
+  border: 1px solid red;
+}
+@media only screen and (max-width: 991px) {
+  .football-page-wrapper .main-content-page-football .left-content .left-sidebar-mobile {
+    display: none !important;
+  }
 }
 .football-page-wrapper .main-content-page-football .left-content .left-sidebar-mobile .league-info {
   display: flex;
@@ -274,6 +281,9 @@
   .football-page-wrapper .main-content-page-football .middle-content {
     padding: 16px;
     width: 100%;
+    background: #fff;
+    border: none;
+    padding-top: 0;
   }
 }
 .football-page-wrapper .main-content-page-football .middle-content .sub-tabs-nav {
@@ -408,7 +418,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 60px;
+  min-width: 30%;
+  border: 1px solid red;
 }
 .football-page-wrapper .main-content-page-football .list-league .league-item .list-timeline .timeline-item .time-wrapper .text-time {
   font-style: normal;
@@ -815,6 +826,7 @@
   color: #FFFFFF;
   background-color: #A52457;
   cursor: pointer;
+  font-family: "Poppins";
 }
 .league-content-wrapper .list-league-match .league-match-item .list-match .match-item .right-row .btn-watch:hover {
   outline: none;

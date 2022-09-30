@@ -222,7 +222,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #48BB78;
+  color: #13B7A7;
 }
 @media only screen and (max-width: 991px) {
   .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(3) .price-info .save-label, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(4) .price-info .save-label, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(5) .price-info .save-label, .price-page-wrapper .price-table-wrapper .table-heading .table-column:nth-of-type(6) .price-info .save-label {

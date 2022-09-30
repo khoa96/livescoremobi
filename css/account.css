@@ -148,6 +148,7 @@
   color: #1A202C;
   cursor: pointer;
   border: 1px solid #1A202C;
+  font-family: "Poppins";
 }
 .account-page-wrapper .btn-log-out:focus {
   outline: none;

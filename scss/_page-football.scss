@@ -15,7 +15,8 @@
 
     @include mq(max_md) {
       flex-direction: column;
-      margin-top: 24px;
+      margin-top:0;
+      background-color: #fff;
     }
     .left-content {
       min-width: 300px;
@@ -136,6 +137,11 @@
         background: #FFFFFF;
         border: 1px solid #E9E6DC;
         border-radius: 4px;
+        border: 1px solid red;
+
+        @include mq(max_md) {
+          display: none !important;
+        }
 
         .league-info {
           display: flex;
@@ -296,6 +302,9 @@
       @include mq(max_md) {
         padding: 16px;
         width: 100%;
+        background: #fff;
+        border: none;
+        padding-top: 0;
       }
 
       .sub-tabs-nav {
@@ -449,7 +458,8 @@
               flex-direction: column;
               justify-content: center;
               align-items: center;
-              min-width: 60px;
+              min-width: 30%;
+              border: 1px solid red;
 
               .text-time {
                 font-style: normal;
@@ -905,6 +915,8 @@
               color: #FFFFFF;
               background-color: #A52457;
               cursor: pointer;
+              font-family: 'Poppins';
+
 
               &:hover {
                 outline: none;

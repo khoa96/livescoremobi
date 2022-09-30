@@ -65,11 +65,6 @@
   line-height: 36px;
   color: #fff;
 }
-@media only screen and (max-width: 991px) {
-  .match-page-wrapper .live-content .live-title {
-    display: none;
-  }
-}
 .match-page-wrapper .live-content .match-time {
   font-style: normal;
   font-weight: 400;
@@ -276,6 +271,7 @@
   font-size: 14px;
   line-height: 21px;
   color: #1A202C;
+  align-items: center;
 }
 @media only screen and (max-width: 991px) {
   .list-club-info-detail .club-item-info {

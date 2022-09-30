@@ -43,6 +43,10 @@
       flex-direction: column;
       gap: 30px;
 
+      @include mq(max_md) {
+        gap: 12px;
+      }
+
       li {
         display: flex;
         gap: 16px;

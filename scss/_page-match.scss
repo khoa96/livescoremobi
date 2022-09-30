@@ -74,7 +74,7 @@
       line-height: 36px;
       color: #fff;
       @include mq(max_md) {
-        display: none;
+        // display: none;
       }
     }
 
@@ -294,6 +294,7 @@
     font-size: 14px;
     line-height: 21px;
     color: #1A202C;
+    align-items: center;
 
     @include mq(max_md) {
       padding: 12px;

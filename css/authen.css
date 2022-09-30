@@ -40,6 +40,11 @@
   flex-direction: column;
   gap: 30px;
 }
+@media only screen and (max-width: 991px) {
+  .authen-form-wrapper .authen-content ul {
+    gap: 12px;
+  }
+}
 .authen-form-wrapper .authen-content ul li {
   display: flex;
   gap: 16px;
