@@ -719,8 +719,30 @@
 }
 .league-content-wrapper .list-league-match .league-match-item .list-match .match-item .left-row .time {
   display: block;
-  min-width: 40px;
-  max-width: 40px;
+  min-width: max-content;
+  display: flex;
+  gap: 4px;
+  position: relative;
+}
+.league-content-wrapper .list-league-match .league-match-item .list-match .match-item .left-row .time .status {
+  border-left: 1px solid #E1ECE6;
+  padding-left: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #1A202C;
+  position: absolute;
+  min-width: max-content;
+  bottom: 0;
+  left: calc(100% + 4px);
+}
+.league-content-wrapper .list-league-match .league-match-item .list-match .match-item .left-row .time .upcoming {
+  color: #A52457;
+}
+.league-content-wrapper .list-league-match .league-match-item .list-match .match-item .left-row .time .live {
+  text-transform: capitalize;
+  color: #13B7A7;
 }
 .league-content-wrapper .list-league-match .league-match-item .list-match .match-item .left-row .league-match-name {
   display: block;
@@ -780,11 +802,11 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 170px;
+  max-width: 120px;
 }
 @media only screen and (max-width: 991px) {
   .league-content-wrapper .list-league-match .league-match-item .list-match .match-item .right-row .list-club-wrapper .club-item .club-name {
-    max-width: 80px;
+    max-width: 60px;
   }
 }
 .league-content-wrapper .list-league-match .league-match-item .list-match .match-item .right-row .list-club-wrapper .first-club {

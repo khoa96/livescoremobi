@@ -795,8 +795,34 @@
 
             .time {
               display: block;
-              min-width: 40px;
-              max-width: 40px;
+              min-width: max-content;
+              display: flex;
+              gap: 4px;
+
+              position: relative;
+
+              .status {
+                border-left: 1px solid #E1ECE6;
+                padding-left: 4px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 21px;
+                color: #1A202C;
+                position: absolute;
+                min-width: max-content;
+                bottom: 0;
+                left: calc(100% + 4px);
+              }
+
+              .upcoming {
+                color: #A52457
+              }
+
+              .live {
+                text-transform: capitalize;
+                color: #13B7A7;
+              }
             }
 
             .league-match-name {
@@ -858,10 +884,10 @@
                   white-space: nowrap;
                   overflow: hidden;
                   text-overflow: ellipsis;
-                  max-width: 170px;
+                  max-width: 120px;
 
                   @include mq(max_md) {
-                    max-width: 80px;
+                    max-width: 60px;
                   }
                 }
               }
