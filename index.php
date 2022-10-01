@@ -624,7 +624,10 @@
                             <div class="match-item">
                               <div class="left-row">
                                 <span class="league-match-name">Premier League</span>
-                                <span class="time">21:30</span>
+                                <span class="time">
+                                  <span>21:30</span>
+                                  <span class="status upcoming">Sắp diễn ra</span>
+                                </span>
                               </div>
                               <div class="right-row">
                                 <div class="list-club-wrapper">
@@ -644,7 +647,10 @@
                             <div class="match-item">
                               <div class="left-row">
                                 <span class="league-match-name">Premier League</span>
-                                <span class="time">21:30</span>
+                                <span class="time">
+                                  <span>21:30</span>
+                                  <span class="status live">Live</span>
+                                </span>
                               </div>
                               <div class="right-row">
                                 <div class="list-club-wrapper">
@@ -718,7 +724,11 @@
                             <div class="match-item">
                               <div class="left-row">
                                 <span class="league-match-name">Premier League</span>
-                                <span class="time">21:30</span>
+                                <span class="time">
+                                   <span>21:30</span>
+                                   <span class="status upcoming">Sắp diễn ra</span>
+                                </span>
+                                </span>
                               </div>
                               <div class="right-row">
                                 <div class="list-club-wrapper">
@@ -738,7 +748,10 @@
                             <div class="match-item">
                               <div class="left-row">
                                 <span class="league-match-name">Premier League</span>
-                                <span class="time">21:30</span>
+                                <span class="time">
+                                  <span>21:30</span>
+                                   <span class="status live">Live</span>
+                                </span>
                               </div>
                               <div class="right-row">
                                 <div class="list-club-wrapper">

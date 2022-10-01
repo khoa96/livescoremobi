@@ -5,42 +5,51 @@
         <ul class="navbar-nav">
           <li class="nav-item football active" data-menu="football">
             <a class="nav-link" aria-current="page" href="#">
-             Football
+              <img src="../images/icon-football.png" alt="">
+              <span>Football</span>
             </a>
           </li>
           <li class="nav-item tennis" data-menu="tennis">
             <a class="nav-link" aria-current="page" href="#">
-              Tennis
+              <img src="../images/icon-tennis.png" alt="">
+              <span>Tennis</span>
+
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">
-              Basketball
+              <img src="../images/icon-basketball.png" alt="">
+              <span>Basketball</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">
-              Ice Hockey
+              <img src="../images/icon-icehockey.png" alt="">
+              <span> Ice Hockey</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">
-              Baseball
+              <img src="../images/icon-basball.png" alt="">
+              <span>Baseball</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">
-              Fighting
+              <img src="../images/icon-fighting.png" alt="">
+              <span>Fighting</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">
-              Other
+              <img src="../images/icon-other.png" alt="">
+              <span>Other</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">
-              News
+              <img src="../images/icon-news.png" alt="">
+              <span>News</span>
             </a>
           </li>
         </ul>
