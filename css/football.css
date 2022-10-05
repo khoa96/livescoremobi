@@ -806,7 +806,7 @@
 }
 @media only screen and (max-width: 991px) {
   .league-content-wrapper .list-league-match .league-match-item .list-match .match-item .right-row .list-club-wrapper .club-item .club-name {
-    max-width: 60px;
+    max-width: 90px;
   }
 }
 .league-content-wrapper .list-league-match .league-match-item .list-match .match-item .right-row .list-club-wrapper .first-club {

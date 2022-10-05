@@ -39,7 +39,7 @@
 @media only screen and (max-width: 991px) {
   .account-page-wrapper .account-header {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
   }
 }
