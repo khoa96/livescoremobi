@@ -48,9 +48,9 @@ $(function () {
   }
   const date = new Date();
   $("#time-calender").text(formatDate());
-  $(".datepicker-mobile").hide()
+  $(".datepicker-mobile").hide();
   $(".btn-calender").on("click", function (event) {
-    $(".datepicker-mobile").toggle()
+    $(".datepicker-mobile").toggle();
     $(".datepicker-mobile").datepicker({
       firstDay: 1,
       showOtherMonths: true,
@@ -59,13 +59,21 @@ $(function () {
       onSelect: function (date, datepicker) {
         if (date) {
           // handle select datetime here
-          $("#datepicker-mobile").hide();
+          $(".datepicker-mobile").hide();
+          // code  here
         }
       },
     });
   });
 });
 
+// handle click outside date picker
+$(document).mouseup(function (e) {
+  const container = $(".datepicker-mobile");
+  if (!container.is(e.target) && container.has(e.target).length === 0) {
+    container.hide();
+  }
+});
 // =======HANDLE DATEPICKER FOR MOBILE ========
 
 // ===========HANDLE CLICK TAB LEFT SIDEBAR FOR PC =======
