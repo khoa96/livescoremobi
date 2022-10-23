@@ -423,6 +423,7 @@ p {
   justify-content: center;
   align-items: center;
   padding: 40px 0px 80px 0px;
+  position: relative;
 }
 @media only screen and (max-width: 991px) {
   .list-top-match-today-wrapper .list-top-match-today-content {
@@ -441,77 +442,75 @@ p {
     display: none;
   }
 }
-.list-top-match-today-wrapper .list-top-match-today {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-  overflow-x: auto;
-  max-width: 100%;
+.list-top-match-today-wrapper .list-top-match-today-slide-wrapper {
+  position: relative;
+  min-width: 1310px;
+  max-width: 1310px;
 }
-.list-top-match-today-wrapper .list-top-match-item {
-  min-width: 192px;
-  max-width: 192px;
-  min-height: 224px;
-  max-height: 224px;
-  padding: 12px 8px 8px 8px;
+@media only screen and (max-width: 991px) {
+  .list-top-match-today-wrapper .list-top-match-today-slide-wrapper {
+    min-width: 100%;
+    max-width: 100%;
+  }
+}
+.list-top-match-today-wrapper .list-top-match-today {
+  min-width: 100%;
+  max-width: 100%;
+  position: relative;
+}
+.list-top-match-today-wrapper .top-match-today-item {
+  min-width: 245px;
+  max-width: 245px;
+  height: 100%;
+  margin-right: 20px;
   background: #FFFFFF;
-  border: none;
+  border-radius: 10px;
+}
+.list-top-match-today-wrapper .top-match-today-content-wrapper {
+  padding: 16px 10px 0px 10px;
+}
+.list-top-match-today-wrapper .top-match-today-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.list-top-match-today-wrapper .league-info {
   display: flex;
   flex-direction: column;
 }
-.list-top-match-today-wrapper .list-top-match-item .club-item {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.list-top-match-today-wrapper .list-top-match-item .club-item .club-image {
-  display: block;
-  min-width: 40px;
-  max-width: 40px;
-  height: 40px;
-  object-fit: cover;
-  border: none;
-  border-radius: 50%;
-}
-.list-top-match-today-wrapper .list-top-match-item .club-item .club-name {
-  font-style: normal;
+.list-top-match-today-wrapper .league-info .time {
   font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  text-align: center;
+  /* Gray:900 */
+  color: #1A202C;
+}
+.list-top-match-today-wrapper .league-info .date {
+  font-style: normal;
+  font-weight: 300;
   font-size: 14px;
   line-height: 21px;
-  color: #1A202C;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: 100px;
+  text-align: center;
+  color: #878686;
 }
-.list-top-match-today-wrapper .list-top-match-item .club-2 {
-  justify-content: flex-end;
-}
-.list-top-match-today-wrapper .list-top-match-item .club-2 .club-name {
-  direction: rtl;
-}
-.list-top-match-today-wrapper .list-top-match-item .dash-top-match {
-  display: block;
-  width: 63px;
-  height: 22px;
-  object-fit: cover;
-  margin: 2px auto;
-}
-.list-top-match-today-wrapper .list-top-match-item .league-info {
+.list-top-match-today-wrapper .league-info .league-info-head {
   display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 16px auto 6px;
+  gap: 6px;
 }
-.list-top-match-today-wrapper .list-top-match-item .league-info .league-image {
-  display: block;
+.list-top-match-today-wrapper .league-info .league-info-bottom {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.list-top-match-today-wrapper .league-info .league-info-bottom .league-image {
   min-width: 16px;
   max-width: 16px;
   height: 16px;
   object-fit: cover;
-  border: none;
 }
-.list-top-match-today-wrapper .list-top-match-item .league-info .league-name {
+.list-top-match-today-wrapper .league-info .league-info-bottom .league-name {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -519,35 +518,108 @@ p {
   color: #1A202C;
   white-space: nowrap;
   overflow: hidden;
+  display: inline-block;
   text-overflow: ellipsis;
   max-width: 100px;
 }
-.list-top-match-today-wrapper .list-top-match-item .match-time {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: #1A202C;
-  display: inline-block;
-  margin-bottom: 8px;
-  text-align: center;
+.list-top-match-today-wrapper .list-league-image {
+  display: flex;
+  gap: 8px;
+  align-items: center;
 }
-.list-top-match-today-wrapper .list-top-match-item .btn-top-match {
+.list-top-match-today-wrapper .club-image {
+  min-width: 40px;
+  max-width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+.list-top-match-today-wrapper .top-match-today-content {
   width: 100%;
+  margin: 16px 0px;
+  padding: 0px 12px;
+}
+.list-top-match-today-wrapper .top-match-today-content .club-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-top-match-today-wrapper .top-match-today-content .club-name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #000000;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  text-overflow: ellipsis;
+  max-width: 170px;
+}
+.list-top-match-today-wrapper .top-match-today-content .score {
+  display: inline-block;
+  min-width: 10px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  text-align: center;
+  color: #000000;
+}
+.list-top-match-today-wrapper .btn-watch {
   display: block;
+  width: 100%;
   padding: 5px 0px;
   text-align: center;
-  background-color: #13B7A7;
+  cursor: pointer;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
   line-height: 18px;
-  color: #FFFFFF;
-  cursor: pointer;
+  /* identical to box height */
   border: none;
-}
-.list-top-match-today-wrapper .list-top-match-item .btn-top-match:focus {
   outline: none;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #13B7A7;
+  border-radius: 0px 0px 10px 10px;
+}
+.list-top-match-today-wrapper .btn-watch:focus {
+  outline: none;
+}
+.list-top-match-today-wrapper .btn-slide {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  z-index: 9;
+}
+@media only screen and (max-width: 991px) {
+  .list-top-match-today-wrapper .btn-slide {
+    display: none;
+  }
+}
+.list-top-match-today-wrapper .btn-slide:focus {
+  outline: none;
+}
+.list-top-match-today-wrapper .btn-prev {
+  top: 40%;
+  left: -20px;
+}
+.list-top-match-today-wrapper .btn-next {
+  top: 40%;
+  right: -25px;
 }
 
 .list-group-wrapper {
@@ -1158,7 +1230,7 @@ p {
     flex-direction: column;
     position: relative;
   }
-  .countdown-timer-wrapper .timeline-wrapper .timeline-item .icon-square-wrapper .dash {
+  .countdown-timer-wrapper .timeline-wrapper .timeline-item .icon-square-wrapper .timeline-dash-wrapper {
     position: relative;
     top: 0;
     left: 0;
@@ -1171,7 +1243,7 @@ p {
     margin-top: 0 !important;
   }
 }
-.countdown-timer-wrapper .timeline-wrapper .timeline-item:last-of-type .dash {
+.countdown-timer-wrapper .timeline-wrapper .timeline-item:last-of-type .timeline-dash-wrapper {
   display: none !important;
 }
 .countdown-timer-wrapper .timeline-wrapper .timeline-item:last-of-type .timeline-detail {
@@ -1189,7 +1261,7 @@ p {
   align-items: center;
   position: relative;
 }
-.countdown-timer-wrapper .timeline-wrapper .timeline-item .dash {
+.countdown-timer-wrapper .timeline-wrapper .timeline-item .timeline-dash-wrapper {
   width: 250px;
   height: 2px;
   border: none;
@@ -1197,6 +1269,39 @@ p {
   position: absolute;
   top: 49%;
   left: 25px;
+}
+.countdown-timer-wrapper .timeline-wrapper .timeline-item .dash-mask-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  z-index: 9999;
+}
+@media only screen and (max-width: 991px) {
+  .countdown-timer-wrapper .timeline-wrapper .timeline-item .dash-mask-wrapper {
+    width: 100%;
+    height: 70%;
+    top: 20px;
+  }
+}
+.countdown-timer-wrapper .timeline-wrapper .timeline-item .dash-mask-wrapper .dash-solid {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: #C4083A;
+}
+.countdown-timer-wrapper .timeline-wrapper .timeline-item .dash-mask-wrapper .circle {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #C4083A;
+  border: none;
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+  right: -3px;
 }
 .countdown-timer-wrapper .timeline-wrapper .timeline-item .icon-square {
   width: 24px;
@@ -1231,6 +1336,39 @@ p {
   line-height: 27px;
   text-align: center;
   color: #FFFFFF;
+}
+
+.control-group-list-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.control-group-list-wrapper .btn-control-group-list {
+  min-width: 250px;
+  max-width: 250px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  gap: 6px;
+  /* identical to box height */
+  text-align: center;
+  cursor: pointer;
+  color: #FFFFFF;
+  padding: 4px 0px;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+}
+.control-group-list-wrapper .btn-control-group-list:focus {
+  outline: none;
 }
 
 /*# sourceMappingURL=common.css.map */

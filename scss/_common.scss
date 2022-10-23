@@ -446,6 +446,7 @@ p {
 		justify-content: center;
 		align-items: center;
 		padding: 40px 0px 80px 0px;
+		position: relative;
 
 		@include mq(max_md) {
 			padding: 32px 0px;
@@ -464,81 +465,86 @@ p {
 			display: none;
 		}
 	}
-	.list-top-match-today {
-		display: flex;
-		gap: 24px;
-		align-items: center;
-		overflow-x: auto;
-		max-width: 100%;
+
+	.list-top-match-today-slide-wrapper {
+		position: relative;
+		min-width: 1310px;
+		max-width: 1310px;
+
+		@include mq(max_md) {
+			min-width: 100%;
+			max-width: 100%;
+		}
 	}
-	.list-top-match-item {
-		min-width: 192px;
-		max-width: 192px;
-		min-height: 224px;
-		max-height: 224px;
-		padding: 12px 8px 8px 8px;
+	.list-top-match-today {
+
+		min-width: 100%;
+		max-width: 100%;
+		position: relative;
+	}
+
+
+
+	.top-match-today-item {
+		min-width: 245px;
+		max-width: 245px;
+		height: 100%;
+		margin-right: 20px;
 		background: #FFFFFF;
-		border: none;
+		border-radius: 10px;
+	}
+
+	.top-match-today-content-wrapper {
+		padding: 16px 10px 0px 10px;
+	}
+
+	.top-match-today-header {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.league-info {
 		display: flex;
 		flex-direction: column;
 
-		.club-item {
+		.time {
+			font-weight: 500;
+			font-size: 16px;
+			line-height: 24px;
+			/* identical to box height */
+
+			text-align: center;
+
+			/* Gray:900 */
+
+			color: #1A202C;
+		}
+
+		.date {
+			font-style: normal;
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 21px;
+			text-align: center;
+
+			color: #878686;
+		}
+
+		.league-info-head {
 			display: flex;
-			align-items: center;
 			gap: 6px;
-			.club-image {
-				display: block;
-				min-width: 40px;
-				max-width: 40px;
-				height: 40px;
-				object-fit: cover;
-				border: none;
-				border-radius: 50%;
-			}
-
-			.club-name {
-				font-style: normal;
-				font-weight: 500;
-				font-size: 14px;
-				line-height: 21px;
-				color: #1A202C;
-				white-space: nowrap;
-				overflow: hidden;
-				text-overflow: ellipsis;
-				max-width: 100px;
-			}
-
 		}
-
-		.club-2 {
-			justify-content: flex-end;
-
-			.club-name {
-				direction: rtl;
-			}
-		}
-
-		.dash-top-match {
-			display: block;
-			width: 63px;
-			height: 22px;
-			object-fit: cover;
-			margin: 2px auto;
-		}
-
-		.league-info {
+		.league-info-bottom {
 			display: flex;
-			align-items: center;
 			gap: 8px;
-			margin: 16px auto 6px;
+			align-items: center;
 
 			.league-image {
-				display: block;
 				min-width: 16px;
-				max-width:16px;
+				max-width: 16px;
 				height: 16px;
 				object-fit: cover;
-				border: none;
 			}
 
 			.league-name {
@@ -549,42 +555,128 @@ p {
 				color: #1A202C;
 				white-space: nowrap;
 				overflow: hidden;
+			  display: inline-block;
 				text-overflow: ellipsis;
 				max-width: 100px;
 			}
-
 		}
-		.match-time {
-			font-style: normal;
-			font-weight: 500;
-			font-size: 16px;
-			line-height: 24px;
-			color: #1A202C;
-			display: inline-block;
-			margin-bottom: 8px;
-			text-align: center;
+	}
+
+	.list-league-image {
+		display: flex;
+		gap: 8px;
+		align-items: center;
+	}
+
+	.club-image {
+		min-width: 40px;
+		max-width: 40px;
+		height: 40px;
+		object-fit: cover;
+	}
+
+
+	.top-match-today-content {
+		width: 100%;
+		margin: 16px 0px;
+		padding: 0px 12px;
+
+		.club-info {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
 		}
 
-		.btn-top-match {
-			width: 100%;
-			display: block;
-			padding: 5px 0px;
-			text-align: center;
-			background-color: #13B7A7;
+		.club-name {
 			font-style: normal;
 			font-weight: 600;
-			font-size: 12px;
-			line-height: 18px;
-			color: #FFFFFF;
-			cursor: pointer;
-			border: none;
-
-			&:focus {
-				outline: none;
-			}
+			font-size: 14px;
+			line-height: 21px;
+			/* identical to box height */
+			color: #000000;
+			display: inline-block;
+			white-space: nowrap;
+			overflow: hidden;
+			display: inline-block;
+			text-overflow: ellipsis;
+			max-width: 170px;
 		}
 
+		.score {
+			display: inline-block;
+			min-width: 10px;
+			text-align: center;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 14px;
+			line-height: 21px;
+			/* identical to box height */
+
+			text-align: center;
+
+			color: #000000;
+		}
 	}
+
+	.btn-watch {
+		display: block;
+		width: 100%;
+		padding: 5px 0px;
+		text-align: center;
+		cursor: pointer;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 12px;
+		line-height: 18px;
+		/* identical to box height */
+		border: none;
+		outline: none;
+
+		text-align: center;
+
+		color: #FFFFFF;
+		background-color: #13B7A7;
+		border-radius: 0px 0px 10px 10px;
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	.btn-slide {
+		position: absolute;
+		width: 42px;
+		height: 42px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		background-color: #fff;
+		border-radius: 50%;
+		cursor: pointer;
+		outline: none;
+		border: none;
+		z-index: 9;
+
+		@include mq(max_md) {
+			display: none;
+		}
+
+		&:focus {
+			outline: none;
+		}
+	}
+
+	.btn-prev {
+		top: 40%;
+		left: -20px;
+	}
+
+	.btn-next {
+		top: 40%;
+		right: -25px;
+	}
+
 }
 
 // ==========STYLE LIST TOP MATCH TODAY ======
@@ -1239,7 +1331,7 @@ p {
 					flex-direction: column;
 					position: relative;
 
-					.dash {
+					.timeline-dash-wrapper {
 						position: relative;
 						top: 0;
 						left: 0;
@@ -1256,7 +1348,7 @@ p {
 			}
 
 			&:last-of-type {
-				.dash {
+				.timeline-dash-wrapper {
 					display: none !important;
 				}
 
@@ -1278,7 +1370,7 @@ p {
 				align-items: center;
 				position: relative;
 			}
-			.dash {
+			.timeline-dash-wrapper {
 				width: 250px;
 				height: 2px;
 				border: none;
@@ -1286,6 +1378,39 @@ p {
 				position: absolute;
 				top: 49%;
 				left: 25px;
+			}
+			.dash-mask-wrapper {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 70%;
+				height: 100%;
+				display: flex;
+				z-index: 9999;
+
+				@include mq(max_md) {
+					width: 100%;
+					height: 70%;
+					top: 20px;
+				}
+				.dash-solid {
+					width: 100%;
+					height: 100%;
+					border: none;
+					background-color: #C4083A;
+				}
+
+				.circle {
+					display: block;
+					width: 10px;
+					height: 10px;
+					background-color: #C4083A;
+					border: none;
+					border-radius: 50%;
+					position: absolute;
+					top: -3px;
+					right: -3px;
+				}
 			}
 			.icon-square {
 				width: 24px;
@@ -1330,3 +1455,40 @@ p {
 
 }
 // ==========COUNTDOWN TIMER STYLE
+
+.control-group-list-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+
+	.btn-control-group-list {
+		min-width:  250px;
+		max-width: 250px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 27px;
+		gap: 6px;
+		/* identical to box height */
+
+		text-align: center;
+		cursor: pointer;
+
+		color: #FFFFFF;
+		padding: 4px 0px;
+		border: 1px solid #FFFFFF;
+		border-radius: 5px;
+		background-color: transparent;
+		outline: none;
+
+		&:focus {
+			outline: none;
+		}
+	}
+}
