@@ -850,7 +850,27 @@
   text-overflow: ellipsis;
   max-width: 160px;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1300px) {
+  .league-content-wrapper .list-league-match .league-match-item .list-match .match-item .right-row .list-club-wrapper .club-item .club-name {
+    max-width: 130px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .league-content-wrapper .list-league-match .league-match-item .list-match .match-item .right-row .list-club-wrapper .club-item .club-name {
+    max-width: 120px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .league-content-wrapper .list-league-match .league-match-item .list-match .match-item .right-row .list-club-wrapper .club-item .club-name {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .league-content-wrapper .list-league-match .league-match-item .list-match .match-item .right-row .list-club-wrapper .club-item .club-name {
+    max-width: 100px;
+  }
+}
+@media only screen and (max-width: 400px) {
   .league-content-wrapper .list-league-match .league-match-item .list-match .match-item .right-row .list-club-wrapper .club-item .club-name {
     max-width: 80px;
   }
@@ -880,7 +900,7 @@
   color: #A52457;
 }
 .league-content-wrapper .list-league-match .league-match-item .list-match .match-item .right-row .btn-watch {
-  min-width: 64px;
+  min-width: max-content;
   max-height: 32px;
   padding: 5px 8px;
   text-align: center;

@@ -941,7 +941,20 @@
                   text-overflow: ellipsis;
                   max-width: 160px;
 
-                  @include mq(max_md) {
+                  @media only screen and (max-width: 1300px) {
+                    max-width: 130px;
+                  }
+
+                  @media only screen and (max-width: 1200px) {
+                    max-width: 120px;
+                  }
+                  @media only screen and (max-width: 1000px) {
+                    max-width: 100%;
+                  }
+                  @media only screen and (max-width: 600px) {
+                    max-width: 100px;
+                  }
+                  @media only screen and (max-width: 400px) {
                     max-width: 80px;
                   }
                 }
@@ -981,7 +994,7 @@
             }
 
             .btn-watch {
-              min-width: 64px;
+              min-width: max-content;
               max-height: 32px;
               padding: 5px 8px;
               text-align: center;
