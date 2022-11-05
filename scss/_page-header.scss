@@ -6,19 +6,6 @@
 
 .header {
   width: 100%;
-  border: none;
-  height: auto;
-  padding: 8px 0px;
-  background-color: #ffff;
-  position: relative;
-
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0;
-  }
-
   .hamburger {
     display: none;
   }
@@ -33,116 +20,8 @@
     background-color: #101010;
   }
 
-  .nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 24px;
-  }
-
-  .nav-item {
-    // margin-left: 5rem;
-  }
-
-  .nav-link {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #1A202C;
-    text-decoration: none;
-    display: block;
-    width: 100%;
-    height: 100%;
-    padding: 6px 0px;
-    min-width: max-content;
-  }
-
-  .nav-link:hover {
-    color: $primary-color;
-    border-bottom: 3px solid $primary-color;;
-  }
-
-  .link-active {
-    a {
-      color: $primary-color;
-      border-bottom: 3px solid #13B7A7;
-    }
-  }
-
-  .list-control {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .btn {
-    display: inline-block;
-    padding: 6px 8px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 21px;
-    color: #FFFFFF;
-    border: none;
-    min-width: max-content;
-
-    &:hover {
-      text-decoration: none;
-    }
-  }
-
-  .btn-signin {
-    background-color: $primary-color;
-  }
-
-  .btn-signup {
-    border: 1px solid $primary-color;
-    color: $primary-color;
-  }
-
-  .nav-logo {
-    img {
-      display: block;
-      min-width: 205px;
-      max-width: 205px;
-      height: auto;
-      object-fit: cover;
-
-      @include mq(max_md) {
-        min-width: 150px;
-        max-width: 150px;
-      }
-    }
-  }
 
   @media only screen and (max-width: 768px) {
-    .nav-menu {
-      position: absolute;
-      left: -100%;
-      top: 100%;
-      flex-direction: column;
-      background-color: #fff;
-      width: 100%;
-      text-align: center;
-      transition: 0.3s;
-      z-index: 99999999;
-      gap: 16px;
-      padding: 12px 0px 24px 16px;
-      justify-content: flex-start;
-      align-items: flex-start;
-
-    }
-
-    .nav-menu.active {
-      left: 0;
-    }
-
-    .nav-item {
-       .nav-link {
-          padding: 4px 0px;
-       }
-    }
 
     .hamburger {
       display: block;

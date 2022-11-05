@@ -13,15 +13,6 @@
 		<link rel="stylesheet" type="text/css" href="css/common.css" />
 		<link rel="stylesheet" type="text/css" href="css/slick.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/header.css" />
-		<link rel="stylesheet" type="text/css" href="css/menu.css" />
-		<link rel="stylesheet" type="text/css" href="css/footer.css" />
-		<link rel="stylesheet" type="text/css" href="css/authen.css" />
-		<link rel="stylesheet" type="text/css" href="css/football.css" />
-		<link rel="stylesheet" type="text/css" href="css/league.css" />
-		<link rel="stylesheet" type="text/css" href="css/news.css" />
-		<link rel="stylesheet" type="text/css" href="css/match.css" />
-		<link rel="stylesheet" type="text/css" href="css/price.css" />
-		<link rel="stylesheet" type="text/css" href="css/account.css" />
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file://-->
