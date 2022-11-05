@@ -1,0 +1,325 @@
+@charset "utf-8";
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+
+.match-content-page-wrapper {
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+
+  @include mq(max_md) {
+    border: none;
+    border-radius: 0;
+  }
+
+
+  .match-content-header{
+    padding: 20px 20px 16px 20px;
+    @include mq(max_md) {
+      padding: 12px;
+    }
+  }
+
+  .match-tab-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    /* identical to box height */
+
+    text-transform: uppercase;
+
+    /* #FFFFFF */
+
+    color: #FFFFFF;
+    margin-bottom: 8px;
+  }
+
+  // STYLE TAB 1
+  .list-match-info {
+    margin-bottom: 16px;
+
+    .match-info-item {
+      display: flex;
+      gap: 0px 16px;
+      align-items: center;
+      padding: 6px 0px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+      .icon-match-info {
+        min-width: 24px;
+        max-width: 24px;
+        height: 24px;
+        object-fit: cover;
+      }
+
+      .info-detail {
+        display: flex;
+        flex-direction: column;
+
+        .label-1 {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 20px;
+          /* identical to box height */
+
+
+          color: #FFFFFF;
+        }
+
+        .label-2 {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 11px;
+          line-height: 16px;
+          /* identical to box height */
+
+
+          color: rgba(255, 255, 255, 0.5);
+
+        }
+      }
+    }
+
+
+  }
+
+  .match-table-summary {
+    width: 100%;
+    height: auto;
+
+    .row-background {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .match-table-row {
+      padding: 6px 20px;
+      display: flex;
+      min-height: 48px;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+
+      @include mq(max_md) {
+        padding: 6px 10px;
+      }
+
+      .time {
+        min-width: 20px;
+        max-width: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 12px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.5);
+
+        @include mq(max_md) {
+          margin-right: 8px;
+        }
+      }
+
+      .score {
+        min-width: 40px !important;
+        width: 40px;
+        max-width: 40px;
+        text-align: center;
+        display: inline-block;
+        margin: 0px 40px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 20px;
+        /* identical to box height */
+
+        text-align: center;
+
+        @include mq(max_md) {
+          margin: 0 20px;
+        }
+      }
+
+      .match-result-wrapper {
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+      }
+
+      .match-result-item {
+        flex-grow: 1;
+        display: flex;
+        width: 50%;
+        gap: 0px 8px;
+        align-items: center;
+
+
+
+
+        &:first-of-type {
+          justify-content: flex-end;
+
+          .player-1, .player-2 {
+            display: rtl !important;
+          }
+
+        }
+
+        &:last-of-type {
+          justify-content: flex-start;
+        }
+
+        .icon {
+          min-width: 16px;
+          max-width: 16px;
+          height: 16px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .detail-result {
+          display: flex;
+          flex-direction: column;
+          .player-1 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 16px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 250px;
+
+            @include mq(max_md) {
+              max-width: 80px;
+            }
+
+          }
+
+          .player-2 {
+            font-style: normal;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 16px;
+            color: rgba(255, 255, 255, 0.5);
+
+            max-width: 250px;
+
+            @include mq(max_md) {
+              max-width: 80px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // STYLE TAB 1
+
+
+  // =======STYLE 2 =====
+
+  .match-stats-content-wrapper {
+    width: 100%;
+    .match-stats-item {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px 0px;
+      margin-bottom: 16px;;
+    }
+    .top-match-stats-item {
+      display: flex;
+      justify-content: space-between;
+
+      .first-value {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 16px;
+        /* identical to box height */
+
+
+        color: rgba(255, 255, 255, 0.5);
+      }
+
+      .label {
+        font-style: normal;
+          font-weight: 500;
+          font-size: 11px;
+          line-height: 16px;
+          /* identical to box height */
+
+          text-align: center;
+
+          color: rgba(255, 255, 255, 0.5);
+      }
+
+      .second-value {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 16px;
+        /* identical to box height */
+
+        text-align: right;
+
+        color: #FFFFFF;
+      }
+    }
+
+    .progress-match-stats-item-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0px 8px;
+      width: 100%;
+      height: 10px;
+
+      .progress-match-stats-item {
+        width: 50%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.2);
+        margin-bottom: 16px;
+      }
+
+      .progress {
+        width: 100%;
+        height: 100%;
+      }
+      .progress-value {
+        height: 100%;
+      }
+
+
+      .progress-1 {
+        display: flex;
+        justify-content: flex-end;
+        .progress-value {
+          background-color: rgba(255, 255, 255, 0.7);
+        }
+      }
+
+      .progress-2 {
+        .progress-value {
+          background: #009A5F;
+        }
+      }
+    }
+
+  }
+  //=========STYLE 2 =====
+
+
+
+  // ==========STYLE 4 =========
+  .match-h2h-content-wrapper {
+
+  }
+  // ===========STYLE 4 =========
+}
