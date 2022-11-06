@@ -135,7 +135,7 @@
               </div>
             </a>
             <a href="#" target="" class="list-news-item">
-              <img src="./images/news-.png" alt="" class="image-news" />
+              <img src="./images/news-5.png" alt="" class="image-news" />
               <div class="news-content-mask">
                 <span class="news-title">Oblak apologises to Atletico fans after 'cruel' Champions League exit</span>
               </div>

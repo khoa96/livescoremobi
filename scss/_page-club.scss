@@ -1,0 +1,56 @@
+@charset "utf-8";
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+
+.page-club-content-wrapper,
+.page-league-content-wrapper {
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+
+  .page-header {
+    padding: 20px 20px 16px 20px;
+  }
+
+  .table-match-detail-wrapper {
+    margin-bottom: 16px !important;
+  }
+
+  .list-form {
+    margin-bottom: 8px;
+  }
+
+  .list-news-wrapper {
+    margin-top: 16px;
+  }
+
+  .block-title-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;;
+
+    .block-tab-title {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .icon-arrow {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .list-feature {
+    margin-bottom: 16px;
+  }
+
+  .match-table-common {
+    margin-bottom: 8px !important;
+  }
+}
