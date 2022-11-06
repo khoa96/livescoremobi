@@ -16,5 +16,6 @@
 		<link rel="stylesheet" type="text/css" href="css/footer.css" />
 		<link rel="stylesheet" type="text/css" href="css/news.css" />
 		<link rel="stylesheet" type="text/css" href="css/match.css" />
+		<link rel="stylesheet" type="text/css" href="css/club.css" />
 
 	</head>

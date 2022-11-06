@@ -1,0 +1,90 @@
+/* -----------------------------------------------------------
+	font-face
+----------------------------------------------------------- */
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.page-club-content-wrapper,
+.page-league-content-wrapper {
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+}
+.page-club-content-wrapper .page-header,
+.page-league-content-wrapper .page-header {
+  padding: 20px 20px 16px 20px;
+}
+.page-club-content-wrapper .table-match-detail-wrapper,
+.page-league-content-wrapper .table-match-detail-wrapper {
+  margin-bottom: 16px !important;
+}
+.page-club-content-wrapper .list-form,
+.page-league-content-wrapper .list-form {
+  margin-bottom: 8px;
+}
+.page-club-content-wrapper .list-news-wrapper,
+.page-league-content-wrapper .list-news-wrapper {
+  margin-top: 16px;
+}
+.page-club-content-wrapper .block-title-wrapper,
+.page-league-content-wrapper .block-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.page-club-content-wrapper .block-title-wrapper .block-tab-title,
+.page-league-content-wrapper .block-title-wrapper .block-tab-title {
+  margin-bottom: 0 !important;
+}
+.page-club-content-wrapper .icon-arrow,
+.page-league-content-wrapper .icon-arrow {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.page-club-content-wrapper .list-feature,
+.page-league-content-wrapper .list-feature {
+  margin-bottom: 16px;
+}
+.page-club-content-wrapper .match-table-common,
+.page-league-content-wrapper .match-table-common {
+  margin-bottom: 8px !important;
+}
+
+/*# sourceMappingURL=club.css.map */
