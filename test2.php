@@ -11,7 +11,7 @@
 
 <!-- TAB  -->
 <div id="match-tabs">
-  <ul class="match-nav">
+  <ul class="sub-nav">
     <li><a href="#tabs-1">Summary</a></li>
     <li><a href="#tabs-2">Stats</a></li>
     <li><a href="#tabs-3">Lineups</a></li>

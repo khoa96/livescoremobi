@@ -141,7 +141,7 @@ p {
 }
 
 .text-primary {
-  color: #F91E4E;
+  color: #009a5f;
 }
 
 .text-uppercase {
@@ -174,6 +174,10 @@ p {
 
 .w-100 {
   width: 100%;
+}
+
+.txt-green-primary {
+  color: #009A5F !important;
 }
 
 .w-20 {
@@ -213,7 +217,8 @@ p {
   background: #fff;
   overflow: hidden;
   position: relative;
-  max-width: 300px;
+  max-width: max-content;
+  min-width: 320px;
   padding: 12px 4px;
 }
 @media only screen and (max-width: 991px) {
@@ -221,8 +226,7 @@ p {
     max-width: 100%;
   }
 }
-
-.ui-datepicker-header {
+.calendar .ui-datepicker-header {
   height: auto;
   width: 100%;
   font-style: normal;
@@ -232,9 +236,8 @@ p {
   color: #1A202C;
   margin-bottom: 16px;
 }
-
-.ui-datepicker-prev,
-.ui-datepicker-next {
+.calendar .ui-datepicker-prev,
+.calendar .ui-datepicker-next {
   width: 24px;
   height: 24px;
   text-indent: 9999px;
@@ -245,31 +248,26 @@ p {
   overflow: hidden;
   position: relative;
 }
-
-.ui-datepicker-prev {
+.calendar .ui-datepicker-prev {
   float: left;
   margin-left: 0px;
   position: relative;
 }
-
-.ui-datepicker-prev:after {
+.calendar .ui-datepicker-prev:after {
   transform: rotate(45deg);
   margin: -43px 0px 0px 8px;
 }
-
-.ui-datepicker-next {
+.calendar .ui-datepicker-next {
   float: right;
   margin-right: 8px;
   position: relative;
 }
-
-.ui-datepicker-next:after {
+.calendar .ui-datepicker-next:after {
   transform: rotate(-135deg);
   margin: -43px 0px 0px 6px;
 }
-
-.ui-datepicker-prev:after,
-.ui-datepicker-next:after {
+.calendar .ui-datepicker-prev:after,
+.calendar .ui-datepicker-next:after {
   content: "";
   position: absolute;
   display: block;
@@ -279,31 +277,30 @@ p {
   border-bottom: 2px solid #1A202C;
   top: 48px;
 }
-
-.ui-datepicker-prev:hover,
-.ui-datepicker-next:hover,
-.ui-datepicker-prev:hover:after,
-.ui-datepicker-next:hover:after {
+.calendar .ui-datepicker-prev:hover,
+.calendar .ui-datepicker-next:hover,
+.calendar .ui-datepicker-prev:hover:after,
+.calendar .ui-datepicker-next:hover:after {
   border-color: #1A202C;
 }
-
-.ui-datepicker-title {
+.calendar .ui-datepicker-title {
   text-align: center;
 }
 @media only screen and (max-width: 991px) {
-  .ui-datepicker-title {
+  .calendar .ui-datepicker-title {
     margin-top: 10px;
   }
 }
-
-.ui-datepicker-calendar {
+.calendar .ui-datepicker-calendar {
   width: 100%;
   text-align: center;
 }
-
-.ui-datepicker-calendar thead tr th span {
+.calendar .ui-datepicker-calendar thead tr th span {
   display: block;
-  width: 35px;
+  min-width: 35px;
+  max-width: 35px;
+  min-height: 35px;
+  max-height: 35px;
   margin-bottom: 8px;
   font-size: 13px;
   font-style: normal;
@@ -312,11 +309,12 @@ p {
   line-height: 18px;
   color: #718096;
 }
-
-.ui-state-default {
+.calendar .ui-state-default {
   text-decoration: none;
-  width: 35px;
-  height: 35px;
+  min-width: 35px !important;
+  min-height: 35px !important;
+  max-width: 35px !important;
+  max-height: 35px !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -326,24 +324,21 @@ p {
   line-height: 21px;
   color: #1A202C;
 }
-.ui-state-default:hover {
+.calendar .ui-state-default:hover {
   text-decoration: none;
 }
-
-.ui-datepicker-today .ui-state-highlight {
+.calendar .ui-datepicker-today .ui-state-highlight {
   color: #FFFFFF;
   border-radius: 50%;
-  background-color: #F91E4E;
+  background-color: #009a5f;
 }
-.ui-datepicker-today .ui-state-active {
+.calendar .ui-datepicker-today .ui-state-active {
   color: #fff !important;
 }
-
-.ui-state-active {
-  color: #F91E4E;
+.calendar .ui-state-active {
+  color: #009a5f;
 }
-
-.ui-datepicker-other-month .ui-state-default {
+.calendar .ui-datepicker-other-month .ui-state-default {
   color: #A0AEC0;
 }
 
@@ -645,6 +640,13 @@ p {
   border: none;
   margin-right: 12px;
 }
+@media only screen and (max-width: 991px) {
+  .league-info-wrapper .league-image {
+    min-width: 20px;
+    max-width: 20px;
+    height: 20px;
+  }
+}
 .league-info-wrapper .league-info {
   display: flex;
   flex-direction: column;
@@ -740,7 +742,7 @@ p {
   }
 }
 
-.match-nav {
+.sub-nav {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -749,24 +751,24 @@ p {
   padding: 0px 20px;
 }
 @media only screen and (max-width: 991px) {
-  .match-nav {
+  .sub-nav {
     padding: 0px 12px;
   }
 }
-.match-nav li {
+.sub-nav li {
   min-width: max-content;
   margin-right: 20px;
 }
 @media only screen and (max-width: 991px) {
-  .match-nav li {
+  .sub-nav li {
     margin-right: 12px;
     min-width: fit-content;
   }
 }
-.match-nav li:last-of-type {
+.sub-nav li:last-of-type {
   margin-right: 0;
 }
-.match-nav li a {
+.sub-nav li a {
   font-style: normal;
   font-weight: 500;
   font-size: 13px;
@@ -781,10 +783,10 @@ p {
   top: 4px;
   left: 0;
 }
-.match-nav li a:hover {
+.sub-nav li a:hover {
   text-decoration: none;
 }
-.match-nav .ui-state-active a {
+.sub-nav .ui-state-active a {
   color: #009A5F;
   padding-bottom: 7px;
   border-bottom: 3px solid #009A5F;
@@ -1105,6 +1107,327 @@ p {
 
 .txt-orange {
   color: #D98017;
+}
+
+.main-layout-scores-page .right-main-layout {
+  padding-top: 46px;
+}
+@media only screen and (max-width: 991px) {
+  .main-layout-scores-page {
+    border: none;
+  }
+}
+
+.main-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 32px;
+  /* identical to box height */
+  /* #FFFFFF */
+  color: #FFFFFF;
+  margin: 8px 0px;
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  .main-title {
+    display: block;
+  }
+}
+
+.main-nav {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0px 10px;
+  margin-bottom: 16px;
+}
+@media only screen and (max-width: 991px) {
+  .main-nav {
+    gap: 0px 5px;
+    margin-bottom: 8px;
+  }
+}
+.main-nav li {
+  min-width: max-content;
+}
+.main-nav li a {
+  display: block;
+  text-decoration: none;
+  padding: 5px 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #FFFFFF;
+  min-width: max-content;
+}
+.main-nav li a:hover {
+  text-decoration: none;
+}
+@media only screen and (max-width: 991px) {
+  .main-nav li a {
+    padding: 5px 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+  }
+}
+.main-nav .nav-item-pc {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+@media only screen and (max-width: 991px) {
+  .main-nav .nav-item-pc {
+    display: none;
+  }
+}
+.main-nav .ui-state-default {
+  width: auto !important;
+  height: auto !important;
+}
+.main-nav .ui-tabs-active a {
+  background-color: #009A5F;
+}
+
+.date-nav {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  padding: 8px 16px 0px;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 991px) {
+  .date-nav {
+    padding: 10px 0px 0px;
+  }
+}
+.date-nav li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.date-nav li a {
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 68px;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+@media only screen and (max-width: 991px) {
+  .date-nav li a {
+    min-width: fit-content;
+  }
+}
+.date-nav li a:hover {
+  text-decoration: none;
+}
+.date-nav li a .day {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .date-nav li a .day {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+.date-nav li a .date {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+@media only screen and (max-width: 991px) {
+  .date-nav li a .date {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+.date-nav .ui-tabs-active a {
+  color: #009A5F;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #009A5F;
+}
+
+.sub-nav-item-for-mobile {
+  display: none !important;
+}
+@media only screen and (max-width: 991px) {
+  .sub-nav-item-for-mobile {
+    display: block !important;
+  }
+}
+
+.sub-nav-item-for-pc {
+  display: block;
+}
+@media only screen and (max-width: 991px) {
+  .sub-nav-item-for-pc {
+    display: none;
+  }
+}
+
+.main-tab-content {
+  background: #000000;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  min-height: 100%;
+}
+@media only screen and (max-width: 991px) {
+  .main-tab-content {
+    padding: 0;
+    border: none;
+    height: auto;
+  }
+}
+
+.scores-page-content-wrapper {
+  width: 100%;
+  height: auto;
+}
+
+.date-picker-wrapper {
+  cursor: pointer;
+  position: relative;
+  top: -5px;
+}
+.date-picker-wrapper .calender-wrapper {
+  position: relative;
+}
+.date-picker-wrapper .calender-wrapper .datepicker-mobile {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  z-index: 99999;
+}
+@media only screen and (max-width: 991px) {
+  .date-picker-wrapper .calender-wrapper .datepicker-mobile {
+    bottom: auto;
+    right: -100%;
+  }
+}
+.date-picker-wrapper .calender-wrapper .control-wrapper {
+  display: flex;
+}
+.date-picker-wrapper .calender-wrapper .time-detail {
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.date-picker-wrapper .calender-wrapper .btn-calender {
+  display: flex;
+  min-width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+.date-picker-wrapper .calender-wrapper .btn-calender:focus {
+  outline: none;
+}
+@media only screen and (max-width: 991px) {
+  .date-picker-wrapper .calender-wrapper {
+    display: flex;
+  }
+}
+
+.live-nav-item {
+  border-bottom: none !important;
+  padding: 5px 8px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000000 !important;
+  max-height: 30px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sub-tab-content {
+  padding: 16px 20px;
+}
+@media only screen and (max-width: 991px) {
+  .sub-tab-content {
+    padding: 12px 0px;
+  }
+}
+
+.block-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px !important;
+}
+.block-header .league-info-wrapper {
+  margin-bottom: 0 !important;
+}
+.block-header .icon-arrow {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+}
+
+.list-league-in-scores {
+  width: 100%;
+}
+.list-league-in-scores .list-result-league {
+  margin-bottom: 16px;
+}
+.list-league-in-scores .list-result-league .eague-item-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.stading-content-wrapper {
+  padding: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .stading-content-wrapper {
+    padding: 12px 0px;
+  }
+}
+.stading-content-wrapper .stading-league-item {
+  margin-bottom: 20px;
+}
+.stading-content-wrapper .match-table-common {
+  margin: 12px 0px 8px 0px;
 }
 
 /*# sourceMappingURL=common.css.map */

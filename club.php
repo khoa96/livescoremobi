@@ -101,7 +101,7 @@
         </div>
 
         <div id="club-tabs">
-          <ul class="match-nav">
+          <ul class="sub-nav">
             <li><a href="#tabs-1">Overview</a></li>
             <li><a href="#tabs-2">Results</a></li>
             <li><a href="#tabs-3">Schedule</a></li>

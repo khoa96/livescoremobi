@@ -111,7 +111,7 @@ p {
 }
 
 .text-primary {
-	color: #F91E4E;
+	color: #009a5f;
 }
 
 .text-uppercase {
@@ -144,6 +144,9 @@ p {
 
 .w-100 {
 	width: 100%;
+}
+.txt-green-primary {
+	color: #009A5F !important;
 }
 
 .w-20 {
@@ -191,146 +194,154 @@ p {
 	background: #fff;
 	overflow: hidden;
 	position: relative;
-	max-width: 300px;
+	max-width: max-content;
+	min-width: 320px;
 	padding: 12px 4px;
 	@include mq(max_md) {
 		max-width: 100%;
 	}
-}
 
-.ui-datepicker-header {
-	height: auto;
-	width: 100%;
-	font-style: normal;
-	font-weight: 500;
-	font-size: 16px;
-	line-height: 24px;
-	color: #1A202C;
-	margin-bottom: 16px;
-}
-
-.ui-datepicker-prev,
-.ui-datepicker-next {
-	width: 24px;
-	height: 24px;
-	text-indent: 9999px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor: pointer;
-	overflow: hidden;
-	position: relative;
-}
-
-.ui-datepicker-prev {
-	float: left;
-	margin-left: 0px;
-	position: relative;
-}
-
-.ui-datepicker-prev:after {
-	transform: rotate(45deg);
-	margin: -43px 0px 0px 8px;
-}
-
-.ui-datepicker-next {
-	float: right;
-	margin-right: 8px;
-	position: relative;
-}
-
-.ui-datepicker-next:after {
-	transform: rotate(-135deg);
-	margin: -43px 0px 0px 6px;
-}
-
-.ui-datepicker-prev:after,
-.ui-datepicker-next:after {
-	content: "";
-	position: absolute;
-	display: block;
-	width: 10px;
-	height: 10px;
-	border-left: 2px solid #1A202C;
-	border-bottom: 2px solid #1A202C;
-	top: 48px;
-}
-
-.ui-datepicker-prev:hover,
-.ui-datepicker-next:hover,
-.ui-datepicker-prev:hover:after,
-.ui-datepicker-next:hover:after {
-	border-color: #1A202C;
-}
-
-.ui-datepicker-title {
-	text-align: center;
-
-	@include mq(max_md) {
-		margin-top: 10px;
+	.ui-datepicker-header {
+		height: auto;
+		width: 100%;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		color: #1A202C;
+		margin-bottom: 16px;
 	}
-}
 
-.ui-datepicker-calendar {
-	width: 100%;
-	text-align: center;
-}
+	.ui-datepicker-prev,
+	.ui-datepicker-next {
+		width: 24px;
+		height: 24px;
+		text-indent: 9999px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		overflow: hidden;
+		position: relative;
+	}
 
-.ui-datepicker-calendar thead tr th span {
-	display: block;
-	width: 35px;
-	margin-bottom: 8px;
-	font-size: 13px;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 18px;
-	color: #718096;
-}
+	.ui-datepicker-prev {
+		float: left;
+		margin-left: 0px;
+		position: relative;
+	}
 
-.ui-state-default {
-	text-decoration: none;
-	width: 35px;
-	height: 35px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-style: normal;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 21px;
-	color: #1A202C;
+	.ui-datepicker-prev:after {
+		transform: rotate(45deg);
+		margin: -43px 0px 0px 8px;
+	}
 
-	&:hover {
+	.ui-datepicker-next {
+		float: right;
+		margin-right: 8px;
+		position: relative;
+	}
+
+	.ui-datepicker-next:after {
+		transform: rotate(-135deg);
+		margin: -43px 0px 0px 6px;
+	}
+
+	.ui-datepicker-prev:after,
+	.ui-datepicker-next:after {
+		content: "";
+		position: absolute;
+		display: block;
+		width: 10px;
+		height: 10px;
+		border-left: 2px solid #1A202C;
+		border-bottom: 2px solid #1A202C;
+		top: 48px;
+	}
+
+	.ui-datepicker-prev:hover,
+	.ui-datepicker-next:hover,
+	.ui-datepicker-prev:hover:after,
+	.ui-datepicker-next:hover:after {
+		border-color: #1A202C;
+	}
+
+	.ui-datepicker-title {
+		text-align: center;
+
+		@include mq(max_md) {
+			margin-top: 10px;
+		}
+	}
+
+	.ui-datepicker-calendar {
+		width: 100%;
+		text-align: center;
+	}
+
+	.ui-datepicker-calendar thead tr th span {
+		display: block;
+		min-width: 35px;
+		max-width: 35px;
+		min-height: 35px;
+		max-height: 35px;
+		margin-bottom: 8px;
+		font-size: 13px;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 18px;
+		color: #718096;
+	}
+
+	.ui-state-default {
 		text-decoration: none;
+		min-width: 35px !important;
+		min-height: 35px !important;
+		max-width: 35px !important;
+		max-height: 35px !important;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 21px;
+		color: #1A202C;
+
+		&:hover {
+			text-decoration: none;
+		}
 	}
-}
 
-.ui-state-default:hover {
-	// background: rgba(0, 0, 0, 0.02);
-}
+	.ui-state-default:hover {
+		// background: rgba(0, 0, 0, 0.02);
+	}
 
-.ui-datepicker-today {
-	.ui-state-highlight {
-		color: #FFFFFF;
-		border-radius: 50%;
-		background-color: #F91E4E;
+	.ui-datepicker-today {
+		.ui-state-highlight {
+			color: #FFFFFF;
+			border-radius: 50%;
+			background-color: #009a5f;
+		}
+
+		.ui-state-active {
+			color: #fff !important;
+		}
 	}
 
 	.ui-state-active {
-		color: #fff !important;
+		color: #009a5f;
+	}
+
+	.ui-datepicker-unselectable .ui-state-default {}
+
+	.ui-datepicker-other-month .ui-state-default {
+		color: #A0AEC0;
 	}
 }
 
-.ui-state-active {
-	color: #F91E4E;
-}
 
-.ui-datepicker-unselectable .ui-state-default {}
-
-.ui-datepicker-other-month .ui-state-default {
-	color: #A0AEC0;
-}
 
 
 // =========style input common=========
@@ -657,6 +668,12 @@ p {
 		border-radius: 50%;
 		border: none;
 		margin-right: 12px;
+
+		@include mq(max_md) {
+			min-width: 20px;
+			max-width: 20px;
+			height: 20px;
+		}
 	}
 
 	.league-info {
@@ -777,7 +794,7 @@ p {
 }
 
 // ===========STYLE MATCH TABS =========
-.match-nav {
+.sub-nav {
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -1188,3 +1205,352 @@ p {
 .txt-orange {
 	color: #D98017;
 }
+
+// =========STYLE MAIN TAB COMMON ==========
+// =========END MAIN TAB COMMON ==========
+
+.main-layout-scores-page {
+	.right-main-layout {
+		padding-top: 46px;
+	}
+
+	@include mq(max_md) {
+		border: none;
+	}
+
+}
+
+
+.main-title {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 32px;
+	/* identical to box height */
+
+
+	/* #FFFFFF */
+
+	color: #FFFFFF;
+	margin: 8px 0px;
+	display: none;
+
+	@include mq(max_md) {
+		display: block;
+	}
+}
+
+.main-nav {
+	width: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	gap: 0px 10px;
+	margin-bottom: 16px;;
+
+	@include mq(max_md) {
+		gap: 0px 5px;
+		margin-bottom: 8px;
+	}
+
+	li {
+		min-width: max-content;
+		a {
+			display: block;
+			text-decoration: none;
+			padding: 5px 16px;
+			background: rgba(255, 255, 255, 0.1);
+			border-radius: 100px;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 13px;
+			line-height: 20px;
+			/* identical to box height */
+
+			text-transform: uppercase;
+
+			color: #FFFFFF;
+			min-width: max-content;
+
+			&:hover {
+				text-decoration: none;
+			}
+
+			@include mq(max_md) {
+				padding: 5px 8px;
+				background: rgba(255, 255, 255, 0.1);
+				border-radius: 6px;
+			}
+
+		}
+	}
+
+	.nav-item-pc {
+		display: block;
+		margin: 0;
+		padding: 0;
+
+		@include mq(max_md) {
+			display: none;
+		}
+	}
+
+	.ui-state-default {
+		width: auto !important;
+		height: auto !important;
+	}
+
+	.ui-tabs-active {
+		a {
+			background-color: #009A5F;
+		}
+	}
+}
+
+
+.date-nav {
+	width: 100%;
+	height: auto;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	padding: 8px 16px 0px;
+	justify-content: space-between;
+
+	@include mq(max_md) {
+		padding: 10px 0px 0px;
+	}
+
+	li {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		a {
+			font-style: normal;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			min-width: 68px;
+			text-decoration: none;
+			padding-bottom: 8px;
+
+			@include mq(max_md) {
+				min-width: fit-content;
+			}
+
+			&:hover {
+				text-decoration: none;
+			}
+
+			.day {
+				text-transform: uppercase;
+				color: #fff;
+				font-weight: 600;
+				font-weight: 600;
+				font-size: 13px;
+				line-height: 20px;
+
+				@include mq(max_md) {
+					font-size: 10px;
+					line-height: 15px;
+				}
+			}
+
+			.date {
+				font-style: normal;
+				font-weight: 400;
+				font-size: 11px;
+				line-height: 16px;
+				text-align: center;
+				color: rgba(255, 255, 255, 0.5);
+
+				@include mq(max_md) {
+					font-weight: 600;
+					font-size: 10px;
+					line-height: 15px;
+				}
+			}
+		}
+	}
+
+	.ui-tabs-active {
+		a {
+			color: #009A5F;
+			padding-bottom: 5px;
+			border-bottom: 3px solid #009A5F;
+		}
+	}
+}
+
+.sub-nav-item-for-mobile {
+	display: none !important;
+
+	@include mq(max_md) {
+		display: block !important;
+	}
+}
+
+.sub-nav-item-for-pc {
+	display: block;
+
+	@include mq(max_md) {
+		display: none;
+	}
+}
+
+.main-tab-content {
+	background: #000000;
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	border-radius: 8px;
+	min-height: 100%;
+
+	@include mq(max_md) {
+		padding: 0;
+		border: none;
+		height: auto;
+	}
+}
+.scores-page-content-wrapper {
+	width: 100%;
+	height: auto;
+}
+
+.date-picker-wrapper {
+	cursor: pointer;
+	position: relative;
+	top: -5px;
+
+	.calender-wrapper {
+		position: relative;
+		.datepicker-mobile {
+			position: absolute;
+			width: 100%;
+			height: auto;
+			background-color: #fff;
+			z-index: 99999;
+
+			@include mq(max_md) {
+				bottom: auto;
+				right: -100%;
+			}
+		}
+
+
+		.control-wrapper {
+			display: flex;
+		}
+
+		.time-detail {
+			flex-grow: 1;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.btn-calender {
+			display: flex;
+			min-width: 24px;
+			height: 24px;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			border: none;
+			background-color: transparent;
+
+			&:focus {
+				outline: none;
+			}
+		}
+		@include mq(max_md) {
+			display: flex;
+		}
+	}
+
+}
+
+.live-nav-item {
+	border-bottom: none !important;
+	padding: 5px 8px;
+	background: #FFFFFF;
+	border-radius: 6px;
+	border: none;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 13px;
+	line-height: 20px;
+
+	text-transform: uppercase;
+
+	color: #000000 !important;
+	max-height: 30px !important;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.sub-tab-content {
+	padding:  16px 20px;
+
+	@include mq(max_md) {
+		padding: 12px 0px;
+	}
+}
+
+
+// ===========START TYLE SCORES PAGE ===========
+
+.block-header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 8px !important;
+
+	.league-info-wrapper {
+		margin-bottom: 0 !important;
+	}
+	.icon-arrow {
+		width: 20px;
+		height: 20px;
+		display: flex;
+		justify-content: center;
+		cursor: pointer;
+		align-items: center;
+
+	}
+}
+.list-league-in-scores {
+	width: 100%;
+
+	.list-result-league {
+		margin-bottom: 16px;
+
+		.eague-item-wrapper {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
+
+.stading-content-wrapper {
+	padding: 20px;
+
+	@include mq(max_md) {
+		padding: 12px 0px;
+	}
+
+	.stading-league-item {
+		margin-bottom: 20px;
+	}
+
+	.match-table-common {
+		margin:  12px 0px 8px 0px;
+	}
+}
+// ===========END STYLE SCORES PAGE ===========
