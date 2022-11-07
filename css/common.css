@@ -1271,6 +1271,9 @@ p {
   padding-bottom: 5px;
   border-bottom: 3px solid #009A5F;
 }
+.date-nav .ui-tabs-active a .day, .date-nav .ui-tabs-active a .date {
+  color: #009A5F;
+}
 
 .sub-nav-item-for-mobile {
   display: none !important;
@@ -1428,6 +1431,18 @@ p {
 }
 .stading-content-wrapper .match-table-common {
   margin: 12px 0px 8px 0px;
+}
+
+.list-league-in-odds {
+  width: 100%;
+  height: auto;
+  border: 1px solid red;
+}
+
+.odds-block-header {
+  display: flex;
+  align-items: center;
+  border: 1px solid red;
 }
 
 /*# sourceMappingURL=common.css.map */

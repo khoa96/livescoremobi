@@ -1384,6 +1384,10 @@ p {
 			color: #009A5F;
 			padding-bottom: 5px;
 			border-bottom: 3px solid #009A5F;
+
+			.day, .date {
+				color: #009A5F;
+			}
 		}
 	}
 }
@@ -1551,6 +1555,22 @@ p {
 
 	.match-table-common {
 		margin:  12px 0px 8px 0px;
+	}
+}
+
+.list-league-in-odds {
+	width: 100%;
+	height: auto;
+	border: 1px solid red;
+}
+
+.odds-block-header {
+	display: flex;
+	align-items: center;
+	border: 1px solid red;
+
+	.odds-info {
+
 	}
 }
 // ===========END STYLE SCORES PAGE ===========
