@@ -834,7 +834,7 @@
                         <img src="./images/icon-arrow-green.png" alt="" class="icon icon-arrow-green">
                         <img src="./images/icon-ball.png" alt="" class="icon icon-ball">
                       </div>
-                      <span class="player-name">Inaki Pena</span>
+                      <span class="player-name">Inaki Pena Inaki Pena Inaki Pena Inaki Pena</span>
                     </div>
                   </div>
 
@@ -937,7 +937,7 @@
                         <img src="./images/icon-plus.png" alt="" class="icon-plus">
                       </span>
                       <div class="suspensions-info">
-                        <span class="player-name player-name-1">Sergi Roberto</span>
+                        <span class="player-name player-name-1">Sergi Roberto Dislocated shoulder</span>
                         <span class="player-name player-name-2">Dislocated shoulder</span>
                       </div>
                     </div>
@@ -1024,14 +1024,14 @@
                         <div class="club-item">
                           <div class="club-info-wrapper">
                             <img src="./images/club-1.png" alt="">
-                            <span class="club-name">Manchester City</span>
+                            <span class="club-name txt-h2h-common">Manchester City</span>
                           </div>
                           <span class="score">0</span>
                         </div>
                         <div class="club-item">
                           <div class="club-info-wrapper">
                             <img src="./images/club-2.png" alt="">
-                            <span class="club-name">Chelsea</span>
+                            <span class="club-name txt-h2h-common">Chelsea</span>
                           </div>
                           <span class="score">1</span>
                         </div>
@@ -1056,14 +1056,14 @@
                         <div class="club-item">
                           <div class="club-info-wrapper">
                             <img src="./images/club-1.png" alt="">
-                            <span class="club-name">Manchester City</span>
+                            <span class="club-name txt-h2h-common">Manchester City</span>
                           </div>
                           <span class="score">0</span>
                         </div>
                         <div class="club-item">
                           <div class="club-info-wrapper">
                             <img src="./images/club-2.png" alt="">
-                            <span class="club-name">Chelsea</span>
+                            <span class="club-name txt-h2h-common">Chelsea</span>
                           </div>
                           <span class="score">1</span>
                         </div>
@@ -1078,14 +1078,14 @@
                         <div class="club-item">
                           <div class="club-info-wrapper">
                             <img src="./images/club-1.png" alt="">
-                            <span class="club-name">Manchester City</span>
+                            <span class="club-name txt-h2h-common">Manchester City</span>
                           </div>
                           <span class="score">0</span>
                         </div>
                         <div class="club-item">
                           <div class="club-info-wrapper">
                             <img src="./images/club-2.png" alt="">
-                            <span class="club-name">Chelsea</span>
+                            <span class="club-name txt-h2h-common">Chelsea</span>
                           </div>
                           <span class="score">1</span>
                         </div>
@@ -1110,14 +1110,14 @@
                         <div class="club-item">
                           <div class="club-info-wrapper">
                             <img src="./images/club-1.png" alt="">
-                            <span class="club-name">Manchester City</span>
+                            <span class="club-name txt-h2h-common">Manchester City</span>
                           </div>
                           <span class="score">0</span>
                         </div>
                         <div class="club-item">
                           <div class="club-info-wrapper">
                             <img src="./images/club-2.png" alt="">
-                            <span class="club-name">Chelsea</span>
+                            <span class="club-name txt-h2h-common">Chelsea</span>
                           </div>
                           <span class="score">1</span>
                         </div>
@@ -1132,14 +1132,14 @@
                         <div class="club-item">
                           <div class="club-info-wrapper">
                             <img src="./images/club-1.png" alt="">
-                            <span class="club-name">Manchester City</span>
+                            <span class="club-name txt-h2h-common">Manchester City Manchester City Manchester City Manchester City</span>
                           </div>
                           <span class="score">0</span>
                         </div>
                         <div class="club-item">
                           <div class="club-info-wrapper">
                             <img src="./images/club-2.png" alt="">
-                            <span class="club-name">Chelsea</span>
+                            <span class="club-name txt-h2h-common">Chelsea</span>
                           </div>
                           <span class="score">1</span>
                         </div>

@@ -1561,16 +1561,154 @@ p {
 .list-league-in-odds {
 	width: 100%;
 	height: auto;
-	border: 1px solid red;
 }
 
+
+.txt-odds-1 {
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+	max-width: 250px;
+
+	@include mq(max_md) {
+		max-width: 280px;
+	}
+}
+
+.txt-odds-2 {
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+	max-width: 150px;
+}
 .odds-block-header {
 	display: flex;
 	align-items: center;
-	border: 1px solid red;
 
 	.odds-info {
+		display: flex;
+		align-items: center;
 
+		.odd-value {
+			display: flex;
+			align-items: center;
+			gap: 0px 55px;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 11px;
+			line-height: 16px;
+			margin: 0px 30px;
+
+			@include  mq(max_md) {
+				display: none;
+			}
+		}
+
+		.icon-arrow {
+			width: 20px;
+			height: 20px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+
+			svg {
+				display: none;
+				@include mq(max_md) {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+
+.list-league-in-odds {
+	.league-item-wrapper {
+		margin-bottom: 16px;;
+	}
+}
+.list-odds-value {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+
+	@include mq(max_md) {
+		flex-direction: column;
+		gap: 4px 0px;
+	}
+
+	.odds-item {
+		display: flex;
+		gap: 4px;
+		align-items: center;
+		background: rgba(217, 217, 217, 0.1);
+		border-radius: 4px;
+		min-width: 57px;
+		max-height: 24px;;
+		padding: 4px 7px;
+		justify-content: center;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 11px;
+		line-height: 16px;
+		color: #FFFFFF;
+
+		@include mq(max_md) {
+			background-color: transparent;
+			font-weight: 400;
+			font-size: 10px;
+			line-height: 15px;
+			padding: 0;
+			min-width: fit-content;
+			max-height: fit-content;
+		}
+
+		.icon {
+			width: 16px;
+			height: 16px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			@include mq(max_md) {
+				width: 12px;
+				height: 12px;
+			}
+
+			svg {
+				@include mq(max_md) {
+					width: 12px;
+					height: 12px;
+				}
+			}
+		}
 	}
 }
 // ===========END STYLE SCORES PAGE ===========
+
+
+//=========STYLE favourites page =======
+
+.favourites-page-content-wrapper {
+	.sub-nav {
+		padding-top: 10px;
+
+		@include mq(max_md) {
+			padding: 0;
+		}
+	}
+
+	.sub-tab-content {
+		padding: 16px 20px;
+
+		@include mq(max_md) {
+			padding: 16px 0px;
+		}
+	}
+
+	.favourites-list-league-item {
+		margin-bottom: 16px;;
+	}
+}
+// ========END STYLE FAVOURITES PAGE

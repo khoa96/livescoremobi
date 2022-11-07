@@ -282,6 +282,17 @@
 .match-content-page-wrapper .match-h2h-content-wrapper .h2h-item {
   margin-bottom: 16px;
 }
+.match-content-page-wrapper .match-h2h-content-wrapper .txt-h2h-common {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 350px;
+}
+@media only screen and (max-width: 991px) {
+  .match-content-page-wrapper .match-h2h-content-wrapper .txt-h2h-common {
+    max-width: 200px;
+  }
+}
 .match-content-page-wrapper .list-suggestion {
   list-style: none;
   margin-top: 16px;
@@ -702,8 +713,9 @@
 }
 .substitution-player-wrapper .list-substitution-player .substitution-player-item .player-item .number {
   display: flex;
-  width: 20px;
-  height: 20px;
+  min-width: 20px;
+  min-height: 20px;
+  max-height: 20px;
   justify-content: center;
   align-items: center;
   border: 1px solid #FFFFFF;
@@ -726,9 +738,13 @@
   font-weight: 400;
   font-size: 13px;
   line-height: 20px;
-  /* identical to box height */
-  /* #FFFFFF */
   color: #FFFFFF;
+  max-width: 200px;
+}
+@media only screen and (max-width: 991px) {
+  .substitution-player-wrapper .list-substitution-player .substitution-player-item .player-item .player-name {
+    max-width: 140px;
+  }
 }
 .substitution-player-wrapper .list-substitution-player .substitution-player-item .player-item .icon {
   min-width: 9px;
@@ -778,6 +794,15 @@
   font-weight: 500;
   font-size: 13px;
   line-height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 200px;
+}
+@media only screen and (max-width: 991px) {
+  .suspensions-content-wrapper .list-suspensions .suspensions-info .player-name {
+    max-width: 120px;
+  }
 }
 .suspensions-content-wrapper .list-suspensions .suspensions-info .player-name-1 {
   color: #fff;

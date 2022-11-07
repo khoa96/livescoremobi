@@ -487,7 +487,7 @@
 
           <!-- ===========START Odds TABS ============= -->
           <div id="tabs-3" class="main-tab-content">
-          <div id="odds-date-tabs">
+            <div id="odds-date-tabs">
               <ul class="date-nav">
                 <li class="sub-nav-item-for-mobile">
                   <a href="#sub-tabs-1" class="live-nav-item">Live</a>
@@ -560,36 +560,79 @@
                       <div class="league-info-wrapper">
                         <img src="./images/league-3.png" class="league-image w-20" />
                         <div class="league-info">
-                          <span class="group-name">Premier League</span>
-                          <span class="league-name">Champions League</span>
+                          <span class="group-name txt-odds-1">Premier League</span>
+                          <span class="league-name txt-odds-1">Champions League</span>
                         </div>
                       </div>
-
                       <div class="odds-info">
-
+                        <div class="odd-value">
+                          <span>1</span>
+                          <span>x</span>
+                          <span>2</span>
+                        </div>
+                        <span class="icon-arrow">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2_2086)">
+                              <path d="M7.5 5L12.5 10L7.5 15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2_2086">
+                                <rect width="20" height="20" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </span>
                       </div>
-
                     </div>
-
                     <div class="list-result-league">
                       <div class="block-club-common">
                         <div class="time-wrapper">
-                          <span class="type">FT</span>
+                          <span class="time">23:45</span>
                         </div>
                         <div class="list-club-wrapper">
                           <div class="club-item">
                             <div class="club-info-wrapper">
                               <img src="./images/club-1.png" alt="">
-                              <span class="club-name text-overflow-club">Manchester City Manchester </span>
+                              <span class="club-name txt-odds-2">Manchester City Manchester </span>
                             </div>
-                            <span class="score">0</span>
                           </div>
                           <div class="club-item">
                             <div class="club-info-wrapper">
                               <img src="./images/club-2.png" alt="">
-                              <span class="club-name text-overflow-club">Chelsea</span>
+                              <span class="club-name txt-odds-2">Chelsea</span>
                             </div>
-                            <span class="score">1</span>
+                          </div>
+                        </div>
+
+                        <div class="list-odds-value">
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-red" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.18294 13.1667L8.18294 3.16666" stroke="#F91E4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.1992 9.13345L8.18317 13.1668L4.1665 9.13345" stroke="#F91E4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>2.90</span>
+                          </div>
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-green" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.81706 2.83334L7.81706 12.8333" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3.80083 6.86655L7.81683 2.83321L11.8335 6.86655" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </span>
+                            <span>3.90</span>
+                          </div>
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-green" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.81706 2.83334L7.81706 12.8333" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3.80083 6.86655L7.81683 2.83321L11.8335 6.86655" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </span>
+                            <span>3.90</span>
                           </div>
                         </div>
 
@@ -603,22 +646,170 @@
                       </div>
                       <div class="block-club-common">
                         <div class="time-wrapper">
-                          <span class="type">FT</span>
+                          <span class="time">23:45</span>
                         </div>
                         <div class="list-club-wrapper">
                           <div class="club-item">
                             <div class="club-info-wrapper">
                               <img src="./images/club-1.png" alt="">
-                              <span class="club-name text-overflow-club">Manchester City</span>
+                              <span class="club-name txt-odds-2">Manchester City Manchester </span>
                             </div>
-                            <span class="score">0</span>
                           </div>
                           <div class="club-item">
                             <div class="club-info-wrapper">
                               <img src="./images/club-2.png" alt="">
-                              <span class="club-name text-overflow-club">Chelsea City Manchester City Manchester City City Manchester City Manchester City</span>
+                              <span class="club-name txt-odds-2">Chelsea</span>
                             </div>
-                            <span class="score">1</span>
+                          </div>
+                        </div>
+
+                        <div class="list-odds-value">
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-red" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.18294 13.1667L8.18294 3.16666" stroke="#F91E4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.1992 9.13345L8.18317 13.1668L4.1665 9.13345" stroke="#F91E4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>2.90</span>
+                          </div>
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-green" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.81706 2.83334L7.81706 12.8333" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3.80083 6.86655L7.81683 2.83321L11.8335 6.86655" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </span>
+                            <span>3.90</span>
+                          </div>
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-green" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.81706 2.83334L7.81706 12.8333" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3.80083 6.86655L7.81683 2.83321L11.8335 6.86655" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </span>
+                            <span>3.90</span>
+                          </div>
+                        </div>
+
+                        <span class="icon-star">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.3">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.595 2.86736L12.525 6.74986C12.6217 6.94569 12.8084 7.08236 13.025 7.11402L17.3459 7.73819C17.5209 7.76152 17.6784 7.85319 17.7859 7.99319C17.9875 8.25569 17.9567 8.62736 17.715 8.85319L14.5834 11.8815C14.4242 12.0315 14.3534 12.2515 14.395 12.4657L15.145 16.739C15.1975 17.0932 14.9559 17.4249 14.6017 17.4824C14.455 17.5049 14.305 17.4815 14.1717 17.4157L10.3234 15.3982C10.13 15.2932 9.89836 15.2932 9.70503 15.3982L5.82836 17.4265C5.50419 17.5915 5.10753 17.469 4.93086 17.1515C4.86336 17.0232 4.84003 16.8774 4.86336 16.7349L5.61336 12.4615C5.65086 12.2482 5.58003 12.029 5.42503 11.8782L2.27669 8.85069C2.02003 8.59569 2.01836 8.18069 2.27419 7.92402C2.27503 7.92319 2.27586 7.92153 2.27669 7.92069C2.38253 7.82486 2.51253 7.76069 2.65336 7.73569L6.97503 7.11153C7.19086 7.07736 7.37669 6.94236 7.47503 6.74652L9.40336 2.86736C9.48086 2.70986 9.61836 2.58903 9.78503 2.53403C9.95253 2.47819 10.1359 2.49153 10.2934 2.57069C10.4225 2.63486 10.5284 2.73903 10.595 2.86736Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="block-club-common">
+                        <div class="time-wrapper">
+                          <span class="time">23:45</span>
+                        </div>
+                        <div class="list-club-wrapper">
+                          <div class="club-item">
+                            <div class="club-info-wrapper">
+                              <img src="./images/club-1.png" alt="">
+                              <span class="club-name txt-odds-2">Manchester City Manchester </span>
+                            </div>
+                          </div>
+                          <div class="club-item">
+                            <div class="club-info-wrapper">
+                              <img src="./images/club-2.png" alt="">
+                              <span class="club-name txt-odds-2">Chelsea</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="list-odds-value">
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-red" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.18294 13.1667L8.18294 3.16666" stroke="#F91E4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.1992 9.13345L8.18317 13.1668L4.1665 9.13345" stroke="#F91E4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>2.90</span>
+                          </div>
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-green" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.81706 2.83334L7.81706 12.8333" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3.80083 6.86655L7.81683 2.83321L11.8335 6.86655" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </span>
+                            <span>3.90</span>
+                          </div>
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-green" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.81706 2.83334L7.81706 12.8333" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3.80083 6.86655L7.81683 2.83321L11.8335 6.86655" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </span>
+                            <span>3.90</span>
+                          </div>
+                        </div>
+
+                        <span class="icon-star">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g opacity="0.3">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.595 2.86736L12.525 6.74986C12.6217 6.94569 12.8084 7.08236 13.025 7.11402L17.3459 7.73819C17.5209 7.76152 17.6784 7.85319 17.7859 7.99319C17.9875 8.25569 17.9567 8.62736 17.715 8.85319L14.5834 11.8815C14.4242 12.0315 14.3534 12.2515 14.395 12.4657L15.145 16.739C15.1975 17.0932 14.9559 17.4249 14.6017 17.4824C14.455 17.5049 14.305 17.4815 14.1717 17.4157L10.3234 15.3982C10.13 15.2932 9.89836 15.2932 9.70503 15.3982L5.82836 17.4265C5.50419 17.5915 5.10753 17.469 4.93086 17.1515C4.86336 17.0232 4.84003 16.8774 4.86336 16.7349L5.61336 12.4615C5.65086 12.2482 5.58003 12.029 5.42503 11.8782L2.27669 8.85069C2.02003 8.59569 2.01836 8.18069 2.27419 7.92402C2.27503 7.92319 2.27586 7.92153 2.27669 7.92069C2.38253 7.82486 2.51253 7.76069 2.65336 7.73569L6.97503 7.11153C7.19086 7.07736 7.37669 6.94236 7.47503 6.74652L9.40336 2.86736C9.48086 2.70986 9.61836 2.58903 9.78503 2.53403C9.95253 2.47819 10.1359 2.49153 10.2934 2.57069C10.4225 2.63486 10.5284 2.73903 10.595 2.86736Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="block-club-common">
+                        <div class="time-wrapper">
+                          <span class="time">23:45</span>
+                        </div>
+                        <div class="list-club-wrapper">
+                          <div class="club-item">
+                            <div class="club-info-wrapper">
+                              <img src="./images/club-1.png" alt="">
+                              <span class="club-name txt-odds-2">Manchester City Manchester </span>
+                            </div>
+                          </div>
+                          <div class="club-item">
+                            <div class="club-info-wrapper">
+                              <img src="./images/club-2.png" alt="">
+                              <span class="club-name txt-odds-2">Chelsea</span>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="list-odds-value">
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-red" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.18294 13.1667L8.18294 3.16666" stroke="#F91E4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.1992 9.13345L8.18317 13.1668L4.1665 9.13345" stroke="#F91E4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>2.90</span>
+                          </div>
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-green" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.81706 2.83334L7.81706 12.8333" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3.80083 6.86655L7.81683 2.83321L11.8335 6.86655" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </span>
+                            <span>3.90</span>
+                          </div>
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-green" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.81706 2.83334L7.81706 12.8333" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3.80083 6.86655L7.81683 2.83321L11.8335 6.86655" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </span>
+                            <span>3.90</span>
                           </div>
                         </div>
 
@@ -632,49 +823,84 @@
                       </div>
                     </div>
                   </div>
-
                   <div class="league-item-wrapper">
-                    <div class="block-header">
+                    <div class="odds-block-header">
                       <div class="league-info-wrapper">
                         <img src="./images/league-3.png" class="league-image w-20" />
                         <div class="league-info">
-                          <span class="group-name">La Liga</span>
-                          <span class="league-name">Spain</span>
+                          <span class="group-name txt-odds-1">Premier League</span>
+                          <span class="league-name txt-odds-1">Champions League</span>
                         </div>
                       </div>
-                      <span class="icon-arrow">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0_2_214)">
-                            <path d="M7.5 5L12.5 10L7.5 15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_2_214">
-                              <rect width="20" height="20" fill="white" />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </span>
+                      <div class="odds-info">
+                        <div class="odd-value">
+                          <span>1</span>
+                          <span>x</span>
+                          <span>2</span>
+                        </div>
+                        <span class="icon-arrow">
+                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2_2086)">
+                              <path d="M7.5 5L12.5 10L7.5 15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_2_2086">
+                                <rect width="20" height="20" fill="white" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </span>
+                      </div>
                     </div>
-
                     <div class="list-result-league">
                       <div class="block-club-common">
                         <div class="time-wrapper">
-                          <span class="type txt-green-primary">FT</span>
+                          <span class="time">23:45</span>
                         </div>
                         <div class="list-club-wrapper">
                           <div class="club-item">
                             <div class="club-info-wrapper">
                               <img src="./images/club-1.png" alt="">
-                              <span class="club-name text-overflow-club">Manchester City Manchester </span>
+                              <span class="club-name txt-odds-2">Manchester City Manchester </span>
                             </div>
-                            <span class="score txt-green-primary">0</span>
                           </div>
                           <div class="club-item">
                             <div class="club-info-wrapper">
                               <img src="./images/club-2.png" alt="">
-                              <span class="club-name text-overflow-club">Chelsea</span>
+                              <span class="club-name txt-odds-2">Chelsea</span>
                             </div>
-                            <span class="score txt-green-primary">1</span>
+                          </div>
+                        </div>
+
+                        <div class="list-odds-value">
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-red" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.18294 13.1667L8.18294 3.16666" stroke="#F91E4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.1992 9.13345L8.18317 13.1668L4.1665 9.13345" stroke="#F91E4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>2.90</span>
+                          </div>
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-green" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.81706 2.83334L7.81706 12.8333" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3.80083 6.86655L7.81683 2.83321L11.8335 6.86655" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </span>
+                            <span>3.90</span>
+                          </div>
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-green" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.81706 2.83334L7.81706 12.8333" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3.80083 6.86655L7.81683 2.83321L11.8335 6.86655" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </span>
+                            <span>3.90</span>
                           </div>
                         </div>
 
@@ -688,22 +914,52 @@
                       </div>
                       <div class="block-club-common">
                         <div class="time-wrapper">
-                          <span class="type txt-green-primary">FT</span>
+                          <span class="time">23:45</span>
                         </div>
                         <div class="list-club-wrapper">
                           <div class="club-item">
                             <div class="club-info-wrapper">
                               <img src="./images/club-1.png" alt="">
-                              <span class="club-name text-overflow-club">Manchester City</span>
+                              <span class="club-name txt-odds-2">Manchester City Manchester </span>
                             </div>
-                            <span class="score txt-green-primary">0</span>
                           </div>
                           <div class="club-item">
                             <div class="club-info-wrapper">
                               <img src="./images/club-2.png" alt="">
-                              <span class="club-name text-overflow-club">Chelsea City Manchester City Manchester City City Manchester City Manchester City</span>
+                              <span class="club-name txt-odds-2">Chelsea</span>
                             </div>
-                            <span class="score txt-green-primary">1</span>
+                          </div>
+                        </div>
+
+                        <div class="list-odds-value">
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-red" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.18294 13.1667L8.18294 3.16666" stroke="#F91E4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.1992 9.13345L8.18317 13.1668L4.1665 9.13345" stroke="#F91E4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>2.90</span>
+                          </div>
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-green" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.81706 2.83334L7.81706 12.8333" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3.80083 6.86655L7.81683 2.83321L11.8335 6.86655" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </span>
+                            <span>3.90</span>
+                          </div>
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-green" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.81706 2.83334L7.81706 12.8333" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3.80083 6.86655L7.81683 2.83321L11.8335 6.86655" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </span>
+                            <span>3.90</span>
                           </div>
                         </div>
 
@@ -715,130 +971,121 @@
                           </svg>
                         </span>
                       </div>
-                    </div>
-                  </div>
-
-
-                  <div class="league-item-wrapper">
-                    <div class="block-header">
-                      <div class="league-info-wrapper">
-                        <img src="./images/league-3.png" class="league-image w-20" />
-                        <div class="league-info">
-                          <span class="group-name">Group B</span>
-                          <span class="league-name">Champions League</span>
-                        </div>
-                      </div>
-                      <span class="icon-arrow">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <g clip-path="url(#clip0_2_214)">
-                            <path d="M7.5 5L12.5 10L7.5 15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                          </g>
-                          <defs>
-                            <clipPath id="clip0_2_214">
-                              <rect width="20" height="20" fill="white" />
-                            </clipPath>
-                          </defs>
-                        </svg>
-                      </span>
-                    </div>
-
-                    <div class="list-result-league">
                       <div class="block-club-common">
                         <div class="time-wrapper">
-                          <span class="type">23:45</span>
+                          <span class="time">23:45</span>
                         </div>
                         <div class="list-club-wrapper">
                           <div class="club-item">
                             <div class="club-info-wrapper">
                               <img src="./images/club-1.png" alt="">
-                              <span class="club-name text-overflow-club">Manchester City Manchester </span>
+                              <span class="club-name txt-odds-2">Manchester City Manchester </span>
                             </div>
                           </div>
                           <div class="club-item">
                             <div class="club-info-wrapper">
                               <img src="./images/club-2.png" alt="">
-                              <span class="club-name text-overflow-club">Chelsea</span>
+                              <span class="club-name txt-odds-2">Chelsea</span>
                             </div>
                           </div>
                         </div>
+
+                        <div class="list-odds-value">
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-red" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.18294 13.1667L8.18294 3.16666" stroke="#F91E4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.1992 9.13345L8.18317 13.1668L4.1665 9.13345" stroke="#F91E4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>2.90</span>
+                          </div>
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-green" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.81706 2.83334L7.81706 12.8333" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3.80083 6.86655L7.81683 2.83321L11.8335 6.86655" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </span>
+                            <span>3.90</span>
+                          </div>
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-green" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.81706 2.83334L7.81706 12.8333" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3.80083 6.86655L7.81683 2.83321L11.8335 6.86655" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </span>
+                            <span>3.90</span>
+                          </div>
+                        </div>
+
                         <span class="icon-star">
                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5948 2.86736L12.5248 6.74986C12.6214 6.94569 12.8081 7.08236 13.0248 7.11402L17.3456 7.73819C17.5206 7.76152 17.6781 7.85319 17.7856 7.99319C17.9873 8.25569 17.9564 8.62736 17.7148 8.85319L14.5831 11.8815C14.4239 12.0315 14.3531 12.2515 14.3948 12.4657L15.1448 16.739C15.1973 17.0932 14.9556 17.4249 14.6014 17.4824C14.4548 17.5049 14.3048 17.4815 14.1714 17.4157L10.3231 15.3982C10.1298 15.2932 9.89811 15.2932 9.70478 15.3982L5.82811 17.4265C5.50395 17.5915 5.10728 17.469 4.93062 17.1515C4.86312 17.0232 4.83978 16.8774 4.86312 16.7349L5.61312 12.4615C5.65062 12.2482 5.57978 12.029 5.42478 11.8782L2.27645 8.85069C2.01978 8.59569 2.01812 8.18069 2.27395 7.92402C2.27478 7.92319 2.27562 7.92153 2.27645 7.92069C2.38228 7.82486 2.51228 7.76069 2.65312 7.73569L6.97478 7.11153C7.19061 7.07736 7.37645 6.94236 7.47478 6.74652L9.40312 2.86736C9.48062 2.70986 9.61811 2.58903 9.78478 2.53403C9.95228 2.47819 10.1356 2.49153 10.2931 2.57069C10.4223 2.63486 10.5281 2.73903 10.5948 2.86736Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <g opacity="0.3">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.595 2.86736L12.525 6.74986C12.6217 6.94569 12.8084 7.08236 13.025 7.11402L17.3459 7.73819C17.5209 7.76152 17.6784 7.85319 17.7859 7.99319C17.9875 8.25569 17.9567 8.62736 17.715 8.85319L14.5834 11.8815C14.4242 12.0315 14.3534 12.2515 14.395 12.4657L15.145 16.739C15.1975 17.0932 14.9559 17.4249 14.6017 17.4824C14.455 17.5049 14.305 17.4815 14.1717 17.4157L10.3234 15.3982C10.13 15.2932 9.89836 15.2932 9.70503 15.3982L5.82836 17.4265C5.50419 17.5915 5.10753 17.469 4.93086 17.1515C4.86336 17.0232 4.84003 16.8774 4.86336 16.7349L5.61336 12.4615C5.65086 12.2482 5.58003 12.029 5.42503 11.8782L2.27669 8.85069C2.02003 8.59569 2.01836 8.18069 2.27419 7.92402C2.27503 7.92319 2.27586 7.92153 2.27669 7.92069C2.38253 7.82486 2.51253 7.76069 2.65336 7.73569L6.97503 7.11153C7.19086 7.07736 7.37669 6.94236 7.47503 6.74652L9.40336 2.86736C9.48086 2.70986 9.61836 2.58903 9.78503 2.53403C9.95253 2.47819 10.1359 2.49153 10.2934 2.57069C10.4225 2.63486 10.5284 2.73903 10.595 2.86736Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
                           </svg>
                         </span>
                       </div>
                       <div class="block-club-common">
                         <div class="time-wrapper">
-                          <span class="type">23:45</span>
+                          <span class="time">23:45</span>
                         </div>
                         <div class="list-club-wrapper">
                           <div class="club-item">
                             <div class="club-info-wrapper">
                               <img src="./images/club-1.png" alt="">
-                              <span class="club-name text-overflow-club">Manchester City</span>
+                              <span class="club-name txt-odds-2">Manchester City Manchester </span>
                             </div>
                           </div>
                           <div class="club-item">
                             <div class="club-info-wrapper">
                               <img src="./images/club-2.png" alt="">
-                              <span class="club-name text-overflow-club">Chelsea City Manchester City Manchester City City Manchester City Manchester City</span>
+                              <span class="club-name txt-odds-2">Chelsea</span>
                             </div>
+                          </div>
+                        </div>
+
+                        <div class="list-odds-value">
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-red" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.18294 13.1667L8.18294 3.16666" stroke="#F91E4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.1992 9.13345L8.18317 13.1668L4.1665 9.13345" stroke="#F91E4E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </span>
+                            <span>2.90</span>
+                          </div>
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-green" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.81706 2.83334L7.81706 12.8333" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3.80083 6.86655L7.81683 2.83321L11.8335 6.86655" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </span>
+                            <span>3.90</span>
+                          </div>
+                          <div class="odds-item">
+                            <span class="icon">
+                              <svg id="arrow-green" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.81706 2.83334L7.81706 12.8333" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M3.80083 6.86655L7.81683 2.83321L11.8335 6.86655" stroke="#009A5F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </span>
+                            <span>3.90</span>
                           </div>
                         </div>
 
                         <span class="icon-star">
                           <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5948 2.86736L12.5248 6.74986C12.6214 6.94569 12.8081 7.08236 13.0248 7.11402L17.3456 7.73819C17.5206 7.76152 17.6781 7.85319 17.7856 7.99319C17.9873 8.25569 17.9564 8.62736 17.7148 8.85319L14.5831 11.8815C14.4239 12.0315 14.3531 12.2515 14.3948 12.4657L15.1448 16.739C15.1973 17.0932 14.9556 17.4249 14.6014 17.4824C14.4548 17.5049 14.3048 17.4815 14.1714 17.4157L10.3231 15.3982C10.1298 15.2932 9.89811 15.2932 9.70478 15.3982L5.82811 17.4265C5.50395 17.5915 5.10728 17.469 4.93062 17.1515C4.86312 17.0232 4.83978 16.8774 4.86312 16.7349L5.61312 12.4615C5.65062 12.2482 5.57978 12.029 5.42478 11.8782L2.27645 8.85069C2.01978 8.59569 2.01812 8.18069 2.27395 7.92402C2.27478 7.92319 2.27562 7.92153 2.27645 7.92069C2.38228 7.82486 2.51228 7.76069 2.65312 7.73569L6.97478 7.11153C7.19061 7.07736 7.37645 6.94236 7.47478 6.74652L9.40312 2.86736C9.48062 2.70986 9.61811 2.58903 9.78478 2.53403C9.95228 2.47819 10.1356 2.49153 10.2931 2.57069C10.4223 2.63486 10.5281 2.73903 10.5948 2.86736Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                          </svg>
-                        </span>
-                      </div>
-                      <div class="block-club-common">
-                        <div class="time-wrapper">
-                          <span class="type">23:45</span>
-                        </div>
-                        <div class="list-club-wrapper">
-                          <div class="club-item">
-                            <div class="club-info-wrapper">
-                              <img src="./images/club-1.png" alt="">
-                              <span class="club-name text-overflow-club">Manchester City</span>
-                            </div>
-                          </div>
-                          <div class="club-item">
-                            <div class="club-info-wrapper">
-                              <img src="./images/club-2.png" alt="">
-                              <span class="club-name text-overflow-club">Chelsea City Manchester City Manchester City City Manchester City Manchester City</span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <span class="icon-star">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5948 2.86736L12.5248 6.74986C12.6214 6.94569 12.8081 7.08236 13.0248 7.11402L17.3456 7.73819C17.5206 7.76152 17.6781 7.85319 17.7856 7.99319C17.9873 8.25569 17.9564 8.62736 17.7148 8.85319L14.5831 11.8815C14.4239 12.0315 14.3531 12.2515 14.3948 12.4657L15.1448 16.739C15.1973 17.0932 14.9556 17.4249 14.6014 17.4824C14.4548 17.5049 14.3048 17.4815 14.1714 17.4157L10.3231 15.3982C10.1298 15.2932 9.89811 15.2932 9.70478 15.3982L5.82811 17.4265C5.50395 17.5915 5.10728 17.469 4.93062 17.1515C4.86312 17.0232 4.83978 16.8774 4.86312 16.7349L5.61312 12.4615C5.65062 12.2482 5.57978 12.029 5.42478 11.8782L2.27645 8.85069C2.01978 8.59569 2.01812 8.18069 2.27395 7.92402C2.27478 7.92319 2.27562 7.92153 2.27645 7.92069C2.38228 7.82486 2.51228 7.76069 2.65312 7.73569L6.97478 7.11153C7.19061 7.07736 7.37645 6.94236 7.47478 6.74652L9.40312 2.86736C9.48062 2.70986 9.61811 2.58903 9.78478 2.53403C9.95228 2.47819 10.1356 2.49153 10.2931 2.57069C10.4223 2.63486 10.5281 2.73903 10.5948 2.86736Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                          </svg>
-                        </span>
-                      </div>
-                      <div class="block-club-common">
-                        <div class="time-wrapper">
-                          <span class="type">23:45</span>
-                        </div>
-                        <div class="list-club-wrapper">
-                          <div class="club-item">
-                            <div class="club-info-wrapper">
-                              <img src="./images/club-1.png" alt="">
-                              <span class="club-name text-overflow-club">Manchester City</span>
-                            </div>
-                          </div>
-                          <div class="club-item">
-                            <div class="club-info-wrapper">
-                              <img src="./images/club-2.png" alt="">
-                              <span class="club-name text-overflow-club">Chelsea City Manchester City Manchester City City Manchester City Manchester City</span>
-                            </div>
-                          </div>
-                        </div>
-
-                        <span class="icon-star">
-                          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.5948 2.86736L12.5248 6.74986C12.6214 6.94569 12.8081 7.08236 13.0248 7.11402L17.3456 7.73819C17.5206 7.76152 17.6781 7.85319 17.7856 7.99319C17.9873 8.25569 17.9564 8.62736 17.7148 8.85319L14.5831 11.8815C14.4239 12.0315 14.3531 12.2515 14.3948 12.4657L15.1448 16.739C15.1973 17.0932 14.9556 17.4249 14.6014 17.4824C14.4548 17.5049 14.3048 17.4815 14.1714 17.4157L10.3231 15.3982C10.1298 15.2932 9.89811 15.2932 9.70478 15.3982L5.82811 17.4265C5.50395 17.5915 5.10728 17.469 4.93062 17.1515C4.86312 17.0232 4.83978 16.8774 4.86312 16.7349L5.61312 12.4615C5.65062 12.2482 5.57978 12.029 5.42478 11.8782L2.27645 8.85069C2.01978 8.59569 2.01812 8.18069 2.27395 7.92402C2.27478 7.92319 2.27562 7.92153 2.27645 7.92069C2.38228 7.82486 2.51228 7.76069 2.65312 7.73569L6.97478 7.11153C7.19061 7.07736 7.37645 6.94236 7.47478 6.74652L9.40312 2.86736C9.48062 2.70986 9.61811 2.58903 9.78478 2.53403C9.95228 2.47819 10.1356 2.49153 10.2931 2.57069C10.4223 2.63486 10.5281 2.73903 10.5948 2.86736Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <g opacity="0.3">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M10.595 2.86736L12.525 6.74986C12.6217 6.94569 12.8084 7.08236 13.025 7.11402L17.3459 7.73819C17.5209 7.76152 17.6784 7.85319 17.7859 7.99319C17.9875 8.25569 17.9567 8.62736 17.715 8.85319L14.5834 11.8815C14.4242 12.0315 14.3534 12.2515 14.395 12.4657L15.145 16.739C15.1975 17.0932 14.9559 17.4249 14.6017 17.4824C14.455 17.5049 14.305 17.4815 14.1717 17.4157L10.3234 15.3982C10.13 15.2932 9.89836 15.2932 9.70503 15.3982L5.82836 17.4265C5.50419 17.5915 5.10753 17.469 4.93086 17.1515C4.86336 17.0232 4.84003 16.8774 4.86336 16.7349L5.61336 12.4615C5.65086 12.2482 5.58003 12.029 5.42503 11.8782L2.27669 8.85069C2.02003 8.59569 2.01836 8.18069 2.27419 7.92402C2.27503 7.92319 2.27586 7.92153 2.27669 7.92069C2.38253 7.82486 2.51253 7.76069 2.65336 7.73569L6.97503 7.11153C7.19086 7.07736 7.37669 6.94236 7.47503 6.74652L9.40336 2.86736C9.48086 2.70986 9.61836 2.58903 9.78503 2.53403C9.95253 2.47819 10.1359 2.49153 10.2934 2.57069C10.4225 2.63486 10.5284 2.73903 10.595 2.86736Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
                           </svg>
                         </span>
                       </div>
