@@ -505,6 +505,7 @@
                     <div class="player-wrapper">
                       <div class="number">
                         <span>1</span>
+                        <img src="./images/icon-arrow-green.png" class="icon icon-arrow" />
                       </div>
                       <span class="player-name">Marc-Andre </span>
                     </div>
@@ -514,13 +515,17 @@
                       <div class="player-wrapper">
                         <div class="number">
                           <span>2</span>
+                          <img src="./images/icon-arrow-red.png" class="icon icon-arrow" />
                         </div>
                         <span class="player-name">Hector Bellerin</span>
                       </div>
                     </div>
                     <div class="player-item">
                       <div class="player-wrapper">
-                        <span class="number">1</span>
+                        <div class="number">
+                          <span>3</span>
+                          <img src="./images/icon-yellow-card.png" class="icon icon-card" />
+                        </div>
                         <span class="player-name">Marc-Andre </span>
                       </div>
                     </div>
@@ -528,6 +533,7 @@
                       <div class="player-wrapper">
                         <div class="number">
                           <span>13</span>
+                          <img src="./images/icon-ball.png" class="icon icon-ball" />
                         </div>
                         <span class="player-name">Jules Kounde</span>
                       </div>

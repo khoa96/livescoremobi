@@ -473,6 +473,24 @@
         font-size: 13px;
         line-height: 20px;
         border-radius: 50%;
+        position: relative;
+
+        .icon {
+          position: absolute;
+          min-width: 14px;
+          max-width: 14px;
+          height: 14px;
+        }
+
+        .icon-arrow {
+          right: -3px;
+          bottom: -3px;
+        }
+
+        .icon-card, .icon-ball {
+          top: -3px;
+          right: -3px;
+        }
       }
 
       .player-name {

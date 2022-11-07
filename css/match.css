@@ -425,6 +425,21 @@
   font-size: 13px;
   line-height: 20px;
   border-radius: 50%;
+  position: relative;
+}
+.match-content-page-wrapper .visual-match-wrapper .player-wrapper .number .icon {
+  position: absolute;
+  min-width: 14px;
+  max-width: 14px;
+  height: 14px;
+}
+.match-content-page-wrapper .visual-match-wrapper .player-wrapper .number .icon-arrow {
+  right: -3px;
+  bottom: -3px;
+}
+.match-content-page-wrapper .visual-match-wrapper .player-wrapper .number .icon-card, .match-content-page-wrapper .visual-match-wrapper .player-wrapper .number .icon-ball {
+  top: -3px;
+  right: -3px;
 }
 .match-content-page-wrapper .visual-match-wrapper .player-wrapper .player-name {
   font-style: normal;
