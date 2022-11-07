@@ -194,10 +194,12 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 8px;
   padding: 32px;
+  min-width: 765px;
 }
 @media only screen and (max-width: 991px) {
   .page-news-detail-wrapper .center-main-layout {
     padding: 16px 12px;
+    min-width: 100%;
   }
 }
 .page-news-detail-wrapper .center-main-layout .news-detail-title {
