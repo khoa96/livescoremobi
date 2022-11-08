@@ -76,78 +76,74 @@ $(document).mouseup(function (e) {
 });
 // =======HANDLE DATEPICKER FOR MOBILE ========
 
-// ===========HANDLE CLICK TAB LEFT SIDEBAR FOR PC =======
-function openTab(evt, tabName) {
-  // Declare all variables
-  var i, tabcontent, tablinks;
 
-  // Get all elements with class="tabcontent" and hide them
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+//  ========SUPPORT GAP PROPERTY =======
+$(function () {
+  function checkFlexGap() {
+    // create flex container with row-gap set
+    var flex = document.createElement("div");
+    flex.style.display = "flex";
+    flex.style.flexDirection = "column";
+    flex.style.rowGap = "1px";
+
+    // create two, elements inside it
+    flex.appendChild(document.createElement("div"));
+    flex.appendChild(document.createElement("div"));
+
+    // append to the DOM (needed to obtain scrollHeight)
+    document.body.appendChild(flex);
+    var isSupported = flex.scrollHeight === 1; // flex container should be 1px high from the row-gap
+    flex.parentNode.removeChild(flex);
+
+    return isSupported;
   }
 
-  // Get all elements with class="tablinks" and remove the class "active"
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  const isSupportGap = checkFlexGap();
+  function detectBrowser() {
+    if (
+      (navigator.userAgent.indexOf("Opera") ||
+        navigator.userAgent.indexOf("OPR")) != -1
+    ) {
+      return "Opera";
+    } else if (navigator.userAgent.indexOf("Chrome") != -1) {
+      return "Chrome";
+    } else if (navigator.userAgent.indexOf("Safari") != -1) {
+      return "Safari";
+    } else if (navigator.userAgent.indexOf("Firefox") != -1) {
+      return "Firefox";
+    } else if (
+      navigator.userAgent.indexOf("MSIE") != -1 ||
+      !!document.documentMode == true
+    ) {
+      return "IE"; //crap
+    } else {
+      return "Unknown";
+    }
   }
-
-  // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-
-// Get the element with id="defaultOpen" and click on it
-const nodeDefault = document.getElementById("defaultOpen");
-if (nodeDefault) {
-  nodeDefault.click();
-}
-
-// ===========HANDLE CLICK TAB LEFT SIDEBAR FOR PC =======
-
-// ===========HANDLE OPEN TAB LEFT SIDEBAR FOR MOBILE (select league)=======
-$(".list-league-dropdown").hide();
-$("#btn-league-dropdown").on("click", function () {
-  $("#datepicker-mobile").hide();
-  $(".list-league-dropdown").toggle();
-});
-
-// handle click league for mobile
-$(".league-dropdown-item").on("click", function () {
-  const imgElement = $(this).children("img");
-  const spanElement = $(this).children("span");
-  if (imgElement.length && spanElement.length) {
-    const src = imgElement.attr("src");
-    const leagueName = spanElement.text();
-    $("#league-image-mobile").attr("src", src);
-    $("#league-name-mobile").text(leagueName);
+  const browerName = detectBrowser();
+  console.log('browerName ====', browerName, 'isSupportGap ====', isSupportGap)
+  if (!isSupportGap || browerName === "Safari") {
+    // support safari cannot support gap css property
+    console.log('======cal here ====')
+    $("*").each(function () {
+      const displayPro = $(this).css("display");
+      const rowGap = $(this).css("row-gap");
+      const columnGap = $(this).css("column-gap");
+      const directionPro = $(this).css("flexDirection");
+      if (
+        displayPro === "flex" &&
+        (rowGap !== "normal" || columnGap !== "normal")
+      ) {
+        const parent = $(this);
+        parent.children().each(function (index) {
+          if (directionPro === "row") {
+            $(this).css("margin-right", columnGap);
+          } else if (directionPro === "column") {
+            $(this).css("margin-bottom", rowGap);
+          }
+        });
+      }
+    });
   }
-  $(".list-league-dropdown").hide();
-  //code something here .....
 });
 
-// =================== HANDLE SELECT LEAGUE RANKING ===================
-
-// hidden list league ranking when init
-$(".list-league-ranking-dropdown").hide();
-
-// toggle show list league ranking when click.
-$("#btn-league-ranking-dropdown").on("click", function () {
-  $(".list-league-ranking-dropdown").toggle();
-});
-
-// handle click league for mobile
-$(".league-ranking-item").on("click", function () {
-  const imgElement = $(this).children("img");
-  const spanElement = $(this).children("span");
-  if (imgElement.length && spanElement.length) {
-    const src = imgElement.attr("src");
-    const leagueName = spanElement.text();
-    $("#league-ranking-image").attr("src", src);
-    $("#league-ranking-name").text(leagueName);
-  }
-  $(".list-league-ranking-dropdown").hide();
-  // code something here .....
-});
-// =================== HANDLE SELECT LEAGUE RANKING ===================
