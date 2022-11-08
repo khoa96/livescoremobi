@@ -121,10 +121,8 @@ $(function () {
     }
   }
   const browerName = detectBrowser();
-  console.log('browerName ====', browerName, 'isSupportGap ====', isSupportGap)
-  if (!isSupportGap || browerName === "Safari") {
-    // support safari cannot support gap css property
-    console.log('======cal here ====')
+  if (!isSupportGap) {
+    // support safari cannot support gap css propertys
     $("*").each(function () {
       const displayPro = $(this).css("display");
       const rowGap = $(this).css("row-gap");
