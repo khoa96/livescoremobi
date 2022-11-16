@@ -194,6 +194,8 @@
   height: auto;
   padding: 10px 0px;
   background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
 }
 @media only screen and (max-width: 991px) {
   .header .list-league-pc-wrapper {
