@@ -192,6 +192,12 @@ p {
   margin-right: auto;
   margin-left: auto;
 }
+@media only screen and (max-width: 991px) {
+  .container {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
 
 @media (min-width: 768px) {
   .container {
@@ -334,6 +340,7 @@ p {
 }
 .calendar .ui-datepicker-today .ui-state-active {
   color: #fff !important;
+  font-weight: bold;
 }
 .calendar .ui-state-active {
   color: #009a5f;
@@ -445,18 +452,28 @@ p {
 }
 
 .nav-logo {
-  min-width: 155px;
-  max-width: 155px;
+  min-width: 200px;
+  max-width: 200px;
+  margin-left: 125px;
+}
+@media only screen and (max-width: 991px) {
+  .nav-logo {
+    margin-left: 0;
+    min-width: 155px;
+    max-width: 155px;
+  }
 }
 .nav-logo img {
-  min-width: 155px;
-  max-width: 155px;
-  height: 24px;
+  min-width: 200px;
+  max-width: 200px;
+  height: 31px;
   object-fit: cover;
 }
 @media only screen and (max-width: 991px) {
   .nav-logo img {
-    display: none;
+    min-width: 155px;
+    max-width: 155px;
+    height: 24px;
   }
 }
 
@@ -586,7 +603,6 @@ p {
   align-items: flex-start;
   justify-content: flex-end;
   padding: 0px 12px 8px;
-  background-color: rgba(255, 255, 255, 0.15);
 }
 .right-main-layout .list-news-right-sidebar-wrapper .list-news-item .news-content-mask .news-title {
   display: -webkit-box;
@@ -653,16 +669,17 @@ p {
 }
 .league-info-wrapper .league-info .group-name {
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 13px;
   line-height: 20px;
   /* identical to box height */
   color: #FFFFFF;
+  font-weight: bold;
 }
 .league-info-wrapper .league-info .league-name {
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 11px;
   line-height: 20px;
   color: rgba(255, 255, 255, 0.5);
 }
@@ -691,7 +708,7 @@ p {
 }
 .table-match-detail-wrapper .score-wrapper .score {
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 17px;
   line-height: 26px;
   /* identical to box height */
@@ -790,6 +807,7 @@ p {
   color: #009A5F;
   padding-bottom: 7px;
   border-bottom: 3px solid #009A5F;
+  font-weight: bold;
 }
 
 .tab-content {
@@ -797,7 +815,7 @@ p {
 }
 @media only screen and (max-width: 991px) {
   .tab-content {
-    padding: 16px 12px;
+    padding: 16px 8px;
   }
 }
 
@@ -867,11 +885,12 @@ p {
   line-height: 20px;
   /* identical to box height */
   /* #FFFFFF */
-  color: #FFFFFF;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
 }
 .block-club-common .club-item .score {
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 13px;
   line-height: 20px;
   color: #FFFFFF;
@@ -908,6 +927,10 @@ p {
     overflow-x: scroll !important;
   }
 }
+.match-table-common .active {
+  background-color: #181818 !important;
+  color: #fff !important;
+}
 .match-table-common .table-row {
   display: flex;
   align-items: center;
@@ -917,11 +940,23 @@ p {
   font-size: 11px;
   line-height: 16px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.7);
 }
 @media only screen and (max-width: 991px) {
   .match-table-common .table-row {
     min-width: max-content;
   }
+}
+.match-table-common .table-row .column-25 + .column-8 {
+  color: #fff;
+  font-weight: bold;
+}
+.match-table-common .table-row .column-8:first-child {
+  font-weight: bold;
+}
+.match-table-common .table-row .column-8:last-child {
+  color: #fff;
+  font-weight: bold;
 }
 .match-table-common .column-25 {
   width: 30%;
@@ -944,6 +979,20 @@ p {
   font-style: normal;
   color: rgba(255, 255, 255, 0.5);
   border-bottom: none !important;
+  font-weight: bold;
+}
+.match-table-common .table-heading .column-25 + .column-8 {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+}
+.match-table-common .table-heading .column-8:first-child {
+  font-weight: 400;
+}
+.match-table-common .table-heading .column-8:last-child {
+  color: rgba(255, 255, 255, 0.5);
+}
+.match-table-common .table-heading .column-25 {
+  font-weight: 400;
 }
 @media only screen and (max-width: 991px) {
   .match-table-common .table-heading {
@@ -1285,11 +1334,11 @@ p {
 }
 
 .sub-nav-item-for-pc {
-  display: block;
+  display: block !important;
 }
 @media only screen and (max-width: 991px) {
   .sub-nav-item-for-pc {
-    display: none;
+    display: none !important;
   }
 }
 
@@ -1413,7 +1462,7 @@ p {
 .list-league-in-scores .list-result-league {
   margin-bottom: 16px;
 }
-.list-league-in-scores .list-result-league .eague-item-wrapper {
+.list-league-in-scores .list-result-league .league-item-wrapper {
   display: flex;
   flex-direction: column;
 }
@@ -1442,7 +1491,7 @@ p {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  max-width: 250px;
+  max-width: 210px;
 }
 @media only screen and (max-width: 991px) {
   .txt-odds-1 {
@@ -1470,10 +1519,10 @@ p {
   align-items: center;
   gap: 0px 55px;
   font-style: normal;
-  font-weight: 500;
-  font-size: 11px;
+  font-weight: bold;
+  font-size: 13px;
   line-height: 16px;
-  margin: 0px 30px;
+  margin: 0px 50px;
 }
 @media only screen and (max-width: 991px) {
   .odds-block-header .odds-info .odd-value {

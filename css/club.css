@@ -42,6 +42,13 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 8px;
 }
+@media only screen and (max-width: 991px) {
+  .page-club-content-wrapper,
+.page-league-content-wrapper {
+    border: none;
+    border-radius: 0;
+  }
+}
 .page-club-content-wrapper .page-header,
 .page-league-content-wrapper .page-header {
   padding: 20px 20px 16px 20px;

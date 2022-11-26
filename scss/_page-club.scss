@@ -10,6 +10,11 @@
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: 8px;
 
+  @include mq(max_md) {
+    border: none;
+    border-radius: 0;
+  }
+
   .page-header {
     padding: 20px 20px 16px 20px;
   }
