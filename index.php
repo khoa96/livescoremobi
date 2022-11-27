@@ -142,7 +142,7 @@
                   </a>
                 </li>
 
-                <li>
+                <li class="sub-nav-item-for-pc">
                   <a href="#sub-tabs-7">
                     <span class="day">THU</span>
                     <span class="date">22 Oct</span>
@@ -527,7 +527,7 @@
                   </a>
                 </li>
 
-                <li>
+                <li class="sub-nav-item-for-pc">
                   <a href="#sub-tabs-7">
                     <span class="day">THU</span>
                     <span class="date">22 Oct</span>

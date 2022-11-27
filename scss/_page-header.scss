@@ -44,10 +44,19 @@
 
   .nav-menu {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 0px 12px;
     flex-grow: 1;
+    margin-left: 24px;
+    min-width: 545px;
+    max-width: 545px;
+    justify-content: center;
+
+    @include mq(max_md) {
+      margin-left: 0;
+      min-width: auto;
+      max-width: auto;
+    }
 
   }
 
@@ -193,9 +202,11 @@
     background-color: rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: center;
+    margin-bottom: 40px;
 
     @include mq(max_md) {
       display: none;
+      margin: 0;
     }
   }
 }

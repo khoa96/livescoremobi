@@ -52,7 +52,7 @@
 }
 @media only screen and (max-width: 991px) {
   .match-content-page-wrapper .match-content-header {
-    padding: 12px;
+    padding: 12px 0px;
   }
 }
 .match-content-page-wrapper .list-match-info {
@@ -137,7 +137,7 @@
   display: inline-block;
   margin: 0px 40px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 13px;
   line-height: 20px;
   /* identical to box height */
@@ -183,7 +183,7 @@
 }
 .match-content-page-wrapper .match-table-summary .match-table-row .match-result-item .detail-result .player-1 {
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 11px;
   line-height: 16px;
   white-space: nowrap;
@@ -198,7 +198,7 @@
 }
 .match-content-page-wrapper .match-table-summary .match-table-row .match-result-item .detail-result .player-2 {
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 11px;
   line-height: 16px;
   color: rgba(255, 255, 255, 0.5);
@@ -225,7 +225,7 @@
 }
 .match-content-page-wrapper .match-stats-content-wrapper .top-match-stats-item .first-value {
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 11px;
   line-height: 16px;
   /* identical to box height */
@@ -242,7 +242,7 @@
 }
 .match-content-page-wrapper .match-stats-content-wrapper .top-match-stats-item .second-value {
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   font-size: 11px;
   line-height: 16px;
   /* identical to box height */
@@ -357,7 +357,7 @@
 }
 .match-content-page-wrapper .visual-match-wrapper {
   width: 100%;
-  height: 925px;
+  height: 790px;
   background-image: url("../images/visual-match-background.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -366,7 +366,7 @@
 }
 @media only screen and (max-width: 991px) {
   .match-content-page-wrapper .visual-match-wrapper {
-    height: 688px;
+    height: 650px;
   }
 }
 .match-content-page-wrapper .visual-match-wrapper .label {
@@ -426,6 +426,15 @@
   line-height: 20px;
   border-radius: 50%;
   position: relative;
+  font-weight: bold;
+}
+@media only screen and (max-width: 991px) {
+  .match-content-page-wrapper .visual-match-wrapper .player-wrapper .number {
+    font-size: 12px;
+    width: 24px;
+    height: 24px;
+    line-height: 16px;
+  }
 }
 .match-content-page-wrapper .visual-match-wrapper .player-wrapper .number .icon {
   position: absolute;
@@ -441,6 +450,12 @@
   top: -3px;
   right: -3px;
 }
+@media only screen and (max-width: 991px) {
+  .match-content-page-wrapper .visual-match-wrapper .player-wrapper .number .icon-card, .match-content-page-wrapper .visual-match-wrapper .player-wrapper .number .icon-ball {
+    top: -7px;
+    right: -5px;
+  }
+}
 .match-content-page-wrapper .visual-match-wrapper .player-wrapper .player-name {
   font-style: normal;
   font-weight: 500;
@@ -449,6 +464,7 @@
   /* identical to box height */
   text-align: center;
   color: #FFFFFF;
+  font-weight: bold;
 }
 .match-content-page-wrapper .visual-match-wrapper .list-player {
   width: 100%;
@@ -464,18 +480,18 @@
   position: absolute;
   width: 100%;
   height: 45%;
-  top: 82px;
+  top: 25px;
   left: 0;
 }
 @media only screen and (max-width: 991px) {
   .match-content-page-wrapper .visual-match-wrapper .visual-club-1 {
-    top: 64px;
+    top: 40px;
     left: 0;
   }
 }
 .match-content-page-wrapper .visual-match-wrapper .visual-club-1 .number {
-  color: #fff;
-  background-color: #000;
+  color: #000;
+  background-color: #0A8051;
 }
 .match-content-page-wrapper .visual-match-wrapper .visual-club-1 .match-line-1 {
   top: 0;
@@ -497,6 +513,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 88px;
+  font-weight: bold;
 }
 @media only screen and (max-width: 991px) {
   .match-content-page-wrapper .visual-match-wrapper .visual-club-1 .match-line-2 .player-name {
@@ -552,12 +569,12 @@
   position: absolute;
   width: 100%;
   height: 45%;
-  bottom: 86px;
+  bottom: 25px;
   left: 0;
 }
 @media only screen and (max-width: 991px) {
   .match-content-page-wrapper .visual-match-wrapper .visual-club-2 {
-    bottom: 64px;
+    bottom: 40px;
     left: 0;
   }
 }
@@ -690,7 +707,7 @@
 .substitution-content-wrapper .list-substitution .substitution-info .player-wrapper .player-name {
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
+  font-size: 11px;
   line-height: 20px;
   white-space: nowrap;
   overflow: hidden;
@@ -707,6 +724,7 @@
 }
 .substitution-content-wrapper .list-substitution .substitution-info .player-wrapper .player-2 {
   color: #fff;
+  font-weight: bold;
 }
 
 .substitution-player-wrapper {
