@@ -161,14 +161,12 @@ $(".popup").on("click", function (event) {
 });
 
 $(".btn-sign-up").on('click', function() {
-  console.log("====call 1 ====")
   $(".popup-sign-in-content").hide()
   $(".popup-sign-up-content").show()
   $(".popup").addClass("popup--show");
 })
 
 $(".btn-sign-in").on('click', function() {
-    console.log("====call 3 ====")
   $(".popup-sign-in-content").show()
   $(".popup-sign-up-content").hide()
   $(".popup").addClass("popup--show");
