@@ -6,9 +6,6 @@
   </div>
 </div>
 
-
-
-
 <!-- TAB  -->
 <div id="match-tabs">
   <ul class="sub-nav">

@@ -2,7 +2,7 @@
 	<div class="container">
 		<nav class="navbar">
 			<a href="#" class="nav-logo">
-				<img src="../images/logo.png" alt="" class="logo-header">
+				<img src="./images/logo.png" alt="" class="logo-header">
 			</a>
 			<ul class="nav-menu">
 				<li class="nav-item link-active">
@@ -120,6 +120,10 @@
 				<span class="bar"></span>
 				<span class="bar"></span>
 			</div>
+			<div class="control-authen-block">
+				<button class="btn-authen btn-sign-up">Sign up</button>
+				<button class="btn-authen btn-sign-in">Sign in</button>
+			</div>
 		</nav>
 
 	</div>
@@ -175,4 +179,29 @@
 			</ul>
 		</div>
 	</div>
+
+	<!-- =========START POPUP SIGN IN AND SIGN UP========= -->
+	  <div class="popup">
+    <div class="popup__body">
+      <div class="popup__close">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g opacity="0.6" clip-path="url(#clip0_403_4284)">
+					<path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+					</g>
+					<defs>
+					<clipPath id="clip0_403_4284">
+					<rect width="24" height="24" fill="white"/>
+					</clipPath>
+					</defs>
+					</svg>
+      </div>
+      <div class="popup-content">
+        <div class="popup-sign-in-content">popup-sign-in-content</div>
+				<div class="popup-sign-up-content">popup-sign-up-content</div>
+      </div>
+    </div>
+  </div>
+	<!-- =========END POPUP SIGN IN AND SIGN UP========= -->
+
 </header>
