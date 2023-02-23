@@ -1,0 +1,339 @@
+/* -----------------------------------------------------------
+	font-face
+----------------------------------------------------------- */
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Light.ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.ttf");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+.account-page-wrapper {
+  padding-bottom: 132px;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper {
+    padding-bottom: 60px;
+  }
+}
+.account-page-wrapper .title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+}
+.account-page-wrapper .account-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .account-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+}
+.account-page-wrapper .user-info-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .user-info-wrapper {
+    gap: 16px;
+  }
+}
+.account-page-wrapper .user-info-wrapper .btn-upload {
+  position: relative;
+  width: 144px;
+  height: 144px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  transition: 0.2s;
+  cursor: pointer;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .user-info-wrapper .btn-upload {
+    width: 80px;
+    height: 80px;
+  }
+}
+.account-page-wrapper .user-info-wrapper .btn-upload input[type=file] {
+  cursor: pointer;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  transform: scale(3);
+  opacity: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.account-page-wrapper .user-info-wrapper .info-detail {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.account-page-wrapper .user-info-wrapper .info-detail .username {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height */
+  color: #ffffff;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .user-info-wrapper .info-detail .username {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.account-page-wrapper .user-info-wrapper .info-detail .line {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+}
+.account-page-wrapper .user-info-wrapper .info-detail .expiration-date-wrapper {
+  margin-top: 20px;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .user-info-wrapper .info-detail .expiration-date-wrapper {
+    flex-direction: column;
+  }
+}
+.account-page-wrapper .user-info-wrapper .info-detail .text-link {
+  text-decoration: none;
+  color: #ffb700;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-decoration: none;
+}
+.account-page-wrapper .user-info-wrapper .info-detail .text-link:hover {
+  text-decoration: none;
+}
+.account-page-wrapper .user-info-wrapper .info-detail .txt-cancel-renew-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  /* #009A5F */
+  color: #009a5f;
+  text-decoration: none;
+}
+.account-page-wrapper .user-info-wrapper .info-detail .text-link-change-password {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #009a5f;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .user-info-wrapper .info-detail .text-link-change-password {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+.account-page-wrapper .user-info-wrapper .info-detail .expiration-date {
+  display: inline-block;
+  padding: 8px 10px;
+  background: #009a5f;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  color: #ffffff;
+  margin-right: 16px;
+  min-width: max-content;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .user-info-wrapper .info-detail .expiration-date {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+.account-page-wrapper .user-info-wrapper .info-detail .renew-plan {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  /* Gray:900 */
+  color: #fff;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .user-info-wrapper {
+    gap: 16px;
+  }
+}
+.account-page-wrapper .btn-log-out {
+  min-width: 100px;
+  padding: 8px 24px;
+  background-color: transparent;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.account-page-wrapper .btn-log-out:focus {
+  outline: none;
+}
+.account-page-wrapper .transaction-wrapper {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 24px;
+  max-width: auto;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .transaction-wrapper {
+    padding: 12px;
+    min-width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+  }
+}
+.account-page-wrapper .transaction-wrapper .transaction-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin-bottom: 12px;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .transaction-wrapper .transaction-title {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 8px;
+  }
+}
+.account-page-wrapper .transaction-wrapper .list-transaction {
+  width: 100%;
+  overflow-x: scroll;
+  max-width: 100%;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .transaction-wrapper .list-transaction {
+    margin-right: 0;
+  }
+}
+.account-page-wrapper .transaction-wrapper .list-transaction .table-heading .column-item {
+  color: #fff !important;
+  font-size: 14px !important;
+  line-height: 21px;
+}
+.account-page-wrapper .transaction-wrapper .list-transaction .table-row {
+  display: flex;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding: 10px 12px;
+  padding-right: 0;
+}
+.account-page-wrapper .transaction-wrapper .list-transaction .table-row:last-of-type {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .transaction-wrapper .list-transaction .table-row {
+    padding: 6px 8px;
+  }
+}
+.account-page-wrapper .transaction-wrapper .list-transaction .table-row .column-item {
+  width: 33.3333333333%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .transaction-wrapper .list-transaction .table-row .column-item:nth-of-type(2) {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .transaction-wrapper .list-transaction .table-row .column-item:nth-of-type(3) {
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper .transaction-wrapper .list-transaction .table-row .column-item {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .account-page-wrapper {
+    padding-top: 23px;
+  }
+}
+
+/*# sourceMappingURL=profile.css.map */

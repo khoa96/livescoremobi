@@ -17,5 +17,7 @@
 		<link rel="stylesheet" type="text/css" href="css/news.css" />
 		<link rel="stylesheet" type="text/css" href="css/match.css" />
 		<link rel="stylesheet" type="text/css" href="css/club.css" />
+		<link rel="stylesheet" type="text/css" href="css/profile.css" />
+		<link rel="stylesheet" type="text/css" href="css/pricing.css" />
 
 	</head>

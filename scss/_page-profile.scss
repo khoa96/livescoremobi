@@ -1,0 +1,319 @@
+@charset "utf-8";
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+.account-page-wrapper {
+  padding-bottom: 132px;
+
+  @include mq(max_md) {
+    padding-bottom: 60px;
+  }
+  .title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #fff;
+    margin-bottom: 20px;
+
+    @include mq(max_md) {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .account-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+
+    @include mq(max_md) {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+  }
+
+  .user-info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    @include mq(max_md) {
+      gap: 16px;
+    }
+
+    .btn-upload {
+      position: relative;
+      width: 144px;
+      height: 144px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 0;
+      transition: 0.2s;
+      cursor: pointer;
+      overflow: hidden;
+      background-color: rgba(255, 255, 255, 0.1);
+
+      @include mq(max_md) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    .btn-upload input[type="file"] {
+      cursor: pointer;
+      position: absolute;
+      left: 0%;
+      top: 0%;
+      transform: scale(3);
+      opacity: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .info-detail {
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+
+      .username {
+        margin: 0;
+        padding: 0;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        /* identical to box height */
+
+        color: #ffffff;
+
+        @include mq(max_md) {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 21px;
+        }
+      }
+
+      .line {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #fff;
+      }
+
+      .expiration-date-wrapper {
+        margin-top: 20px;
+
+        @include mq(max_md) {
+          flex-direction: column;
+        }
+      }
+
+      .text-link {
+        text-decoration: none;
+        color: #ffb700;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      .txt-cancel-renew-link {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+        /* #009A5F */
+
+        color: #009a5f;
+        text-decoration: none;
+      }
+
+      .text-link-change-password {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #009a5f;
+
+        @include mq(max_md) {
+          font-size: 14px;
+          line-height: 21px;
+        }
+      }
+
+      .expiration-date {
+        display: inline-block;
+        padding: 8px 10px;
+        background: #009a5f;
+        border-radius: 8px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        color: #ffffff;
+        margin-right: 16px;
+        min-width: max-content;
+
+        @include mq(max_md) {
+          font-size: 13px;
+          line-height: 16px;
+        }
+      }
+
+      .renew-plan {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+
+        /* Gray:900 */
+
+        color: #fff;
+      }
+    }
+
+    @include mq(max_md) {
+      gap: 16px;
+    }
+  }
+
+  .btn-log-out {
+    min-width: 100px;
+    padding: 8px 24px;
+    background-color: transparent;
+
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height */
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .transaction-wrapper {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 24px;
+    max-width: auto;
+
+    @include mq(max_md) {
+      padding: 12px;
+      min-width: 100%;
+      max-width: 100%;
+      margin-left: 0;
+    }
+
+    .transaction-title {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 24px;
+      color: #FFFFFF;
+      margin-bottom: 12px;
+
+      @include mq(max_md) {
+        font-size: 14px;
+        line-height: 21px;
+        margin-bottom: 8px;
+      }
+    }
+
+    .list-transaction {
+      width: 100%;
+      overflow-x: scroll;
+      max-width: 100%;
+
+      @include mq(max_md) {
+        margin-right: 0;
+      }
+      .table-heading {
+        .column-item {
+          color: #fff !important;
+          font-size: 14px !important;
+          line-height: 21px;
+        }
+      }
+      .table-row {
+        display: flex;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        padding: 10px 12px;
+        padding-right: 0;
+
+        &:last-of-type {
+          border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        @include mq(max_md) {
+          padding: 6px 8px;
+        }
+
+        .column-item {
+          width: calc(100% / 3);
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          /* identical to box height */
+          color: #FFFFFF;
+
+          &:nth-of-type(2) {
+            @include mq(max_md) {
+              text-align: center;
+            }
+
+          }
+          &:nth-of-type(3) {
+            @include mq(max_md) {
+              text-align: right;
+            }
+
+          }
+          @include mq(max_md) {
+            font-size: 14px;
+            line-height: 21px;
+          }
+        }
+      }
+    }
+  }
+
+  @include mq(max_md) {
+    padding-top: 23px;
+  }
+}
