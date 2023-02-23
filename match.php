@@ -179,12 +179,12 @@
             <div class="match-tabs-wrapper">
               <div id="match-tabs">
                 <ul class="sub-nav">
-                  <li><a href="#tabs-1">Summary</a></li>
-                  <li><a href="#tabs-2">Stats</a></li>
-                  <li><a href="#tabs-3">Lineups</a></li>
-                  <li><a href="#tabs-4">H2H</a></li>
-                  <li><a href="#tabs-5">Table</a></li>
-                  <li><a href="#tabs-6">News</a></li>
+                  <li class="match-tab-item"><a href="#tabs-1">Summary</a></li>
+                  <li class="match-tab-item"><a href="#tabs-2">Stats</a></li>
+                  <li class="match-tab-item"><a href="#tabs-3">Lineups</a></li>
+                  <li class="match-tab-item"><a href="#tabs-4">H2H</a></li>
+                  <li class="match-tab-item"><a href="#tabs-5">Table</a></li>
+                  <li class="match-tab-item"><a href="#tabs-6">News</a></li>
                 </ul>
                 <!-- ===========START Summary TABS ============= -->
                 <div id="tabs-1" class="tab-content">
@@ -1470,6 +1470,15 @@
     const childNode = element.childNodes[1];
     childNode.style.width = `${width}%`;
   }
+
+  $(".match-tab-item").on('click', function() {
+    const index = $(this).index()
+    if (index === 0) {
+      $(".match-player-wrapper").show()
+    } else {
+      $(".match-player-wrapper").hide()
+    }
+  })
 </script>
 
 </html>

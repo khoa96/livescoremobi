@@ -526,18 +526,22 @@ p {
 .main-match-content-wrapper {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  width: 100%;
+}
+@media only screen and (max-width: 991px) {
+  .main-match-content-wrapper {
+    width: 100%;
+  }
 }
 .main-match-content-wrapper .match-player-wrapper {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
+  max-width: 808px;
 }
 .main-match-content-wrapper .match-player-wrapper .match-player {
-  width: 100%;
   height: 425px;
+  width: 100%;
 }
 .main-match-content-wrapper .match-player-wrapper .match-player iframe {
   width: 100%;
