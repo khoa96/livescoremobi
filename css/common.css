@@ -1460,6 +1460,14 @@ p {
 .scores-page-content-wrapper {
   width: 100%;
   height: auto;
+  flex-grow: 1;
+  max-width: 808px;
+}
+@media only screen and (max-width: 991px) {
+  .scores-page-content-wrapper {
+    min-width: 100%;
+    max-width: 100%;
+  }
 }
 
 .date-picker-wrapper {
@@ -1727,6 +1735,189 @@ p {
 }
 .favourites-page-content-wrapper .favourites-list-league-item {
   margin-bottom: 16px;
+}
+
+.block-league-item-common {
+  width: 100%;
+  height: auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+.block-league-item-common:hover {
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.block-league-item-common .left-block, .block-league-item-common .right-block {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .block-league-item-common .left-block {
+    min-width: 50px;
+    max-width: 50px;
+    padding-right: 12px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .block-league-item-common .right-block {
+    flex-grow: 1;
+  }
+}
+.block-league-item-common .match-info, .block-league-item-common .league-wrapper {
+  display: flex;
+  align-items: center;
+}
+.block-league-item-common .match-info {
+  width: 40%;
+  justify-content: space-between;
+  padding-right: 16px;
+}
+@media only screen and (max-width: 991px) {
+  .block-league-item-common .match-info .match-status {
+    display: none;
+  }
+}
+.block-league-item-common .league-wrapper {
+  width: 60%;
+  padding-left: 16px;
+  padding-right: 8px;
+}
+@media only screen and (max-width: 991px) {
+  .block-league-item-common .league-wrapper {
+    display: none;
+  }
+}
+.block-league-item-common .league-wrapper .league-image {
+  min-width: 16px;
+  max-width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 8px;
+}
+.block-league-item-common .league-wrapper .league-name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+  white-space: nowrap;
+}
+.block-league-item-common .right-block {
+  display: flex;
+  align-items: center;
+}
+.block-league-item-common .right-block .list-club-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .block-league-item-common .right-block .list-club-wrapper {
+    flex-direction: column;
+  }
+}
+.block-league-item-common .right-block .list-club-wrapper .club-wraper {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width: 991px) {
+  .block-league-item-common .right-block .list-club-wrapper .club-wraper {
+    width: 100%;
+  }
+}
+.block-league-item-common .right-block .list-club-wrapper .club-wraper .club-info {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+.block-league-item-common .right-block .list-club-wrapper .club-wraper .club-info .club-image {
+  min-width: 24px;
+  max-width: 24px;
+  height: 24px;
+}
+.block-league-item-common .right-block .list-club-wrapper .club-wraper .club-info .club-name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100px;
+  white-space: nowrap;
+}
+@media only screen and (max-width: 991px) {
+  .block-league-item-common .right-block .list-club-wrapper .club-wraper .club-info .club-name {
+    max-width: 200px;
+  }
+}
+.block-league-item-common .right-block .list-club-wrapper .dot {
+  margin: 0px 4px;
+}
+@media only screen and (max-width: 991px) {
+  .block-league-item-common .right-block .list-club-wrapper .dot {
+    display: none;
+  }
+}
+.block-league-item-common .right-block .list-club-wrapper .club-1 .score {
+  margin-left: 32px;
+}
+@media only screen and (max-width: 991px) {
+  .block-league-item-common .right-block .list-club-wrapper .club-1 .score {
+    margin-left: 0;
+  }
+}
+.block-league-item-common .right-block .list-club-wrapper .club-1 .club-info {
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 991px) {
+  .block-league-item-common .right-block .list-club-wrapper .club-1 .club-info {
+    justify-content: flex-end;
+    flex-direction: row-reverse;
+  }
+}
+.block-league-item-common .right-block .list-club-wrapper .club-1 .club-info .club-image {
+  margin-left: 8px;
+}
+@media only screen and (max-width: 991px) {
+  .block-league-item-common .right-block .list-club-wrapper .club-1 .club-info .club-image {
+    margin-left: 0;
+    margin-right: 8px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .block-league-item-common .right-block .list-club-wrapper .club-2 {
+    flex-direction: row-reverse;
+    margin-top: 8px;
+  }
+}
+.block-league-item-common .right-block .list-club-wrapper .club-2 .score {
+  margin-right: 32px;
+}
+@media only screen and (max-width: 991px) {
+  .block-league-item-common .right-block .list-club-wrapper .club-2 .score {
+    margin-right: 0;
+  }
+}
+.block-league-item-common .right-block .list-club-wrapper .club-2 .club-info {
+  justify-content: flex-start;
+}
+.block-league-item-common .right-block .list-club-wrapper .club-2 .club-info .club-image {
+  margin-right: 8px;
+}
+.block-league-item-common .right-block .star-block {
+  min-width: 20px;
+  max-width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
 }
 
 /*# sourceMappingURL=common.css.map */
