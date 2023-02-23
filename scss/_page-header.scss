@@ -527,6 +527,7 @@
 .all-sport-nav-for-mb {
   position: relative;
   display: none;
+  padding: 0;
   @include mq(max_md) {
     display: flex;
   }

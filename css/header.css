@@ -503,6 +503,7 @@
 .all-sport-nav-for-mb {
   position: relative;
   display: none;
+  padding: 0;
 }
 @media only screen and (max-width: 991px) {
   .all-sport-nav-for-mb {
