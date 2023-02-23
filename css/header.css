@@ -202,7 +202,6 @@
 .header .list-league-pc-wrapper {
   width: 100%;
   height: auto;
-  padding: 10px 0px;
   background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: center;
@@ -213,6 +212,10 @@
     display: none;
     margin: 0;
   }
+}
+.header .list-league-pc-wrapper .list-league li a {
+  display: flex;
+  padding: 10px 16px;
 }
 
 .control-authen-block {
@@ -473,6 +476,108 @@
 
 .mb-0 {
   margin-bottom: 0 !important;
+}
+
+.all-sport-nav {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  position: relative;
+}
+.all-sport-nav .icon {
+  min-width: 20px;
+  max-width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all-sport-nav:hover {
+  background-color: #000;
+  cursor: pointer;
+}
+.all-sport-nav:hover .sub-category {
+  display: flex;
+}
+
+.all-sport-nav-for-mb {
+  position: relative;
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  .all-sport-nav-for-mb {
+    display: flex;
+  }
+}
+.all-sport-nav-for-mb .sub-category-for-mb {
+  display: none;
+  flex-direction: column !important;
+}
+.all-sport-nav-for-mb .sub-category {
+  flex-direction: column;
+}
+.all-sport-nav-for-mb .icon {
+  min-width: 24px;
+  max-width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.sub-category {
+  background-color: #000;
+  top: 100%;
+  right: 0;
+  padding: 24px;
+  position: absolute;
+  color: #fff;
+  z-index: 999;
+  display: flex;
+  min-width: 650px;
+  max-width: 650px;
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  .sub-category {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: none;
+  }
+}
+.sub-category .column-category {
+  flex-grow: 1;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 991px) {
+  .sub-category .column-category {
+    margin-bottom: 12px;
+  }
+}
+.sub-category .column-category .column-category-item {
+  display: flex;
+  padding: 0 !important;
+  margin-bottom: 20px;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  /* identical to box height */
+  color: rgba(255, 255, 255, 0.95);
+  text-decoration: none;
+}
+.sub-category .column-category .column-category-item:last-of-type {
+  margin-bottom: 0;
+}
+.sub-category .column-category .column-category-item .category-item-image {
+  min-width: 20px;
+  max-width: 20px;
+  height: 20px;
+  display: block;
+  object-fit: cover;
+  margin-right: 12px;
 }
 
 /*# sourceMappingURL=header.css.map */

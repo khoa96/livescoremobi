@@ -171,3 +171,4 @@ $(".btn-sign-in").on('click', function() {
   $(".popup-sign-up-content").hide()
   $(".popup").addClass("popup--show");
 })
+

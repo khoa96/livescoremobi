@@ -194,7 +194,6 @@
   .list-league-pc-wrapper {
     width: 100%;
     height: auto;
-    padding: 10px 0px;
     background-color: rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: center;
@@ -203,6 +202,15 @@
     @include mq(max_md) {
       display: none;
       margin: 0;
+    }
+
+    .list-league {
+      li {
+        a {
+          display: flex;
+          padding: 10px 16px;
+        }
+      }
     }
   }
 }
@@ -489,4 +497,110 @@
 
 .mb-0 {
   margin-bottom: 0 !important;
+}
+
+.all-sport-nav {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  position: relative;
+
+  .icon {
+    min-width: 20px;
+    max-width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &:hover {
+    background-color: #000;
+    cursor: pointer;
+
+    .sub-category {
+      display: flex;
+    }
+  }
+}
+
+.all-sport-nav-for-mb {
+  position: relative;
+  display: none;
+  @include mq(max_md) {
+    display: flex;
+  }
+
+  .sub-category-for-mb {
+    display: none;
+    flex-direction: column !important;
+  }
+  .sub-category {
+    flex-direction: column;
+  }
+  .icon {
+    min-width: 24px;
+    max-width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+}
+
+.sub-category {
+  background-color: #000;
+  top: 100%;
+  right: 0;
+  padding: 24px;
+  position: absolute;
+  color: #fff;
+  z-index: 999;
+  display: flex;
+  min-width: 650px;
+  max-width: 650px;
+  display: none;
+
+  @include mq(max_md) {
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: none;
+  }
+
+  .column-category {
+    flex-grow: 1;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    @include mq(max_md) {
+      margin-bottom: 12px;
+    }
+
+    .column-category-item {
+      display: flex;
+      padding: 0 !important;
+      margin-bottom: 20px;;
+      align-items: center;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 19px;
+      /* identical to box height */
+      color: rgba(255, 255, 255, 0.95);
+      text-decoration: none;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+
+      .category-item-image {
+        min-width: 20px;
+        max-width: 20px;
+        height: 20px;
+        display: block;
+        object-fit: cover;
+        margin-right: 12px;
+      }
+    }
+  }
 }

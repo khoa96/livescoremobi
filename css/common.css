@@ -421,7 +421,6 @@ p {
 
 .list-horizontal {
   flex-direction: row;
-  gap: 32px;
 }
 
 .league-item {

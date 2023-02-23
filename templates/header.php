@@ -60,6 +60,156 @@
           </a>
           <div class="mask"></div>
         </li>
+        <div class="nav-item all-sport-nav all-sport-nav-for-mb">
+          <span class="icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_423_2827)">
+                <path d="M4 6H20" stroke="#009A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="#009A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 18H20" stroke="#009A5F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </g>
+              <defs>
+                <clipPath id="clip0_423_2827">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </span>
+          <span class="league-name">All sports</span>
+          <div class="sub-category sub-category-for-mb">
+            <div class="column-category">
+              <a href="#" class="column-category-item">
+                <img src="./images/category-1.png" class="category-item-image" alt="">
+                <span>Soccer</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <img src="./images/category-2.png" class="category-item-image" alt="">
+                <span>Hockey</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <img src="./images/category-3.png" class="category-item-image" alt="">
+                <span>Basketball</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <img src="./images/category-4.png" class="category-item-image" alt="">
+                <span>Tennis</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <img src="./images/category-5.png" class="category-item-image" alt="">
+                <span>Golf</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <img src="./images/category-6.png" class="category-item-image" alt="">
+                <span>Auto Racing</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <img src="./images/category-7.png" class="category-item-image" alt="">
+                <span>Baseball</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <img src="./images/category-8.png" class="category-item-image" alt="">
+                <span>Hockey</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <img src="./images/category-9.png" class="category-item-image" alt="">
+                <span>MMA</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <img src="./images/category-10.png" class="category-item-image" alt="">
+                <span>Boxing</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <img src="./images/category-11.png" class="category-item-image" alt="">
+                <span>Rugby</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <img src="./images/category-12.png" class="category-item-image" alt="">
+                <span>Billiards</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <img src="./images/category-13.png" class="category-item-image" alt="">
+                <span>Darts</span>
+              </a>
+            </div>
+            <div class="column-category">
+              <a href="#" class="column-category-item">
+                <span>MMA</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>Cycling</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>Motor Cycle Racing</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>Diving</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>Water polo</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>Beach Volleyball</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>Surfing</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>Ice Hockey</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>Handball</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>Kabaddi</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>WWE</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>AEW</span>
+              </a>
+            </div>
+
+            <div class="column-category">
+              <a href="#" class="column-category-item">
+                <span>Softball</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>Lacrosse</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>Swimming and Diving</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>Marathon</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>Badminton</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>Skateboarding</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>Surfing</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>Ice Hockey</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>Handball</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>Kabaddi</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>WWE</span>
+              </a>
+              <a href="#" class="column-category-item">
+                <span>AEW</span>
+              </a>
+            </div>
+          </div>
+        </div>
         <li class="nav-item nav-item-mb">
           <div class="search-wrapper-common menu-search">
             <span class="icon icon-search">
@@ -86,10 +236,12 @@
           </div>
 
           <ul class="list-league list-vertical list-league-menu-mb">
-            <li><a href="#" class="league-item">
+            <li>
+              <a href="#" class="league-item">
                 <img class="league-image-common" src="../images/league-1.png" alt="" />
                 <span class="league-name">Premier League</span>
-              </a></li>
+              </a>
+            </li>
             <li>
               <a href="#" class="league-item">
                 <img class="league-image-common" src="../images/league-2.png" alt="" />
@@ -157,34 +309,34 @@
         <li>
           <a href="#" class="league-item">
             <img class="league-image-common" src="../images/league-2.png" alt="" />
-            <span class="league-name">Spain</span>
+            <span class="league-name">La Liga</span>
           </a>
         </li>
         <li>
           <a href="#" class="league-item">
             <img class="league-image-common" src="../images/league-3.png" alt="" />
-            <span class="league-name">Italia</span>
+            <span class="league-name">Serie A</span>
           </a>
         </li>
 
         <li>
           <a href="#" class="league-item">
             <img class="league-image-common" src="../images/league-4.png" alt="" />
-            <span class="league-name">France</span>
+            <span class="league-name">Ligue 1</span>
           </a>
         </li>
 
         <li>
           <a href="#" class="league-item">
             <img class="league-image-common" src="../images/league-5.png" alt="" />
-            <span class="league-name">Champions League</span>
+            <span class="league-name">Bundesliga</span>
           </a>
         </li>
 
         <li>
           <a href="#" class="league-item">
             <img class="league-image-common" src="../images/league-6.png" alt="" />
-            <span class="league-name">Germany</span>
+            <span class="league-name">Champions League</span>
           </a>
         </li>
 
@@ -193,6 +345,161 @@
             <img class="league-image-common" src="../images/league-7.png" alt="" />
             <span class="league-name">Europa League</span>
           </a>
+        </li>
+        <li>
+          <div class="league-item all-sport-nav">
+            <span class="icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_423_2979)">
+                  <path d="M3.33333 5H16.6667" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M3.33333 10H16.6667" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M3.33333 15H16.6667" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_423_2979">
+                    <rect width="20" height="20" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+            <span class="league-name">All sports</span>
+            <div class="sub-category">
+              <div class="column-category">
+                <a href="#" class="column-category-item">
+                  <img src="./images/category-1.png" class="category-item-image" alt="">
+                  <span>Soccer</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <img src="./images/category-2.png" class="category-item-image" alt="">
+                  <span>Hockey</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <img src="./images/category-3.png" class="category-item-image" alt="">
+                  <span>Basketball</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <img src="./images/category-4.png" class="category-item-image" alt="">
+                  <span>Tennis</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <img src="./images/category-5.png" class="category-item-image" alt="">
+                  <span>Golf</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <img src="./images/category-6.png" class="category-item-image" alt="">
+                  <span>Auto Racing</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <img src="./images/category-7.png" class="category-item-image" alt="">
+                  <span>Baseball</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <img src="./images/category-8.png" class="category-item-image" alt="">
+                  <span>Hockey</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <img src="./images/category-9.png" class="category-item-image" alt="">
+                  <span>MMA</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <img src="./images/category-10.png" class="category-item-image" alt="">
+                  <span>Boxing</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <img src="./images/category-11.png" class="category-item-image" alt="">
+                  <span>Rugby</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <img src="./images/category-12.png" class="category-item-image" alt="">
+                  <span>Billiards</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <img src="./images/category-13.png" class="category-item-image" alt="">
+                  <span>Darts</span>
+                </a>
+              </div>
+              <div class="column-category">
+                <a href="#" class="column-category-item">
+                  <span>MMA</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>Cycling</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>Motor Cycle Racing</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>Diving</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>Water polo</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>Beach Volleyball</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>Surfing</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>Ice Hockey</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>Handball</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>Kabaddi</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>WWE</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>AEW</span>
+                </a>
+              </div>
+
+              <div class="column-category">
+                <a href="#" class="column-category-item">
+                  <span>Softball</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>Lacrosse</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>Swimming and Diving</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>Marathon</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>Badminton</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>Skateboarding</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>Surfing</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>Ice Hockey</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>Handball</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>Kabaddi</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>WWE</span>
+                </a>
+                <a href="#" class="column-category-item">
+                  <span>AEW</span>
+                </a>
+              </div>
+            </div>
+          </div>
         </li>
       </ul>
     </div>
@@ -225,9 +532,8 @@
 
             </div>
             <div class="form-control">
-              <label class="label" >Password
-              <input type="password" name="password" value="" placeholder="Enter your password"
-                autocomplete="off" />
+              <label class="label">Password
+                <input type="password" name="password" value="" placeholder="Enter your password" autocomplete="off" />
               </label>
 
             </div>
@@ -300,20 +606,19 @@
           <div class="authen-form-wrapper">
             <div class="form-control">
               <label class="label">Email
-              <input type="text" name="email" value="" placeholder="Enter your email"autocomplete="off" />
+                <input type="text" name="email" value="" placeholder="Enter your email" autocomplete="off" />
               </label>
 
             </div>
             <div class="form-control">
               <label class="label">Username
-              <input type="text" name="email" value="" placeholder="Enter username" autocomplete="off" />
+                <input type="text" name="email" value="" placeholder="Enter username" autocomplete="off" />
               </label>
 
             </div>
             <div class="form-control">
-              <label class="label" >Password
-              <input type="password" name="password" value="" placeholder="Enter your password"
-                autocomplete="off" />
+              <label class="label">Password
+                <input type="password" name="password" value="" placeholder="Enter your password" autocomplete="off" />
               </label>
 
             </div>
@@ -335,5 +640,4 @@
     </div>
   </div>
   <!-- =========END POPUP SIGN IN AND SIGN UP========= -->
-
 </header>
