@@ -177,7 +177,7 @@ p {
 }
 
 .txt-green-primary {
-  color: #009A5F !important;
+  color: #009a5f !important;
 }
 
 .w-20 {
@@ -239,7 +239,7 @@ p {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #1A202C;
+  color: #1a202c;
   margin-bottom: 16px;
 }
 .calendar .ui-datepicker-prev,
@@ -279,15 +279,15 @@ p {
   display: block;
   width: 10px;
   height: 10px;
-  border-left: 2px solid #1A202C;
-  border-bottom: 2px solid #1A202C;
+  border-left: 2px solid #1a202c;
+  border-bottom: 2px solid #1a202c;
   top: 48px;
 }
 .calendar .ui-datepicker-prev:hover,
 .calendar .ui-datepicker-next:hover,
 .calendar .ui-datepicker-prev:hover:after,
 .calendar .ui-datepicker-next:hover:after {
-  border-color: #1A202C;
+  border-color: #1a202c;
 }
 .calendar .ui-datepicker-title {
   text-align: center;
@@ -328,13 +328,13 @@ p {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  color: #1A202C;
+  color: #1a202c;
 }
 .calendar .ui-state-default:hover {
   text-decoration: none;
 }
 .calendar .ui-datepicker-today .ui-state-highlight {
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 50%;
   background-color: #009a5f;
 }
@@ -346,7 +346,7 @@ p {
   color: #009a5f;
 }
 .calendar .ui-datepicker-other-month .ui-state-default {
-  color: #A0AEC0;
+  color: #a0aec0;
 }
 
 .search-wrapper-common {
@@ -379,7 +379,7 @@ p {
   cursor: pointer;
   /* identical to box height */
   /* #FFFFFF */
-  color: #FFFFFF;
+  color: #ffffff;
   background-color: transparent;
 }
 .search-wrapper-common input:focus {
@@ -497,14 +497,16 @@ p {
   }
 }
 
-.left-main-layout, .right-main-layout {
+.left-main-layout,
+.right-main-layout {
   min-width: 200px;
   max-width: 200px;
   height: auto;
   max-height: max-content;
 }
 @media only screen and (max-width: 991px) {
-  .left-main-layout, .right-main-layout {
+  .left-main-layout,
+.right-main-layout {
     display: none;
   }
 }
@@ -517,6 +519,100 @@ p {
 }
 @media only screen and (max-width: 991px) {
   .center-main-layout {
+    max-width: 100%;
+  }
+}
+
+.main-match-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+}
+.main-match-content-wrapper .match-player-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.main-match-content-wrapper .match-player-wrapper .match-player {
+  width: 100%;
+  height: 425px;
+}
+.main-match-content-wrapper .match-player-wrapper .match-player iframe {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 400px) {
+  .main-match-content-wrapper .match-player-wrapper .match-player {
+    min-width: 100%;
+    max-width: 100%;
+    height: 180px;
+  }
+}
+.main-match-content-wrapper .match-player-wrapper .list-server {
+  display: flex;
+  align-items: center;
+}
+.main-match-content-wrapper .match-player-wrapper .list-server .active {
+  background: #009a5f !important;
+}
+.main-match-content-wrapper .match-player-wrapper .list-server .btn-server {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  /* identical to box height */
+  /* #FFFFFF */
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  margin-right: 12px;
+}
+.main-match-content-wrapper .match-player-wrapper .list-server .btn-server:last-of-type {
+  margin-right: 0;
+}
+.main-match-content-wrapper .match-player-wrapper .list-server .btn-server:focus {
+  outline: none;
+}
+.main-match-content-wrapper .match-player-wrapper .match-control {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0px 24px;
+}
+.main-match-content-wrapper .match-player-wrapper .list-player-contact {
+  display: flex;
+  align-items: center;
+}
+.main-match-content-wrapper .match-player-wrapper .list-player-contact .list-player-contact-item {
+  min-width: 20px;
+  max-width: 20px;
+  height: 20px;
+  margin-right: 16px;
+}
+.main-match-content-wrapper .match-player-wrapper .list-player-contact .list-player-contact-item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.main-match-content-wrapper .match-content-wrapper {
+  display: flex;
+}
+.main-match-content-wrapper .match-content-page-wrapper {
+  margin-right: 24px;
+  min-width: 545px;
+  max-width: 545px;
+}
+@media only screen and (max-width: 991px) {
+  .main-match-content-wrapper .match-content-page-wrapper {
+    min-width: 100%;
     max-width: 100%;
   }
 }
@@ -550,7 +646,7 @@ p {
   line-height: 20px;
   /* identical to box height */
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .right-main-layout .header-right-content .icon {
   width: 20px;
@@ -577,7 +673,7 @@ p {
   font-weight: 500;
   font-size: 13px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .right-main-layout .list-news-right-sidebar-wrapper .list-news-item .image-news {
   display: block;
@@ -634,7 +730,7 @@ p {
   /* identical to box height */
   text-align: center;
   /* #FFFFFF */
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .button-common:focus {
   outline: none;
@@ -673,7 +769,7 @@ p {
   font-size: 13px;
   line-height: 20px;
   /* identical to box height */
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: bold;
 }
 .league-info-wrapper .league-info .league-name {
@@ -714,7 +810,7 @@ p {
   /* identical to box height */
   text-align: center;
   /* #FFFFFF */
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .table-match-detail-wrapper .score-wrapper .type {
   font-style: normal;
@@ -748,7 +844,7 @@ p {
   line-height: 20px;
   /* identical to box height */
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media only screen and (max-width: 991px) {
   .table-match-detail-wrapper .club-item-wrapper .club-name {
@@ -791,7 +887,7 @@ p {
   font-size: 13px;
   line-height: 20px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-bottom: 10px;
   display: block;
   text-decoration: none;
@@ -804,9 +900,9 @@ p {
   text-decoration: none;
 }
 .sub-nav .ui-state-active a {
-  color: #009A5F;
+  color: #009a5f;
   padding-bottom: 7px;
-  border-bottom: 3px solid #009A5F;
+  border-bottom: 3px solid #009a5f;
   font-weight: bold;
 }
 
@@ -893,7 +989,7 @@ p {
   font-weight: bold;
   font-size: 13px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #ffffff;
   text-align: center;
   min-width: 8px;
   max-width: 8px;
@@ -1000,10 +1096,10 @@ p {
   }
 }
 .match-table-common .txt-green {
-  color: #31FFE6 !important;
+  color: #31ffe6 !important;
 }
 .match-table-common .txt-violet {
-  color: #B235FF !important;
+  color: #b235ff !important;
 }
 .match-table-common .club-info {
   display: flex;
@@ -1094,7 +1190,7 @@ p {
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media only screen and (max-width: 991px) {
   .list-new-by-category .list-new-by-category-item .news-info .news-title {
@@ -1146,16 +1242,16 @@ p {
   /* identical to box height */
   text-transform: uppercase;
   /* #FFFFFF */
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 8px;
 }
 
 .txt-blue {
-  color: #319CFF;
+  color: #319cff;
 }
 
 .txt-orange {
-  color: #D98017;
+  color: #d98017;
 }
 
 .main-layout-scores-page .right-main-layout {
@@ -1174,7 +1270,7 @@ p {
   line-height: 32px;
   /* identical to box height */
   /* #FFFFFF */
-  color: #FFFFFF;
+  color: #ffffff;
   margin: 8px 0px;
   display: none;
 }
@@ -1215,7 +1311,7 @@ p {
   line-height: 20px;
   /* identical to box height */
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   min-width: max-content;
 }
 .main-nav li a:hover {
@@ -1243,7 +1339,7 @@ p {
   height: auto !important;
 }
 .main-nav .ui-tabs-active a {
-  background-color: #009A5F;
+  background-color: #009a5f;
 }
 
 .date-nav {
@@ -1316,12 +1412,13 @@ p {
   }
 }
 .date-nav .ui-tabs-active a {
-  color: #009A5F;
+  color: #009a5f;
   padding-bottom: 5px;
-  border-bottom: 3px solid #009A5F;
+  border-bottom: 3px solid #009a5f;
 }
-.date-nav .ui-tabs-active a .day, .date-nav .ui-tabs-active a .date {
-  color: #009A5F;
+.date-nav .ui-tabs-active a .day,
+.date-nav .ui-tabs-active a .date {
+  color: #009a5f;
 }
 
 .sub-nav-item-for-mobile {
@@ -1413,7 +1510,7 @@ p {
 .live-nav-item {
   border-bottom: none !important;
   padding: 5px 8px;
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 6px;
   border: none;
   font-style: normal;
@@ -1575,7 +1672,7 @@ p {
   font-weight: 400;
   font-size: 11px;
   line-height: 16px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 @media only screen and (max-width: 991px) {
   .list-odds-value .odds-item {
