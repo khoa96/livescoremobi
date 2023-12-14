@@ -16,6 +16,10 @@ $(function () {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
   }
+
+ $(".all-sport-nav-for-mb").on("click", function () {
+   $(".sub-category-for-mb").toggle();
+ });
   // ========HANDLE TOGGLE SHOW MENU ========
 
   // =======HANDLE DATEPICKER FOR PC ========
