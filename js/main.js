@@ -16,9 +16,19 @@ $(function () {
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
   }
+  $(".icon-close-for-mb").hide()
 
  $(".all-sport-nav-for-mb").on("click", function () {
    $(".sub-category-for-mb").toggle();
+   const displayValue = $(".sub-category-for-mb").css('display')
+   console.log("displayValue =====", displayValue);
+   if (displayValue === 'block') {
+    $(".icon-toggle-for-mb").hide()
+    $(".icon-close-for-mb").show()
+   } else {
+     $(".icon-toggle-for-mb").show();
+     $(".icon-close-for-mb").hide();
+   }
  });
   // ========HANDLE TOGGLE SHOW MENU ========
 

@@ -517,6 +517,19 @@
   &:hover {
     background-color: #000;
     cursor: pointer;
+
+    .sub-category {
+      display: flex;
+    }
+  }
+
+
+  @include mq(max_md) {
+    &:hover {
+        .sub-category {
+          display: none;
+        }
+    }
   }
 }
 

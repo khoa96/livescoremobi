@@ -496,6 +496,14 @@
   background-color: #000;
   cursor: pointer;
 }
+.all-sport-nav:hover .sub-category {
+  display: flex;
+}
+@media only screen and (max-width: 991px) {
+  .all-sport-nav:hover .sub-category {
+    display: none;
+  }
+}
 
 .all-sport-nav-for-mb {
   position: relative;
